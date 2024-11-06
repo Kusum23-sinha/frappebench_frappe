@@ -1,0 +1,50 @@
+2024-10-15 18:42:00,673 INFO ipython === bench console session ===
+2024-10-15 18:42:00,674 INFO ipython frappe
+2024-10-15 18:42:00,674 INFO ipython frappe.get_all("Airplane Ticket", fields=["SUM(total_amount) AS total_revenue", "airplane.airline"], filters={"docstatus": 1}, group_by ="airline")
+2024-10-15 18:42:00,674 INFO ipython frappe.db
+2024-10-15 18:42:00,674 INFO ipython frappe.db.commit()
+2024-10-15 18:42:00,674 INFO ipython frappe.get_all("Airplane Ticket", fields=["SUM(total_amount) AS total_revenue", "airplane.airline"], filters={"docstatus": 1}, group_by ="airline")
+2024-10-15 18:42:00,674 INFO ipython frappe.get_all("Airplane Ticket", fields=["total_amount", "airplane.airline"])
+2024-10-15 18:42:00,674 INFO ipython data = frappe.db.sql("""
+		SELECT
+			airplane.airline AS airline,
+			SUM(total_amount) AS total_revenue
+		FROM
+			`tabAirplane Ticket` AS ticket
+		JOIN
+			`tabAirplane` AS airplane ON airplane.name = ticket.airplane
+		WHERE
+			ticket.docstatus = 1
+		GROUP BY
+			airplane.airline
+	""", as_dict=True)
+2024-10-15 18:42:00,674 INFO ipython data = frappe.db.sql("""SELECT airplane.airline AS airline, SUM(total_amount) AS total_revenue FROM `tabAirplane Ticket` AS ticket JOIN `tabAirplane` AS airplane ON airplane.name = ticket.airplane WHERE ticket.docstatus = 1 GROUP BY airplane.airline, as_dict=True""")
+2024-10-15 18:42:00,674 INFO ipython exit;
+2024-10-15 18:42:00,674 INFO ipython === session end ===
+2024-10-16 10:35:09,149 INFO ipython === bench console session ===
+2024-10-16 10:35:09,151 INFO ipython frappe.get_doc("Airplane", "self.airplane")
+2024-10-16 10:35:09,152 INFO ipython frappe.get_doc("Airplane", "airplane")
+2024-10-16 10:35:09,152 INFO ipython frappe.get_doc("Airplane", "Airplane-001")
+2024-10-16 10:35:09,152 INFO ipython exit;
+2024-10-16 10:35:09,152 INFO ipython === session end ===
+2024-11-06 10:37:48,883 INFO ipython === bench console session ===
+2024-11-06 10:37:48,884 INFO ipython airports = frappe.get_doc("Airports", self.airports)
+2024-11-06 10:37:48,884 INFO ipython airports = frappe.get_doc("Airports", airports)
+2024-11-06 10:37:48,885 INFO ipython shop = frappe.get_doc("Shop")
+2024-11-06 10:37:48,885 INFO ipython exit;
+2024-11-06 10:37:48,885 INFO ipython === session end ===
+2024-11-06 10:47:33,216 INFO ipython === bench console session ===
+2024-11-06 10:47:33,216 INFO ipython from airport_management.airport_management.airport_shop_management.doctype.shop.shop import shop
+2024-11-06 10:47:33,216 INFO ipython from airport_management.airport_shop_management.doctype.shop.shop import Shop
+2024-11-06 10:47:33,216 INFO ipython exit;
+2024-11-06 10:47:33,216 INFO ipython === session end ===
+2024-11-06 11:28:09,552 INFO ipython === bench console session ===
+2024-11-06 11:28:09,553 INFO ipython shop = frappe.get_doc({
+"doctype": "Shop",
+"shop_number": "101",
+"shop_name": "BookStore",
+"area": 200,
+"Status": "Available",
+"Airport": "Indira Gandhi International Airport"})
+2024-11-06 11:28:09,553 INFO ipython exit;
+2024-11-06 11:28:09,553 INFO ipython === session end ===

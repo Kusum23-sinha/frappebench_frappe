@@ -1,0 +1,680 @@
+2024-09-12 19:46:01,525 DEBUG cd frappe && python3 -m venv env
+2024-09-12 19:46:03,463 DEBUG cd frappe && /home/ng/frappe/env/bin/python -m pip install --quiet --upgrade pip
+2024-09-12 19:46:04,608 DEBUG cd frappe && /home/ng/frappe/env/bin/python -m pip install --quiet wheel
+2024-09-12 19:46:06,305 LOG Getting frappe
+2024-09-12 19:46:06,305 DEBUG cd frappe/apps && git clone https://github.com/frappe/frappe.git --branch version-15 --depth 1 --origin upstream
+2024-09-12 19:46:15,528 LOG Installing frappe
+2024-09-12 19:46:15,528 DEBUG cd /home/ng/frappe && /home/ng/frappe/env/bin/python -m pip install --quiet --upgrade -e /home/ng/frappe/apps/frappe 
+2024-09-12 19:46:38,402 DEBUG cd /home/ng/frappe/apps/frappe && yarn install --check-files
+2024-09-12 19:46:50,839 WARNING restart failed: Couldn't find supervisorctl in PATH
+2024-09-12 19:46:50,839 DEBUG cd frappe && bench build
+2024-09-12 19:46:50,933 INFO /home/ng/.local/bin/bench build
+2024-09-12 19:47:01,084 LOG setting up backups
+2024-09-12 19:47:01,094 LOG backups were set up
+2024-09-12 19:47:01,094 INFO Bench frappe initialized
+2024-09-12 19:50:32,997 INFO /home/ng/.local/bin/bench new-site my-bench
+2024-09-12 19:51:54,634 INFO /home/ng/.local/bin/bench start
+2024-09-12 19:51:54,820 INFO /home/ng/.local/bin/bench schedule
+2024-09-12 19:51:54,820 INFO /home/ng/.local/bin/bench serve --port 8005
+2024-09-12 19:51:54,871 INFO /home/ng/.local/bin/bench watch
+2024-09-12 19:51:54,874 INFO /home/ng/.local/bin/bench worker
+2024-09-12 19:52:32,885 INFO /home/ng/.local/bin/bench start
+2024-09-12 19:52:33,104 INFO /home/ng/.local/bin/bench worker
+2024-09-12 19:52:33,109 INFO /home/ng/.local/bin/bench schedule
+2024-09-12 19:52:33,135 INFO /home/ng/.local/bin/bench serve --port 8005
+2024-09-12 19:52:33,137 INFO /home/ng/.local/bin/bench watch
+2024-09-12 19:54:20,904 INFO /home/ng/.local/bin/bench --site my-site install-app frappe
+2024-09-12 19:54:47,172 INFO /home/ng/.local/bin/bench --site my-bench install-app frappe
+2024-09-12 19:55:11,269 INFO /home/ng/.local/bin/bench use my-bench
+2024-09-12 19:56:13,156 INFO /home/ng/.local/bin/bench --site my-bench install-app frappe.app
+2024-09-12 19:56:30,675 INFO /home/ng/.local/bin/bench --site my-bench install-app my-app
+2024-09-12 19:56:37,327 INFO /home/ng/.local/bin/bench start
+2024-09-12 19:56:37,527 INFO /home/ng/.local/bin/bench worker
+2024-09-12 19:56:37,527 INFO /home/ng/.local/bin/bench schedule
+2024-09-12 19:56:37,570 INFO /home/ng/.local/bin/bench serve --port 8005
+2024-09-12 19:56:37,573 INFO /home/ng/.local/bin/bench watch
+2024-09-12 20:00:01,872 INFO /home/ng/.local/bin/bench new-app frappe-app
+2024-09-12 20:00:01,875 LOG creating new app frappe_app
+2024-09-12 20:01:44,754 LOG Installing frappe_app
+2024-09-12 20:01:44,755 DEBUG cd /home/ng/frappe && /home/ng/frappe/env/bin/python -m pip install --quiet --upgrade -e /home/ng/frappe/apps/frappe_app 
+2024-09-12 20:01:46,154 DEBUG bench build --app frappe_app
+2024-09-12 20:01:46,235 INFO /home/ng/.local/bin/bench build --app frappe_app
+2024-09-12 20:01:47,202 WARNING restart failed: Couldn't find supervisorctl in PATH
+2024-09-13 18:00:01,880 INFO /home/ng/.local/bin/bench --verbose --site all backup
+2024-09-13 20:36:20,333 INFO /home/ng/.local/bin/bench start
+2024-09-13 20:36:20,546 INFO /home/ng/.local/bin/bench worker
+2024-09-13 20:36:20,552 INFO /home/ng/.local/bin/bench watch
+2024-09-13 20:36:20,584 INFO /home/ng/.local/bin/bench serve --port 8005
+2024-09-13 20:36:20,595 INFO /home/ng/.local/bin/bench schedule
+2024-09-13 20:48:45,139 INFO /home/ng/.local/bin/bench new-site Airplane_mode
+2024-09-13 20:57:51,916 INFO /home/ng/.local/bin/bench --site Airplane_mode set-config developer_mode 1
+2024-09-13 21:04:48,944 INFO /home/ng/.local/bin/bench new-app airplane_mode
+2024-09-13 21:04:48,949 LOG creating new app airplane_mode
+2024-09-13 21:06:11,030 LOG Installing airplane_mode
+2024-09-13 21:06:11,031 DEBUG cd /home/ng/frappe && /home/ng/frappe/env/bin/python -m pip install --quiet --upgrade -e /home/ng/frappe/apps/airplane_mode 
+2024-09-13 21:06:12,506 DEBUG bench build --app airplane_mode
+2024-09-13 21:06:12,592 INFO /home/ng/.local/bin/bench build --app airplane_mode
+2024-09-13 21:06:13,739 WARNING restart failed: Couldn't find supervisorctl in PATH
+2024-09-13 21:08:12,951 INFO /home/ng/.local/bin/bench --site Airplane_mode installl-app airplane_mode
+2024-09-13 21:08:31,552 INFO /home/ng/.local/bin/bench --site Airplane_mode install-app airplane_mode
+2024-09-13 21:14:20,903 INFO /home/ng/.local/bin/bench use Airplane_mode
+2024-09-13 21:16:18,011 INFO /home/ng/.local/bin/bench start
+2024-09-13 21:16:18,246 INFO /home/ng/.local/bin/bench schedule
+2024-09-13 21:16:18,257 INFO /home/ng/.local/bin/bench watch
+2024-09-13 21:16:18,261 INFO /home/ng/.local/bin/bench serve --port 8005
+2024-09-13 21:16:18,276 INFO /home/ng/.local/bin/bench worker
+2024-09-14 10:32:30,790 INFO /home/ng/.local/bin/bench start
+2024-09-14 10:32:31,035 INFO /home/ng/.local/bin/bench worker
+2024-09-14 10:32:31,043 INFO /home/ng/.local/bin/bench watch
+2024-09-14 10:32:31,049 INFO /home/ng/.local/bin/bench serve --port 8005
+2024-09-14 10:32:31,069 INFO /home/ng/.local/bin/bench schedule
+2024-09-14 12:00:02,010 INFO /home/ng/.local/bin/bench --verbose --site all backup
+2024-09-16 12:00:01,298 INFO /home/ng/.local/bin/bench --verbose --site all backup
+2024-09-16 18:00:02,607 INFO /home/ng/.local/bin/bench --verbose --site all backup
+2024-09-17 12:00:02,004 INFO /home/ng/.local/bin/bench --verbose --site all backup
+2024-09-18 12:00:01,174 INFO /home/ng/.local/bin/bench --verbose --site all backup
+2024-09-18 18:00:01,208 INFO /home/ng/.local/bin/bench --verbose --site all backup
+2024-09-18 18:56:55,113 INFO /home/ng/.local/bin/bench start
+2024-09-18 18:56:55,348 INFO /home/ng/.local/bin/bench watch
+2024-09-18 18:56:55,349 INFO /home/ng/.local/bin/bench worker
+2024-09-18 18:56:55,391 INFO /home/ng/.local/bin/bench serve --port 8005
+2024-09-18 18:56:55,396 INFO /home/ng/.local/bin/bench schedule
+2024-09-18 19:03:39,860 INFO /home/ng/.local/bin/bench start
+2024-09-18 19:05:01,183 INFO /home/ng/.local/bin/bench start
+2024-09-18 19:05:01,418 INFO /home/ng/.local/bin/bench watch
+2024-09-18 19:05:01,448 INFO /home/ng/.local/bin/bench schedule
+2024-09-18 19:05:01,454 INFO /home/ng/.local/bin/bench serve --port 8005
+2024-09-18 19:05:01,466 INFO /home/ng/.local/bin/bench worker
+2024-09-18 19:05:58,142 INFO /home/ng/.local/bin/bench migrate
+2024-09-18 19:29:56,195 INFO /home/ng/.local/bin/bench --site Airplane_mode install-app Interview_management_system
+2024-09-18 19:42:42,036 INFO /home/ng/.local/bin/bench get-app https://github.com/AshaRawat453/interview-management.git
+2024-09-18 19:42:42,042 LOG Getting interview-management
+2024-09-18 19:42:42,042 DEBUG cd ./apps && git clone https://github.com/AshaRawat453/interview-management.git  --depth 1 --origin upstream
+2024-09-18 19:42:42,991 LOG Installing interview_management
+2024-09-18 19:42:42,991 DEBUG cd /home/ng/frappe && /home/ng/frappe/env/bin/python -m pip install --quiet --upgrade -e /home/ng/frappe/apps/interview_management 
+2024-09-18 19:42:44,600 DEBUG bench build --app interview_management
+2024-09-18 19:42:44,700 INFO /home/ng/.local/bin/bench build --app interview_management
+2024-09-18 19:42:45,949 WARNING restart failed: Couldn't find supervisorctl in PATH
+2024-09-18 19:47:32,500 INFO /home/ng/.local/bin/bench get-app https://github.com/AshaRawat453/interview-management.git
+2024-09-18 19:47:32,507 LOG Getting interview-management
+2024-09-18 19:47:32,507 DEBUG cd ./apps && git clone https://github.com/AshaRawat453/interview-management.git  --depth 1 --origin upstream
+2024-09-18 19:47:33,573 WARNING /home/ng/.local/bin/bench get-app https://github.com/AshaRawat453/interview-management.git executed with exit code 1
+2024-09-18 19:48:08,418 INFO /home/ng/.local/bin/bench get-app https://github.com/AshaRawat453/interview-management.git
+2024-09-18 19:48:08,423 LOG Getting interview-management
+2024-09-18 19:48:08,424 DEBUG cd ./apps && git clone https://github.com/AshaRawat453/interview-management.git  --depth 1 --origin upstream
+2024-09-18 19:48:09,642 LOG Installing interview_management
+2024-09-18 19:48:09,644 DEBUG cd /home/ng/frappe && /home/ng/frappe/env/bin/python -m pip install --quiet --upgrade -e /home/ng/frappe/apps/interview_management 
+2024-09-18 19:48:11,070 DEBUG bench build --app interview_management
+2024-09-18 19:48:11,159 INFO /home/ng/.local/bin/bench build --app interview_management
+2024-09-18 19:48:12,166 WARNING restart failed: Couldn't find supervisorctl in PATH
+2024-09-18 19:49:50,606 INFO /home/ng/.local/bin/bench --site Airplane_mode install-app interview_management
+2024-09-18 19:50:52,943 INFO /home/ng/.local/bin/bench start
+2024-09-18 19:50:53,168 INFO /home/ng/.local/bin/bench schedule
+2024-09-18 19:50:53,177 INFO /home/ng/.local/bin/bench watch
+2024-09-18 19:50:53,194 INFO /home/ng/.local/bin/bench serve --port 8005
+2024-09-18 19:50:53,217 INFO /home/ng/.local/bin/bench worker
+2024-09-18 19:53:19,467 INFO /home/ng/.local/bin/bench migrate
+2024-09-19 12:00:01,270 INFO /home/ng/.local/bin/bench --verbose --site all backup
+2024-09-19 18:00:01,749 INFO /home/ng/.local/bin/bench --verbose --site all backup
+2024-09-20 12:00:02,055 INFO /home/ng/.local/bin/bench --verbose --site all backup
+2024-09-23 11:45:05,448 INFO /home/ng/.local/bin/bench new-site library_management
+2024-09-23 11:46:25,733 INFO /home/ng/.local/bin/bench new-app library_system
+2024-09-23 11:46:25,748 LOG creating new app library_system
+2024-09-23 11:48:34,789 LOG Installing library_system
+2024-09-23 11:48:34,790 DEBUG cd /home/ng/frappe && /home/ng/frappe/env/bin/python -m pip install --quiet --upgrade -e /home/ng/frappe/apps/library_system 
+2024-09-23 11:48:36,327 DEBUG bench build --app library_system
+2024-09-23 11:48:36,408 INFO /home/ng/.local/bin/bench build --app library_system
+2024-09-23 11:48:37,570 WARNING restart failed: Couldn't find supervisorctl in PATH
+2024-09-23 11:50:40,006 INFO /home/ng/.local/bin/bench --site library_management install-app library_system
+2024-09-23 11:50:58,814 INFO /home/ng/.local/bin/bench start
+2024-09-23 11:50:59,058 INFO /home/ng/.local/bin/bench watch
+2024-09-23 11:50:59,079 INFO /home/ng/.local/bin/bench worker
+2024-09-23 11:50:59,088 INFO /home/ng/.local/bin/bench schedule
+2024-09-23 11:50:59,105 INFO /home/ng/.local/bin/bench serve --port 8005
+2024-09-23 11:54:59,512 INFO /home/ng/.local/bin/bench start
+2024-09-23 11:54:59,733 INFO /home/ng/.local/bin/bench watch
+2024-09-23 11:54:59,733 INFO /home/ng/.local/bin/bench worker
+2024-09-23 11:54:59,759 INFO /home/ng/.local/bin/bench serve --port 8005
+2024-09-23 11:54:59,774 INFO /home/ng/.local/bin/bench schedule
+2024-09-23 12:00:02,050 INFO /home/ng/.local/bin/bench --verbose --site all backup
+2024-09-23 12:00:48,754 INFO /home/ng/.local/bin/bench migrate
+2024-09-23 12:04:24,852 INFO /home/ng/.local/bin/bench new-site library_management
+2024-09-23 12:05:32,598 INFO /home/ng/.local/bin/bench new-app library_system
+2024-09-23 12:05:32,612 LOG creating new app library_system
+2024-09-23 12:06:41,593 LOG Installing library_system
+2024-09-23 12:06:41,593 DEBUG cd /home/ng/frappe && /home/ng/frappe/env/bin/python -m pip install --quiet --upgrade -e /home/ng/frappe/apps/library_system 
+2024-09-23 12:06:43,086 DEBUG bench build --app library_system
+2024-09-23 12:06:43,167 INFO /home/ng/.local/bin/bench build --app library_system
+2024-09-23 12:06:44,313 WARNING restart failed: Couldn't find supervisorctl in PATH
+2024-09-23 12:07:22,212 INFO /home/ng/.local/bin/bench --site library_management install-app library_system
+2024-09-23 12:07:39,419 INFO /home/ng/.local/bin/bench --site library_management install-app library_system
+2024-09-23 12:08:17,053 INFO /home/ng/.local/bin/bench start
+2024-09-23 12:09:48,621 INFO /home/ng/.local/bin/bench start
+2024-09-23 12:09:48,850 INFO /home/ng/.local/bin/bench watch
+2024-09-23 12:09:48,859 INFO /home/ng/.local/bin/bench serve --port 8005
+2024-09-23 12:09:48,891 INFO /home/ng/.local/bin/bench schedule
+2024-09-23 12:09:48,897 INFO /home/ng/.local/bin/bench worker
+2024-09-23 12:30:05,854 INFO /home/ng/.local/bin/bench start
+2024-09-23 12:30:06,474 INFO /home/ng/.local/bin/bench watch
+2024-09-23 12:30:06,491 INFO /home/ng/.local/bin/bench serve --port 8005
+2024-09-23 12:30:06,562 INFO /home/ng/.local/bin/bench schedule
+2024-09-23 12:30:06,600 INFO /home/ng/.local/bin/bench worker
+2024-09-23 12:31:21,434 INFO /home/ng/.local/bin/bench start
+2024-09-23 12:31:22,369 INFO /home/ng/.local/bin/bench serve --port 8005
+2024-09-23 12:31:22,402 INFO /home/ng/.local/bin/bench schedule
+2024-09-23 12:31:22,417 INFO /home/ng/.local/bin/bench watch
+2024-09-23 12:31:22,421 INFO /home/ng/.local/bin/bench worker
+2024-09-23 12:31:57,829 INFO /home/ng/.local/bin/bench start
+2024-09-23 12:31:58,406 INFO /home/ng/.local/bin/bench watch
+2024-09-23 12:31:58,561 INFO /home/ng/.local/bin/bench serve --port 8005
+2024-09-23 12:31:58,567 INFO /home/ng/.local/bin/bench schedule
+2024-09-23 12:31:58,569 INFO /home/ng/.local/bin/bench worker
+2024-09-23 12:33:15,107 INFO /home/ng/.local/bin/bench start
+2024-09-23 12:33:15,335 INFO /home/ng/.local/bin/bench schedule
+2024-09-23 12:33:15,345 INFO /home/ng/.local/bin/bench worker
+2024-09-23 12:33:15,368 INFO /home/ng/.local/bin/bench serve --port 8005
+2024-09-23 12:33:15,374 INFO /home/ng/.local/bin/bench watch
+2024-09-23 12:35:31,558 INFO /home/ng/.local/bin/bench start
+2024-09-23 12:35:31,763 INFO /home/ng/.local/bin/bench worker
+2024-09-23 12:35:31,772 INFO /home/ng/.local/bin/bench watch
+2024-09-23 12:35:31,805 INFO /home/ng/.local/bin/bench schedule
+2024-09-23 12:35:31,805 INFO /home/ng/.local/bin/bench serve --port 8005
+2024-09-23 15:14:08,528 INFO /home/ng/.local/bin/bench start
+2024-09-23 15:14:08,769 INFO /home/ng/.local/bin/bench serve --port 8005
+2024-09-23 15:14:08,770 INFO /home/ng/.local/bin/bench watch
+2024-09-23 15:14:08,782 INFO /home/ng/.local/bin/bench schedule
+2024-09-23 15:14:08,782 INFO /home/ng/.local/bin/bench worker
+2024-09-23 15:16:06,364 INFO /home/ng/.local/bin/bench list-apps
+2024-09-23 15:17:16,728 INFO /home/ng/.local/bin/bench list-apps
+2024-09-23 15:19:31,876 INFO /home/ng/.local/bin/bench uninstall-app library_system
+2024-09-23 15:20:22,370 INFO /home/ng/.local/bin/bench new-app library_system
+2024-09-23 15:20:22,373 LOG creating new app library_system
+2024-09-23 15:20:22,577 WARNING /home/ng/.local/bin/bench new-app library_system executed with exit code 1
+2024-09-23 15:25:39,186 INFO /home/ng/.local/bin/bench list-apps
+2024-09-23 15:30:32,096 INFO /home/ng/.local/bin/bench start
+2024-09-23 15:30:32,309 INFO /home/ng/.local/bin/bench worker
+2024-09-23 15:30:32,342 INFO /home/ng/.local/bin/bench watch
+2024-09-23 15:30:32,347 INFO /home/ng/.local/bin/bench serve --port 8005
+2024-09-23 15:30:32,355 INFO /home/ng/.local/bin/bench schedule
+2024-09-23 15:50:18,580 INFO /home/ng/.local/bin/bench new-app rentals
+2024-09-23 15:50:18,583 LOG creating new app rentals
+2024-09-23 15:51:18,428 LOG Installing rentals
+2024-09-23 15:51:18,429 DEBUG cd /home/ng/frappe && /home/ng/frappe/env/bin/python -m pip install --quiet --upgrade -e /home/ng/frappe/apps/rentals 
+2024-09-23 15:51:20,046 DEBUG bench build --app rentals
+2024-09-23 15:51:20,142 INFO /home/ng/.local/bin/bench build --app rentals
+2024-09-23 15:51:21,387 WARNING restart failed: Couldn't find supervisorctl in PATH
+2024-09-23 15:53:55,930 INFO /home/ng/.local/bin/bench --site my-bench install-app rentals
+2024-09-23 15:57:49,756 INFO /home/ng/.local/bin/bench start
+2024-09-23 15:57:49,982 INFO /home/ng/.local/bin/bench schedule
+2024-09-23 15:57:49,993 INFO /home/ng/.local/bin/bench worker
+2024-09-23 15:57:50,025 INFO /home/ng/.local/bin/bench serve --port 8005
+2024-09-23 15:57:50,026 INFO /home/ng/.local/bin/bench watch
+2024-09-23 15:59:28,062 INFO /home/ng/.local/bin/bench start
+2024-09-23 15:59:28,269 INFO /home/ng/.local/bin/bench watch
+2024-09-23 15:59:28,287 INFO /home/ng/.local/bin/bench worker
+2024-09-23 15:59:28,315 INFO /home/ng/.local/bin/bench serve --port 8005
+2024-09-23 15:59:28,316 INFO /home/ng/.local/bin/bench schedule
+2024-09-23 16:03:50,164 INFO /home/ng/.local/bin/bench --site my-bench install-app rentals
+2024-09-23 16:05:10,595 INFO /home/ng/.local/bin/bench --site my-bench set-config developer_mode 1
+2024-09-23 16:07:30,429 INFO /home/ng/.local/bin/bench start
+2024-09-23 16:07:30,660 INFO /home/ng/.local/bin/bench watch
+2024-09-23 16:07:30,684 INFO /home/ng/.local/bin/bench worker
+2024-09-23 16:07:30,690 INFO /home/ng/.local/bin/bench serve --port 8005
+2024-09-23 16:07:30,698 INFO /home/ng/.local/bin/bench schedule
+2024-09-23 16:14:04,075 INFO /home/ng/.local/bin/bench new-app rentals
+2024-09-23 16:14:04,078 LOG creating new app rentals
+2024-09-23 16:14:39,355 LOG Installing rentals
+2024-09-23 16:14:39,356 DEBUG cd /home/ng/frappe && /home/ng/frappe/env/bin/python -m pip install --quiet --upgrade -e /home/ng/frappe/apps/rentals 
+2024-09-23 16:14:40,883 DEBUG bench build --app rentals
+2024-09-23 16:14:40,983 INFO /home/ng/.local/bin/bench build --app rentals
+2024-09-23 16:14:42,064 WARNING restart failed: Couldn't find supervisorctl in PATH
+2024-09-23 16:16:47,880 INFO /home/ng/.local/bin/bench --site my-bench install-app rentals
+2024-09-23 16:17:12,352 INFO /home/ng/.local/bin/bench start
+2024-09-23 16:17:12,651 INFO /home/ng/.local/bin/bench worker
+2024-09-23 16:17:12,657 INFO /home/ng/.local/bin/bench serve --port 8005
+2024-09-23 16:17:12,657 INFO /home/ng/.local/bin/bench schedule
+2024-09-23 16:17:12,679 INFO /home/ng/.local/bin/bench watch
+2024-09-23 16:23:19,964 INFO /home/ng/.local/bin/bench start
+2024-09-23 16:23:20,177 INFO /home/ng/.local/bin/bench worker
+2024-09-23 16:23:20,187 INFO /home/ng/.local/bin/bench watch
+2024-09-23 16:23:20,215 INFO /home/ng/.local/bin/bench serve --port 8005
+2024-09-23 16:23:20,220 INFO /home/ng/.local/bin/bench schedule
+2024-09-23 16:24:27,382 INFO /home/ng/.local/bin/bench new-app rentals
+2024-09-23 16:24:27,385 LOG creating new app rentals
+2024-09-23 16:25:08,615 LOG Installing rentals
+2024-09-23 16:25:08,616 DEBUG cd /home/ng/frappe && /home/ng/frappe/env/bin/python -m pip install --quiet --upgrade -e /home/ng/frappe/apps/rentals 
+2024-09-23 16:25:10,129 DEBUG bench build --app rentals
+2024-09-23 16:25:10,210 INFO /home/ng/.local/bin/bench build --app rentals
+2024-09-23 16:25:11,189 WARNING restart failed: Couldn't find supervisorctl in PATH
+2024-09-23 16:25:33,886 INFO /home/ng/.local/bin/bench new-site rentals
+2024-09-23 16:26:50,701 INFO /home/ng/.local/bin/bench --site rentals install-app rentals
+2024-09-23 16:27:38,390 INFO /home/ng/.local/bin/bench start
+2024-09-23 16:27:38,597 INFO /home/ng/.local/bin/bench serve --port 8005
+2024-09-23 16:27:38,610 INFO /home/ng/.local/bin/bench watch
+2024-09-23 16:27:38,642 INFO /home/ng/.local/bin/bench schedule
+2024-09-23 16:27:38,643 INFO /home/ng/.local/bin/bench worker
+2024-09-23 16:30:36,012 INFO /home/ng/.local/bin/bench start
+2024-09-23 16:30:36,239 INFO /home/ng/.local/bin/bench worker
+2024-09-23 16:30:36,248 INFO /home/ng/.local/bin/bench schedule
+2024-09-23 16:30:36,267 INFO /home/ng/.local/bin/bench serve --port 8005
+2024-09-23 16:30:36,274 INFO /home/ng/.local/bin/bench watch
+2024-09-23 17:03:34,191 INFO /home/ng/.local/bin/bench new-app rentals
+2024-09-23 17:03:34,197 LOG creating new app rentals
+2024-09-23 17:04:28,296 LOG Installing rentals
+2024-09-23 17:04:28,297 DEBUG cd /home/ng/frappe && /home/ng/frappe/env/bin/python -m pip install --quiet --upgrade -e /home/ng/frappe/apps/rentals 
+2024-09-23 17:04:29,819 DEBUG bench build --app rentals
+2024-09-23 17:04:29,904 INFO /home/ng/.local/bin/bench build --app rentals
+2024-09-23 17:04:30,853 WARNING restart failed: Couldn't find supervisorctl in PATH
+2024-09-23 17:05:33,113 INFO /home/ng/.local/bin/bench new-site rentals.com
+2024-09-23 17:08:12,326 INFO /home/ng/.local/bin/bench --site rentals.com install-app rentals
+2024-09-23 17:08:37,080 INFO /home/ng/.local/bin/bench start
+2024-09-23 17:08:37,289 INFO /home/ng/.local/bin/bench watch
+2024-09-23 17:08:37,294 INFO /home/ng/.local/bin/bench serve --port 8005
+2024-09-23 17:08:37,340 INFO /home/ng/.local/bin/bench schedule
+2024-09-23 17:08:37,344 INFO /home/ng/.local/bin/bench worker
+2024-09-23 17:09:57,501 INFO /home/ng/.local/bin/bench use rentals.com
+2024-09-23 17:10:43,713 INFO /home/ng/.local/bin/bench start
+2024-09-23 17:10:43,951 INFO /home/ng/.local/bin/bench serve --port 8005
+2024-09-23 17:10:43,954 INFO /home/ng/.local/bin/bench schedule
+2024-09-23 17:10:44,001 INFO /home/ng/.local/bin/bench watch
+2024-09-23 17:10:44,005 INFO /home/ng/.local/bin/bench worker
+2024-09-23 17:17:32,368 INFO /home/ng/.local/bin/bench start
+2024-09-23 17:17:32,576 INFO /home/ng/.local/bin/bench schedule
+2024-09-23 17:17:32,592 INFO /home/ng/.local/bin/bench watch
+2024-09-23 17:17:32,609 INFO /home/ng/.local/bin/bench serve --port 8005
+2024-09-23 17:17:32,621 INFO /home/ng/.local/bin/bench worker
+2024-09-23 17:18:19,011 INFO /home/ng/.local/bin/bench new-app rentals
+2024-09-23 17:18:19,014 LOG creating new app rentals
+2024-09-23 17:19:39,341 LOG Installing rentals
+2024-09-23 17:19:39,341 DEBUG cd /home/ng/frappe && /home/ng/frappe/env/bin/python -m pip install --quiet --upgrade -e /home/ng/frappe/apps/rentals 
+2024-09-23 17:19:41,226 DEBUG bench build --app rentals
+2024-09-23 17:19:41,308 INFO /home/ng/.local/bin/bench build --app rentals
+2024-09-23 17:19:42,347 WARNING restart failed: Couldn't find supervisorctl in PATH
+2024-09-23 17:21:30,331 INFO /home/ng/.local/bin/bench --site my-bench install-app rentals
+2024-09-23 17:21:53,851 INFO /home/ng/.local/bin/bench use my-bench
+2024-09-23 17:22:00,147 INFO /home/ng/.local/bin/bench start
+2024-09-23 17:23:08,072 INFO /home/ng/.local/bin/bench use my-bench
+2024-09-23 17:23:11,053 INFO /home/ng/.local/bin/bench start
+2024-09-23 17:23:11,440 INFO /home/ng/.local/bin/bench schedule
+2024-09-23 17:23:11,450 INFO /home/ng/.local/bin/bench watch
+2024-09-23 17:23:11,468 INFO /home/ng/.local/bin/bench worker
+2024-09-23 17:23:11,480 INFO /home/ng/.local/bin/bench serve --port 8005
+2024-09-23 18:00:01,859 INFO /home/ng/.local/bin/bench --verbose --site all backup
+2024-09-24 00:00:01,867 INFO /home/ng/.local/bin/bench --verbose --site all backup
+2024-09-24 12:03:19,149 INFO /home/ng/.local/bin/bench --verbose --site all backup
+2024-09-24 17:04:31,652 INFO /home/ng/.local/bin/bench use Airplane_mode
+2024-09-24 17:04:37,651 INFO /home/ng/.local/bin/bench start
+2024-09-24 17:04:37,918 INFO /home/ng/.local/bin/bench worker
+2024-09-24 17:04:37,923 INFO /home/ng/.local/bin/bench serve --port 8005
+2024-09-24 17:04:37,961 INFO /home/ng/.local/bin/bench watch
+2024-09-24 17:04:37,964 INFO /home/ng/.local/bin/bench schedule
+2024-09-24 21:34:42,530 INFO /home/ng/.local/bin/bench start
+2024-09-24 21:34:42,759 INFO /home/ng/.local/bin/bench serve --port 8005
+2024-09-24 21:34:42,767 INFO /home/ng/.local/bin/bench worker
+2024-09-24 21:34:42,797 INFO /home/ng/.local/bin/bench schedule
+2024-09-24 21:34:42,801 INFO /home/ng/.local/bin/bench watch
+2024-09-25 09:59:34,250 INFO /home/ng/.local/bin/bench start
+2024-09-25 09:59:34,472 INFO /home/ng/.local/bin/bench watch
+2024-09-25 09:59:34,486 INFO /home/ng/.local/bin/bench worker
+2024-09-25 09:59:34,506 INFO /home/ng/.local/bin/bench schedule
+2024-09-25 09:59:34,514 INFO /home/ng/.local/bin/bench serve --port 8005
+2024-09-25 12:00:01,730 INFO /home/ng/.local/bin/bench --verbose --site all backup
+2024-09-25 12:21:25,076 INFO /home/ng/.local/bin/bench start
+2024-09-25 12:21:25,317 INFO /home/ng/.local/bin/bench watch
+2024-09-25 12:21:25,337 INFO /home/ng/.local/bin/bench schedule
+2024-09-25 12:21:25,347 INFO /home/ng/.local/bin/bench worker
+2024-09-25 12:21:25,358 INFO /home/ng/.local/bin/bench serve --port 8005
+2024-09-25 15:39:56,866 INFO /home/ng/.local/bin/bench start
+2024-09-25 15:39:57,102 INFO /home/ng/.local/bin/bench schedule
+2024-09-25 15:39:57,108 INFO /home/ng/.local/bin/bench watch
+2024-09-25 15:39:57,140 INFO /home/ng/.local/bin/bench serve --port 8005
+2024-09-25 15:39:57,148 INFO /home/ng/.local/bin/bench worker
+2024-09-25 16:44:29,150 INFO /home/ng/.local/bin/bench start
+2024-09-25 16:44:29,574 INFO /home/ng/.local/bin/bench watch
+2024-09-25 16:44:29,577 INFO /home/ng/.local/bin/bench serve --port 8005
+2024-09-25 16:44:29,596 INFO /home/ng/.local/bin/bench schedule
+2024-09-25 16:44:29,608 INFO /home/ng/.local/bin/bench worker
+2024-09-25 18:00:01,307 INFO /home/ng/.local/bin/bench --verbose --site all backup
+2024-09-26 09:46:26,794 INFO /home/ng/.local/bin/bench start
+2024-09-26 09:46:27,010 INFO /home/ng/.local/bin/bench watch
+2024-09-26 09:46:27,011 INFO /home/ng/.local/bin/bench schedule
+2024-09-26 09:46:27,049 INFO /home/ng/.local/bin/bench serve --port 8005
+2024-09-26 09:46:27,062 INFO /home/ng/.local/bin/bench worker
+2024-09-26 12:00:01,688 INFO /home/ng/.local/bin/bench --verbose --site all backup
+2024-09-26 12:54:50,412 INFO /home/ng/.local/bin/bench start
+2024-09-26 12:54:50,647 INFO /home/ng/.local/bin/bench watch
+2024-09-26 12:54:50,661 INFO /home/ng/.local/bin/bench serve --port 8005
+2024-09-26 12:54:50,662 INFO /home/ng/.local/bin/bench schedule
+2024-09-26 12:54:50,684 INFO /home/ng/.local/bin/bench worker
+2024-09-26 15:21:54,247 INFO /home/ng/.local/bin/bench start
+2024-09-26 15:21:54,483 INFO /home/ng/.local/bin/bench serve --port 8005
+2024-09-26 15:21:54,490 INFO /home/ng/.local/bin/bench worker
+2024-09-26 15:21:54,505 INFO /home/ng/.local/bin/bench watch
+2024-09-26 15:21:54,520 INFO /home/ng/.local/bin/bench schedule
+2024-09-26 16:36:58,135 INFO /home/ng/.local/bin/bench start
+2024-09-26 16:36:58,401 INFO /home/ng/.local/bin/bench serve --port 8005
+2024-09-26 16:36:58,412 INFO /home/ng/.local/bin/bench schedule
+2024-09-26 16:36:58,421 INFO /home/ng/.local/bin/bench watch
+2024-09-26 16:36:58,429 INFO /home/ng/.local/bin/bench worker
+2024-09-26 17:02:56,631 INFO /home/ng/.local/bin/bench migrate
+2024-09-26 17:05:22,068 INFO /home/ng/.local/bin/bench start
+2024-09-26 17:05:22,295 INFO /home/ng/.local/bin/bench worker
+2024-09-26 17:05:22,315 INFO /home/ng/.local/bin/bench watch
+2024-09-26 17:05:22,328 INFO /home/ng/.local/bin/bench schedule
+2024-09-26 17:05:22,334 INFO /home/ng/.local/bin/bench serve --port 8005
+2024-09-26 18:00:01,901 INFO /home/ng/.local/bin/bench --verbose --site all backup
+2024-09-26 18:38:34,934 INFO /home/ng/.local/bin/bench start
+2024-09-26 18:38:35,260 INFO /home/ng/.local/bin/bench serve --port 8005
+2024-09-26 18:38:35,265 INFO /home/ng/.local/bin/bench watch
+2024-09-26 18:38:35,275 INFO /home/ng/.local/bin/bench worker
+2024-09-26 18:38:35,276 INFO /home/ng/.local/bin/bench schedule
+2024-09-26 21:39:23,626 INFO /home/ng/.local/bin/bench start
+2024-09-26 21:39:23,947 INFO /home/ng/.local/bin/bench serve --port 8005
+2024-09-26 21:39:23,951 INFO /home/ng/.local/bin/bench watch
+2024-09-26 21:39:23,961 INFO /home/ng/.local/bin/bench worker
+2024-09-26 21:39:23,965 INFO /home/ng/.local/bin/bench schedule
+2024-09-26 23:41:50,233 INFO /home/ng/.local/bin/bench start
+2024-09-26 23:41:50,466 INFO /home/ng/.local/bin/bench schedule
+2024-09-26 23:41:50,468 INFO /home/ng/.local/bin/bench serve --port 8005
+2024-09-26 23:41:50,485 INFO /home/ng/.local/bin/bench worker
+2024-09-26 23:41:50,498 INFO /home/ng/.local/bin/bench watch
+2024-09-27 09:47:15,846 INFO /home/ng/.local/bin/bench start
+2024-09-27 09:47:16,142 INFO /home/ng/.local/bin/bench worker
+2024-09-27 09:47:16,160 INFO /home/ng/.local/bin/bench serve --port 8005
+2024-09-27 09:47:16,168 INFO /home/ng/.local/bin/bench schedule
+2024-09-27 09:47:16,171 INFO /home/ng/.local/bin/bench watch
+2024-09-27 11:05:20,868 INFO /home/ng/.local/bin/bench start
+2024-09-27 11:05:21,127 INFO /home/ng/.local/bin/bench serve --port 8005
+2024-09-27 11:05:21,135 INFO /home/ng/.local/bin/bench worker
+2024-09-27 11:05:21,140 INFO /home/ng/.local/bin/bench schedule
+2024-09-27 11:05:21,153 INFO /home/ng/.local/bin/bench watch
+2024-09-27 11:22:10,508 INFO /home/ng/.local/bin/bench start
+2024-09-27 11:22:10,865 INFO /home/ng/.local/bin/bench serve --port 8005
+2024-09-27 11:22:10,870 INFO /home/ng/.local/bin/bench watch
+2024-09-27 11:22:10,880 INFO /home/ng/.local/bin/bench worker
+2024-09-27 11:22:10,890 INFO /home/ng/.local/bin/bench schedule
+2024-09-27 11:44:37,823 INFO /home/ng/.local/bin/bench build
+2024-09-27 11:45:18,772 INFO /home/ng/.local/bin/bench start
+2024-09-27 11:45:19,090 INFO /home/ng/.local/bin/bench serve --port 8005
+2024-09-27 11:45:19,100 INFO /home/ng/.local/bin/bench watch
+2024-09-27 11:45:19,124 INFO /home/ng/.local/bin/bench worker
+2024-09-27 11:45:19,124 INFO /home/ng/.local/bin/bench schedule
+2024-09-27 12:00:01,315 INFO /home/ng/.local/bin/bench --verbose --site all backup
+2024-09-27 18:00:02,130 INFO /home/ng/.local/bin/bench --verbose --site all backup
+2024-09-28 12:00:01,262 INFO /home/ng/.local/bin/bench --verbose --site all backup
+2024-09-30 10:43:04,194 INFO /home/ng/.local/bin/bench start
+2024-09-30 10:43:04,410 INFO /home/ng/.local/bin/bench worker
+2024-09-30 10:43:04,410 INFO /home/ng/.local/bin/bench serve --port 8005
+2024-09-30 10:43:04,443 INFO /home/ng/.local/bin/bench watch
+2024-09-30 10:43:04,458 INFO /home/ng/.local/bin/bench schedule
+2024-09-30 18:00:01,828 INFO /home/ng/.local/bin/bench --verbose --site all backup
+2024-09-30 18:55:16,282 INFO /home/ng/.local/bin/bench start
+2024-09-30 18:55:16,527 INFO /home/ng/.local/bin/bench watch
+2024-09-30 18:55:16,554 INFO /home/ng/.local/bin/bench serve --port 8005
+2024-09-30 18:55:16,562 INFO /home/ng/.local/bin/bench schedule
+2024-09-30 18:55:16,567 INFO /home/ng/.local/bin/bench worker
+2024-10-01 12:00:01,737 INFO /home/ng/.local/bin/bench --verbose --site all backup
+2024-10-01 18:00:01,917 INFO /home/ng/.local/bin/bench --verbose --site all backup
+2024-10-02 12:00:01,214 INFO /home/ng/.local/bin/bench --verbose --site all backup
+2024-10-03 18:00:48,672 INFO /home/ng/.local/bin/bench --verbose --site all backup
+2024-10-05 12:00:01,717 INFO /home/ng/.local/bin/bench --verbose --site all backup
+2024-10-05 12:00:38,180 INFO /home/ng/.local/bin/bench start
+2024-10-05 12:00:38,395 INFO /home/ng/.local/bin/bench watch
+2024-10-05 12:00:38,410 INFO /home/ng/.local/bin/bench serve --port 8005
+2024-10-05 12:00:38,435 INFO /home/ng/.local/bin/bench schedule
+2024-10-05 12:00:38,437 INFO /home/ng/.local/bin/bench worker
+2024-10-05 12:02:31,740 INFO /home/ng/.local/bin/bench new-site expensesite
+2024-10-05 12:03:37,103 INFO /home/ng/.local/bin/bench use expensesite
+2024-10-05 12:03:56,601 INFO /home/ng/.local/bin/bench new-app ExpenseManager
+2024-10-05 12:03:56,604 LOG creating new app expensemanager
+2024-10-05 12:04:37,536 LOG Installing expensemanager
+2024-10-05 12:04:37,537 DEBUG cd /home/ng/frappe && /home/ng/frappe/env/bin/python -m pip install --quiet --upgrade -e /home/ng/frappe/apps/expensemanager 
+2024-10-05 12:04:39,310 DEBUG bench build --app expensemanager
+2024-10-05 12:04:39,392 INFO /home/ng/.local/bin/bench build --app expensemanager
+2024-10-05 12:04:40,469 WARNING restart failed: Couldn't find supervisorctl in PATH
+2024-10-05 12:06:38,875 INFO /home/ng/.local/bin/bench --site expensesite install-app expensemanager
+2024-10-05 12:13:45,507 INFO /home/ng/.local/bin/bench start
+2024-10-05 12:13:45,723 INFO /home/ng/.local/bin/bench schedule
+2024-10-05 12:13:45,756 INFO /home/ng/.local/bin/bench watch
+2024-10-05 12:13:45,758 INFO /home/ng/.local/bin/bench serve --port 8005
+2024-10-05 12:13:45,764 INFO /home/ng/.local/bin/bench worker
+2024-10-05 16:47:12,955 INFO /home/ng/.local/bin/bench start
+2024-10-05 16:47:13,199 INFO /home/ng/.local/bin/bench watch
+2024-10-05 16:47:13,202 INFO /home/ng/.local/bin/bench worker
+2024-10-05 16:47:13,240 INFO /home/ng/.local/bin/bench serve --port 8005
+2024-10-05 16:47:13,240 INFO /home/ng/.local/bin/bench schedule
+2024-10-08 12:00:01,941 INFO /home/ng/.local/bin/bench --verbose --site all backup
+2024-10-08 18:00:01,852 INFO /home/ng/.local/bin/bench --verbose --site all backup
+2024-10-08 19:56:43,046 INFO /home/ng/.local/bin/bench start
+2024-10-08 19:56:43,334 INFO /home/ng/.local/bin/bench worker
+2024-10-08 19:56:43,337 INFO /home/ng/.local/bin/bench serve --port 8005
+2024-10-08 19:56:43,370 INFO /home/ng/.local/bin/bench watch
+2024-10-08 19:56:43,383 INFO /home/ng/.local/bin/bench schedule
+2024-10-08 21:53:10,750 INFO /home/ng/.local/bin/bench start
+2024-10-08 21:53:10,984 INFO /home/ng/.local/bin/bench schedule
+2024-10-08 21:53:10,987 INFO /home/ng/.local/bin/bench worker
+2024-10-08 21:53:11,011 INFO /home/ng/.local/bin/bench serve --port 8005
+2024-10-08 21:53:11,014 INFO /home/ng/.local/bin/bench watch
+2024-10-08 23:11:39,152 INFO /home/ng/.local/bin/bench start
+2024-10-08 23:11:39,440 INFO /home/ng/.local/bin/bench serve --port 8005
+2024-10-08 23:11:39,468 INFO /home/ng/.local/bin/bench schedule
+2024-10-08 23:11:39,482 INFO /home/ng/.local/bin/bench worker
+2024-10-08 23:11:39,483 INFO /home/ng/.local/bin/bench watch
+2024-10-09 00:03:51,154 INFO /home/ng/.local/bin/bench --verbose --site all backup
+2024-10-09 12:00:01,276 INFO /home/ng/.local/bin/bench --verbose --site all backup
+2024-10-09 15:24:35,149 INFO /home/ng/.local/bin/bench start
+2024-10-09 15:24:35,381 INFO /home/ng/.local/bin/bench serve --port 8005
+2024-10-09 15:24:35,384 INFO /home/ng/.local/bin/bench watch
+2024-10-09 15:24:35,413 INFO /home/ng/.local/bin/bench schedule
+2024-10-09 15:24:35,415 INFO /home/ng/.local/bin/bench worker
+2024-10-09 15:47:37,003 INFO /home/ng/.local/bin/bench start
+2024-10-09 15:47:37,351 INFO /home/ng/.local/bin/bench serve --port 8005
+2024-10-09 15:47:37,356 INFO /home/ng/.local/bin/bench schedule
+2024-10-09 15:47:37,372 INFO /home/ng/.local/bin/bench watch
+2024-10-09 15:47:37,372 INFO /home/ng/.local/bin/bench worker
+2024-10-09 16:11:16,148 INFO /home/ng/.local/bin/bench start
+2024-10-09 16:11:16,396 INFO /home/ng/.local/bin/bench worker
+2024-10-09 16:11:16,401 INFO /home/ng/.local/bin/bench watch
+2024-10-09 16:11:16,429 INFO /home/ng/.local/bin/bench serve --port 8005
+2024-10-09 16:11:16,433 INFO /home/ng/.local/bin/bench schedule
+2024-10-09 18:57:53,389 INFO /home/ng/.local/bin/bench start
+2024-10-09 18:57:53,621 INFO /home/ng/.local/bin/bench serve --port 8005
+2024-10-09 18:57:53,621 INFO /home/ng/.local/bin/bench watch
+2024-10-09 18:57:53,665 INFO /home/ng/.local/bin/bench schedule
+2024-10-09 18:57:53,667 INFO /home/ng/.local/bin/bench worker
+2024-10-10 12:00:01,756 INFO /home/ng/.local/bin/bench --verbose --site all backup
+2024-10-14 18:00:01,647 INFO /home/ng/.local/bin/bench --verbose --site all backup
+2024-10-15 09:44:52,256 INFO /home/ng/.local/bin/bench start
+2024-10-15 09:44:52,522 INFO /home/ng/.local/bin/bench serve --port 8005
+2024-10-15 09:44:52,535 INFO /home/ng/.local/bin/bench worker
+2024-10-15 09:44:52,550 INFO /home/ng/.local/bin/bench watch
+2024-10-15 09:44:52,555 INFO /home/ng/.local/bin/bench schedule
+2024-10-15 12:00:01,462 INFO /home/ng/.local/bin/bench --verbose --site all backup
+2024-10-15 16:40:10,810 INFO /home/ng/.local/bin/bench start
+2024-10-15 16:40:11,039 INFO /home/ng/.local/bin/bench watch
+2024-10-15 16:40:11,050 INFO /home/ng/.local/bin/bench worker
+2024-10-15 16:40:11,075 INFO /home/ng/.local/bin/bench serve --port 8005
+2024-10-15 16:40:11,083 INFO /home/ng/.local/bin/bench schedule
+2024-10-15 17:23:40,378 INFO /home/ng/.local/bin/bench start
+2024-10-15 17:23:40,615 INFO /home/ng/.local/bin/bench schedule
+2024-10-15 17:23:40,647 INFO /home/ng/.local/bin/bench worker
+2024-10-15 17:23:40,654 INFO /home/ng/.local/bin/bench watch
+2024-10-15 17:23:40,659 INFO /home/ng/.local/bin/bench serve --port 8005
+2024-10-15 17:26:45,610 INFO /home/ng/.local/bin/bench --site Airplane_mode console
+2024-10-15 18:00:01,651 INFO /home/ng/.local/bin/bench --verbose --site all backup
+2024-10-16 09:43:58,746 INFO /home/ng/.local/bin/bench start
+2024-10-16 09:43:59,003 INFO /home/ng/.local/bin/bench watch
+2024-10-16 09:43:59,027 INFO /home/ng/.local/bin/bench schedule
+2024-10-16 09:43:59,030 INFO /home/ng/.local/bin/bench worker
+2024-10-16 09:43:59,033 INFO /home/ng/.local/bin/bench serve --port 8005
+2024-10-16 10:31:12,515 INFO /home/ng/.local/bin/bench --Airplane_mode console
+2024-10-16 10:31:23,664 INFO /home/ng/.local/bin/bench --site Airplane_mode console
+2024-10-16 11:47:29,676 INFO /home/ng/.local/bin/bench start
+2024-10-16 11:47:30,101 INFO /home/ng/.local/bin/bench serve --port 8005
+2024-10-16 11:47:30,104 INFO /home/ng/.local/bin/bench schedule
+2024-10-16 11:47:30,109 INFO /home/ng/.local/bin/bench watch
+2024-10-16 11:47:30,140 INFO /home/ng/.local/bin/bench worker
+2024-10-16 12:00:01,300 INFO /home/ng/.local/bin/bench --verbose --site all backup
+2024-10-16 18:00:01,816 INFO /home/ng/.local/bin/bench --verbose --site all backup
+2024-10-16 20:40:04,469 INFO /home/ng/.local/bin/bench start
+2024-10-16 20:40:04,704 INFO /home/ng/.local/bin/bench schedule
+2024-10-16 20:40:04,705 INFO /home/ng/.local/bin/bench serve --port 8005
+2024-10-16 20:40:04,743 INFO /home/ng/.local/bin/bench watch
+2024-10-16 20:40:04,743 INFO /home/ng/.local/bin/bench worker
+2024-10-17 09:59:30,288 INFO /home/ng/.local/bin/bench start
+2024-10-17 09:59:30,529 INFO /home/ng/.local/bin/bench watch
+2024-10-17 09:59:30,536 INFO /home/ng/.local/bin/bench schedule
+2024-10-17 09:59:30,539 INFO /home/ng/.local/bin/bench serve --port 8005
+2024-10-17 09:59:30,560 INFO /home/ng/.local/bin/bench worker
+2024-10-17 10:47:44,802 INFO /home/ng/.local/bin/bench start
+2024-10-17 10:47:45,027 INFO /home/ng/.local/bin/bench watch
+2024-10-17 10:47:45,041 INFO /home/ng/.local/bin/bench schedule
+2024-10-17 10:47:45,072 INFO /home/ng/.local/bin/bench serve --port 8005
+2024-10-17 10:47:45,080 INFO /home/ng/.local/bin/bench worker
+2024-10-17 11:54:36,041 INFO /home/ng/.local/bin/bench start
+2024-10-17 11:54:36,265 INFO /home/ng/.local/bin/bench watch
+2024-10-17 11:54:36,269 INFO /home/ng/.local/bin/bench worker
+2024-10-17 11:54:36,309 INFO /home/ng/.local/bin/bench serve --port 8005
+2024-10-17 11:54:36,311 INFO /home/ng/.local/bin/bench schedule
+2024-10-17 12:00:01,123 INFO /home/ng/.local/bin/bench --verbose --site all backup
+2024-10-17 15:26:55,354 INFO /home/ng/.local/bin/bench start
+2024-10-17 15:26:55,647 INFO /home/ng/.local/bin/bench serve --port 8005
+2024-10-17 15:26:55,653 INFO /home/ng/.local/bin/bench schedule
+2024-10-17 15:26:55,687 INFO /home/ng/.local/bin/bench watch
+2024-10-17 15:26:55,688 INFO /home/ng/.local/bin/bench worker
+2024-10-17 17:32:13,504 INFO /home/ng/.local/bin/bench start
+2024-10-17 17:32:13,833 INFO /home/ng/.local/bin/bench worker
+2024-10-17 17:32:13,833 INFO /home/ng/.local/bin/bench schedule
+2024-10-17 17:32:13,835 INFO /home/ng/.local/bin/bench watch
+2024-10-17 17:32:13,850 INFO /home/ng/.local/bin/bench serve --port 8005
+2024-10-17 18:00:01,977 INFO /home/ng/.local/bin/bench --verbose --site all backup
+2024-10-17 18:00:13,769 INFO /home/ng/.local/bin/bench start
+2024-10-17 18:00:13,996 INFO /home/ng/.local/bin/bench watch
+2024-10-17 18:00:14,013 INFO /home/ng/.local/bin/bench schedule
+2024-10-17 18:00:14,025 INFO /home/ng/.local/bin/bench worker
+2024-10-17 18:00:14,036 INFO /home/ng/.local/bin/bench serve --port 8005
+2024-10-17 18:31:02,625 INFO /home/ng/.local/bin/bench --site Airplane_mode mariadb
+2024-10-17 18:42:20,220 INFO /home/ng/.local/bin/bench --site Airplane_mode mairadb
+2024-10-17 18:42:36,408 INFO /home/ng/.local/bin/bench --site Airplane_mode mariadb
+2024-10-17 20:31:50,483 INFO /home/ng/.local/bin/bench start
+2024-10-17 20:31:50,750 INFO /home/ng/.local/bin/bench watch
+2024-10-17 20:31:50,758 INFO /home/ng/.local/bin/bench schedule
+2024-10-17 20:31:50,771 INFO /home/ng/.local/bin/bench worker
+2024-10-17 20:31:50,784 INFO /home/ng/.local/bin/bench serve --port 8005
+2024-10-18 12:00:01,355 INFO /home/ng/.local/bin/bench --verbose --site all backup
+2024-10-21 12:00:01,906 INFO /home/ng/.local/bin/bench --verbose --site all backup
+2024-10-22 12:00:02,004 INFO /home/ng/.local/bin/bench --verbose --site all backup
+2024-10-22 18:00:54,823 INFO /home/ng/.local/bin/bench --verbose --site all backup
+2024-10-23 12:00:01,539 INFO /home/ng/.local/bin/bench --verbose --site all backup
+2024-10-23 15:24:56,288 INFO /home/ng/.local/bin/bench start
+2024-10-23 15:24:56,520 INFO /home/ng/.local/bin/bench serve --port 8005
+2024-10-23 15:24:56,537 INFO /home/ng/.local/bin/bench schedule
+2024-10-23 15:24:56,568 INFO /home/ng/.local/bin/bench worker
+2024-10-23 15:24:56,569 INFO /home/ng/.local/bin/bench watch
+2024-10-23 15:26:12,318 INFO /home/ng/.local/bin/bench start
+2024-10-23 15:26:12,547 INFO /home/ng/.local/bin/bench serve --port 8005
+2024-10-23 15:26:12,550 INFO /home/ng/.local/bin/bench schedule
+2024-10-23 15:26:12,592 INFO /home/ng/.local/bin/bench worker
+2024-10-23 15:26:12,594 INFO /home/ng/.local/bin/bench watch
+2024-10-23 18:00:01,837 INFO /home/ng/.local/bin/bench --verbose --site all backup
+2024-10-24 12:00:01,427 INFO /home/ng/.local/bin/bench --verbose --site all backup
+2024-10-24 18:00:01,365 INFO /home/ng/.local/bin/bench --verbose --site all backup
+2024-10-24 18:22:46,726 INFO /home/ng/.local/bin/bench start
+2024-10-24 18:22:47,070 INFO /home/ng/.local/bin/bench schedule
+2024-10-24 18:22:47,071 INFO /home/ng/.local/bin/bench serve --port 8005
+2024-10-24 18:22:47,079 INFO /home/ng/.local/bin/bench worker
+2024-10-24 18:22:47,082 INFO /home/ng/.local/bin/bench watch
+2024-10-26 12:00:02,012 INFO /home/ng/.local/bin/bench --verbose --site all backup
+2024-10-28 12:00:02,146 INFO /home/ng/.local/bin/bench --verbose --site all backup
+2024-11-05 12:00:01,844 INFO /home/ng/.local/bin/bench --verbose --site all backup
+2024-11-05 14:11:34,463 INFO /home/ng/.local/bin/bench start
+2024-11-05 14:11:34,758 INFO /home/ng/.local/bin/bench watch
+2024-11-05 14:11:34,761 INFO /home/ng/.local/bin/bench schedule
+2024-11-05 14:11:34,772 INFO /home/ng/.local/bin/bench serve --port 8005
+2024-11-05 14:11:34,778 INFO /home/ng/.local/bin/bench worker
+2024-11-05 15:17:02,225 INFO /home/ng/.local/bin/bench start
+2024-11-05 15:17:02,521 INFO /home/ng/.local/bin/bench worker
+2024-11-05 15:17:02,526 INFO /home/ng/.local/bin/bench schedule
+2024-11-05 15:17:02,538 INFO /home/ng/.local/bin/bench serve --port 8005
+2024-11-05 15:17:02,539 INFO /home/ng/.local/bin/bench watch
+2024-11-05 16:56:27,781 INFO /home/ng/.local/bin/bench start
+2024-11-05 16:56:28,024 INFO /home/ng/.local/bin/bench watch
+2024-11-05 16:56:28,031 INFO /home/ng/.local/bin/bench serve --port 8005
+2024-11-05 16:56:28,052 INFO /home/ng/.local/bin/bench schedule
+2024-11-05 16:56:28,062 INFO /home/ng/.local/bin/bench worker
+2024-11-05 16:59:02,702 INFO /home/ng/.local/bin/bench new-app airport_management
+2024-11-05 16:59:02,705 LOG creating new app airport_management
+2024-11-05 17:00:03,100 LOG Installing airport_management
+2024-11-05 17:00:03,101 DEBUG cd /home/ng/frappe && /home/ng/frappe/env/bin/python -m pip install --quiet --upgrade -e /home/ng/frappe/apps/airport_management 
+2024-11-05 17:00:04,771 DEBUG bench build --app airport_management
+2024-11-05 17:00:04,866 INFO /home/ng/.local/bin/bench build --app airport_management
+2024-11-05 17:00:05,890 WARNING restart failed: Couldn't find supervisorctl in PATH
+2024-11-05 17:01:24,544 INFO /home/ng/.local/bin/bench --site Airplane_mode install-app airport_management
+2024-11-05 17:03:30,852 INFO /home/ng/.local/bin/bench clear-cache
+2024-11-05 17:03:39,049 INFO /home/ng/.local/bin/bench migrate
+2024-11-05 17:04:00,114 INFO /home/ng/.local/bin/bench start
+2024-11-05 17:04:00,327 INFO /home/ng/.local/bin/bench serve --port 8005
+2024-11-05 17:04:00,327 INFO /home/ng/.local/bin/bench schedule
+2024-11-05 17:04:00,369 INFO /home/ng/.local/bin/bench watch
+2024-11-05 17:04:00,378 INFO /home/ng/.local/bin/bench worker
+2024-11-05 18:46:43,967 INFO /home/ng/.local/bin/bench new-site print-designer.test
+2024-11-05 18:48:20,959 INFO /home/ng/.local/bin/bench --site print-designer.test add-to-hosts
+2024-11-05 18:48:50,966 INFO /home/ng/.local/bin/bench get-app https://github.com/frappe/print_designer
+2024-11-05 18:48:50,982 LOG Getting print_designer
+2024-11-05 18:48:50,983 DEBUG cd ./apps && git clone https://github.com/frappe/print_designer  --depth 1 --origin upstream
+2024-11-05 18:48:52,337 LOG Installing print_designer
+2024-11-05 18:48:52,337 DEBUG cd /home/ng/frappe && /home/ng/frappe/env/bin/python -m pip install --quiet --upgrade -e /home/ng/frappe/apps/print_designer 
+2024-11-05 18:48:55,246 DEBUG cd /home/ng/frappe/apps/print_designer && yarn install --check-files
+2024-11-05 18:49:38,351 WARNING cd /home/ng/frappe/apps/print_designer && yarn install --check-files executed with exit code 1
+2024-11-05 18:49:38,352 WARNING /home/ng/.local/bin/bench get-app https://github.com/frappe/print_designer executed with exit code 1
+2024-11-05 18:54:12,450 INFO /home/ng/.local/bin/bench start
+2024-11-05 18:54:12,805 INFO /home/ng/.local/bin/bench worker
+2024-11-05 18:54:12,809 INFO /home/ng/.local/bin/bench schedule
+2024-11-05 18:54:12,818 INFO /home/ng/.local/bin/bench serve --port 8005
+2024-11-05 18:54:12,854 INFO /home/ng/.local/bin/bench watch
+2024-11-05 18:56:49,202 INFO /home/ng/.local/bin/bench get-app https://github.com/frappe/print_designer
+2024-11-05 18:57:04,696 INFO App moved from apps/print_designer to archived/apps/print_designer-2024-11-05
+2024-11-05 18:57:04,701 LOG Getting print_designer
+2024-11-05 18:57:04,702 DEBUG cd ./apps && git clone https://github.com/frappe/print_designer  --depth 1 --origin upstream
+2024-11-05 18:57:06,349 LOG Installing print_designer
+2024-11-05 18:57:06,350 DEBUG cd /home/ng/frappe && /home/ng/frappe/env/bin/python -m pip install --quiet --upgrade -e /home/ng/frappe/apps/print_designer 
+2024-11-05 18:57:11,059 DEBUG cd /home/ng/frappe/apps/print_designer && yarn install --check-files
+2024-11-05 18:57:37,369 WARNING cd /home/ng/frappe/apps/print_designer && yarn install --check-files executed with exit code 1
+2024-11-05 18:57:37,371 WARNING /home/ng/.local/bin/bench get-app https://github.com/frappe/print_designer executed with exit code 1
+2024-11-05 18:59:41,272 INFO /home/ng/.local/bin/bench get-app https://github.com/frappe/print_designer
+2024-11-05 18:59:44,569 INFO App moved from apps/print_designer to archived/apps/print_designer-2024-11-05_1
+2024-11-05 18:59:44,575 LOG Getting print_designer
+2024-11-05 18:59:44,575 DEBUG cd ./apps && git clone https://github.com/frappe/print_designer  --depth 1 --origin upstream
+2024-11-05 18:59:45,860 LOG Installing print_designer
+2024-11-05 18:59:45,862 DEBUG cd /home/ng/frappe && /home/ng/frappe/env/bin/python -m pip install --quiet --upgrade -e /home/ng/frappe/apps/print_designer 
+2024-11-05 18:59:48,460 DEBUG cd /home/ng/frappe/apps/print_designer && yarn install --check-files
+2024-11-05 19:00:14,610 WARNING cd /home/ng/frappe/apps/print_designer && yarn install --check-files executed with exit code 1
+2024-11-05 19:00:14,613 WARNING /home/ng/.local/bin/bench get-app https://github.com/frappe/print_designer executed with exit code 1
+2024-11-05 19:30:28,308 INFO /home/ng/.local/bin/bench start
+2024-11-05 19:30:28,558 INFO /home/ng/.local/bin/bench worker
+2024-11-05 19:30:28,560 INFO /home/ng/.local/bin/bench schedule
+2024-11-05 19:30:28,590 INFO /home/ng/.local/bin/bench serve --port 8005
+2024-11-05 19:30:28,593 INFO /home/ng/.local/bin/bench watch
+2024-11-05 20:21:05,317 INFO /home/ng/.local/bin/bench start
+2024-11-05 20:21:05,535 INFO /home/ng/.local/bin/bench worker
+2024-11-05 20:21:05,564 INFO /home/ng/.local/bin/bench watch
+2024-11-05 20:21:05,572 INFO /home/ng/.local/bin/bench serve --port 8005
+2024-11-05 20:21:05,577 INFO /home/ng/.local/bin/bench schedule
+2024-11-06 09:44:27,148 INFO /home/ng/.local/bin/bench start
+2024-11-06 09:44:27,488 INFO /home/ng/.local/bin/bench schedule
+2024-11-06 09:44:27,495 INFO /home/ng/.local/bin/bench watch
+2024-11-06 09:44:27,509 INFO /home/ng/.local/bin/bench worker
+2024-11-06 09:44:27,509 INFO /home/ng/.local/bin/bench serve --port 8005
+2024-11-06 10:28:51,917 INFO /home/ng/.local/bin/bench --site Airplane_mode console
+2024-11-06 10:43:01,882 INFO /home/ng/.local/bin/bench --site Airplane_mode console
+2024-11-06 10:47:39,115 INFO /home/ng/.local/bin/bench --site your_site_name reload-doc airport_shop_management doctype shop
+2024-11-06 10:48:05,408 INFO /home/ng/.local/bin/bench --site Airplane_mode reload-doc airport_shop_management doctype shop
+2024-11-06 10:48:34,088 INFO /home/ng/.local/bin/bench start
+2024-11-06 10:48:34,461 INFO /home/ng/.local/bin/bench watch
+2024-11-06 10:48:34,466 INFO /home/ng/.local/bin/bench worker
+2024-11-06 10:48:34,469 INFO /home/ng/.local/bin/bench serve --port 8005
+2024-11-06 10:48:34,477 INFO /home/ng/.local/bin/bench schedule
+2024-11-06 10:50:48,993 INFO /home/ng/.local/bin/bench --site Airplane_mode reload-doc airport_shop_management doctype shop
+2024-11-06 10:55:47,798 INFO /home/ng/.local/bin/bench --site Airplane_mode console
+2024-11-06 12:00:01,946 INFO /home/ng/.local/bin/bench --verbose --site all backup
+2024-11-06 18:00:01,757 INFO /home/ng/.local/bin/bench --verbose --site all backup

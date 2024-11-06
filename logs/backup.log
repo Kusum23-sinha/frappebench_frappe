@@ -1,0 +1,856 @@
+set -o pipefail; /usr/bin/mariadb-dump --user=_eb4a01807b099b7e --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _eb4a01807b099b7e | /usr/bin/gzip >> ./my-bench/private/backups/20240913_180002-my-bench-database.sql.gz
+
+Backup Summary for my-bench at 2024-09-13 18:00:02.703531
+Config  : ./my-bench/private/backups/20240913_180002-my-bench-site_config_backup.json 94.0B
+Database: ./my-bench/private/backups/20240913_180002-my-bench-database.sql.gz         221.4KiB
+Backup for Site my-bench has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_39f99fb2d3a92313 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _39f99fb2d3a92313 | /usr/bin/gzip >> ./Airplane_mode/private/backups/20240914_120002-Airplane_mode-database.sql.gz
+
+Backup Summary for Airplane_mode at 2024-09-14 12:00:02.535901
+Config  : ./Airplane_mode/private/backups/20240914_120002-Airplane_mode-site_config_backup.json 116.0B
+Database: ./Airplane_mode/private/backups/20240914_120002-Airplane_mode-database.sql.gz         237.4KiB
+Backup for Site Airplane_mode has been successfully completed
+File ./my-bench/private/backups/20240913_180002-my-bench-site_config_backup.json is recent
+File ./my-bench/private/backups/20240913_180002-my-bench-database.sql.gz is recent
+set -o pipefail; /usr/bin/mariadb-dump --user=_eb4a01807b099b7e --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _eb4a01807b099b7e | /usr/bin/gzip >> ./my-bench/private/backups/20240914_120002-my-bench-database.sql.gz
+
+Backup Summary for my-bench at 2024-09-14 12:00:02.988365
+Config  : ./my-bench/private/backups/20240914_120002-my-bench-site_config_backup.json 94.0B
+Database: ./my-bench/private/backups/20240914_120002-my-bench-database.sql.gz         227.6KiB
+Backup for Site my-bench has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_39f99fb2d3a92313 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _39f99fb2d3a92313 | /usr/bin/gzip >> ./Airplane_mode/private/backups/20240916_120001-Airplane_mode-database.sql.gz
+
+Backup Summary for Airplane_mode at 2024-09-16 12:00:02.160705
+Config  : ./Airplane_mode/private/backups/20240916_120001-Airplane_mode-site_config_backup.json 116.0B
+Database: ./Airplane_mode/private/backups/20240916_120001-Airplane_mode-database.sql.gz         242.9KiB
+Backup for Site Airplane_mode has been successfully completed
+File ./my-bench/private/backups/20240913_180002-my-bench-site_config_backup.json is older than 24 hours
+File ./my-bench/private/backups/20240914_120002-my-bench-database.sql.gz is older than 24 hours
+File ./my-bench/private/backups/20240913_180002-my-bench-database.sql.gz is older than 24 hours
+File ./my-bench/private/backups/20240914_120002-my-bench-site_config_backup.json is older than 24 hours
+set -o pipefail; /usr/bin/mariadb-dump --user=_eb4a01807b099b7e --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _eb4a01807b099b7e | /usr/bin/gzip >> ./my-bench/private/backups/20240916_120002-my-bench-database.sql.gz
+
+Backup Summary for my-bench at 2024-09-16 12:00:02.631403
+Config  : ./my-bench/private/backups/20240916_120002-my-bench-site_config_backup.json 94.0B
+Database: ./my-bench/private/backups/20240916_120002-my-bench-database.sql.gz         230.8KiB
+Backup for Site my-bench has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_39f99fb2d3a92313 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _39f99fb2d3a92313 | /usr/bin/gzip >> ./Airplane_mode/private/backups/20240916_180003-Airplane_mode-database.sql.gz
+
+Backup Summary for Airplane_mode at 2024-09-16 18:00:03.511188
+Config  : ./Airplane_mode/private/backups/20240916_180003-Airplane_mode-site_config_backup.json 116.0B
+Database: ./Airplane_mode/private/backups/20240916_180003-Airplane_mode-database.sql.gz         242.9KiB
+Backup for Site Airplane_mode has been successfully completed
+File ./my-bench/private/backups/20240916_120002-my-bench-database.sql.gz is recent
+File ./my-bench/private/backups/20240916_120002-my-bench-site_config_backup.json is recent
+set -o pipefail; /usr/bin/mariadb-dump --user=_eb4a01807b099b7e --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _eb4a01807b099b7e | /usr/bin/gzip >> ./my-bench/private/backups/20240916_180003-my-bench-database.sql.gz
+
+Backup Summary for my-bench at 2024-09-16 18:00:04.110184
+Config  : ./my-bench/private/backups/20240916_180003-my-bench-site_config_backup.json 94.0B
+Database: ./my-bench/private/backups/20240916_180003-my-bench-database.sql.gz         230.8KiB
+Backup for Site my-bench has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_39f99fb2d3a92313 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _39f99fb2d3a92313 | /usr/bin/gzip >> ./Airplane_mode/private/backups/20240917_120002-Airplane_mode-database.sql.gz
+
+Backup Summary for Airplane_mode at 2024-09-17 12:00:02.956024
+Config  : ./Airplane_mode/private/backups/20240917_120002-Airplane_mode-site_config_backup.json 116.0B
+Database: ./Airplane_mode/private/backups/20240917_120002-Airplane_mode-database.sql.gz         242.9KiB
+Backup for Site Airplane_mode has been successfully completed
+File ./my-bench/private/backups/20240916_120002-my-bench-database.sql.gz is older than 24 hours
+File ./my-bench/private/backups/20240916_120002-my-bench-site_config_backup.json is older than 24 hours
+File ./my-bench/private/backups/20240916_180003-my-bench-database.sql.gz is recent
+File ./my-bench/private/backups/20240916_180003-my-bench-site_config_backup.json is recent
+set -o pipefail; /usr/bin/mariadb-dump --user=_eb4a01807b099b7e --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _eb4a01807b099b7e | /usr/bin/gzip >> ./my-bench/private/backups/20240917_120003-my-bench-database.sql.gz
+
+Backup Summary for my-bench at 2024-09-17 12:00:03.552589
+Config  : ./my-bench/private/backups/20240917_120003-my-bench-site_config_backup.json 94.0B
+Database: ./my-bench/private/backups/20240917_120003-my-bench-database.sql.gz         230.8KiB
+Backup for Site my-bench has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_39f99fb2d3a92313 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _39f99fb2d3a92313 | /usr/bin/gzip >> ./Airplane_mode/private/backups/20240918_120001-Airplane_mode-database.sql.gz
+
+Backup Summary for Airplane_mode at 2024-09-18 12:00:02.098955
+Config  : ./Airplane_mode/private/backups/20240918_120001-Airplane_mode-site_config_backup.json 116.0B
+Database: ./Airplane_mode/private/backups/20240918_120001-Airplane_mode-database.sql.gz         242.9KiB
+Backup for Site Airplane_mode has been successfully completed
+File ./my-bench/private/backups/20240917_120003-my-bench-site_config_backup.json is recent
+File ./my-bench/private/backups/20240917_120003-my-bench-database.sql.gz is recent
+File ./my-bench/private/backups/20240916_180003-my-bench-database.sql.gz is older than 24 hours
+File ./my-bench/private/backups/20240916_180003-my-bench-site_config_backup.json is older than 24 hours
+set -o pipefail; /usr/bin/mariadb-dump --user=_eb4a01807b099b7e --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _eb4a01807b099b7e | /usr/bin/gzip >> ./my-bench/private/backups/20240918_120002-my-bench-database.sql.gz
+
+Backup Summary for my-bench at 2024-09-18 12:00:02.564780
+Config  : ./my-bench/private/backups/20240918_120002-my-bench-site_config_backup.json 94.0B
+Database: ./my-bench/private/backups/20240918_120002-my-bench-database.sql.gz         230.8KiB
+Backup for Site my-bench has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_39f99fb2d3a92313 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _39f99fb2d3a92313 | /usr/bin/gzip >> ./Airplane_mode/private/backups/20240918_180001-Airplane_mode-database.sql.gz
+
+Backup Summary for Airplane_mode at 2024-09-18 18:00:02.080345
+Config  : ./Airplane_mode/private/backups/20240918_180001-Airplane_mode-site_config_backup.json 116.0B
+Database: ./Airplane_mode/private/backups/20240918_180001-Airplane_mode-database.sql.gz         242.9KiB
+Backup for Site Airplane_mode has been successfully completed
+File ./my-bench/private/backups/20240918_120002-my-bench-database.sql.gz is recent
+File ./my-bench/private/backups/20240917_120003-my-bench-site_config_backup.json is older than 24 hours
+File ./my-bench/private/backups/20240917_120003-my-bench-database.sql.gz is older than 24 hours
+File ./my-bench/private/backups/20240918_120002-my-bench-site_config_backup.json is recent
+set -o pipefail; /usr/bin/mariadb-dump --user=_eb4a01807b099b7e --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _eb4a01807b099b7e | /usr/bin/gzip >> ./my-bench/private/backups/20240918_180002-my-bench-database.sql.gz
+
+Backup Summary for my-bench at 2024-09-18 18:00:02.496738
+Config  : ./my-bench/private/backups/20240918_180002-my-bench-site_config_backup.json 94.0B
+Database: ./my-bench/private/backups/20240918_180002-my-bench-database.sql.gz         230.8KiB
+Backup for Site my-bench has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_39f99fb2d3a92313 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _39f99fb2d3a92313 | /usr/bin/gzip >> ./Airplane_mode/private/backups/20240919_120001-Airplane_mode-database.sql.gz
+
+Backup Summary for Airplane_mode at 2024-09-19 12:00:02.172118
+Config  : ./Airplane_mode/private/backups/20240919_120001-Airplane_mode-site_config_backup.json 116.0B
+Database: ./Airplane_mode/private/backups/20240919_120001-Airplane_mode-database.sql.gz         247.3KiB
+Backup for Site Airplane_mode has been successfully completed
+File ./my-bench/private/backups/20240918_120002-my-bench-database.sql.gz is recent
+File ./my-bench/private/backups/20240918_120002-my-bench-site_config_backup.json is recent
+File ./my-bench/private/backups/20240918_180002-my-bench-site_config_backup.json is recent
+File ./my-bench/private/backups/20240918_180002-my-bench-database.sql.gz is recent
+set -o pipefail; /usr/bin/mariadb-dump --user=_eb4a01807b099b7e --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _eb4a01807b099b7e | /usr/bin/gzip >> ./my-bench/private/backups/20240919_120002-my-bench-database.sql.gz
+
+Backup Summary for my-bench at 2024-09-19 12:00:02.622449
+Config  : ./my-bench/private/backups/20240919_120002-my-bench-site_config_backup.json 94.0B
+Database: ./my-bench/private/backups/20240919_120002-my-bench-database.sql.gz         231.7KiB
+Backup for Site my-bench has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_39f99fb2d3a92313 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _39f99fb2d3a92313 | /usr/bin/gzip >> ./Airplane_mode/private/backups/20240919_180002-Airplane_mode-database.sql.gz
+
+Backup Summary for Airplane_mode at 2024-09-19 18:00:02.512905
+Config  : ./Airplane_mode/private/backups/20240919_180002-Airplane_mode-site_config_backup.json 116.0B
+Database: ./Airplane_mode/private/backups/20240919_180002-Airplane_mode-database.sql.gz         247.3KiB
+Backup for Site Airplane_mode has been successfully completed
+File ./my-bench/private/backups/20240919_120002-my-bench-database.sql.gz is recent
+File ./my-bench/private/backups/20240918_120002-my-bench-database.sql.gz is older than 24 hours
+File ./my-bench/private/backups/20240919_120002-my-bench-site_config_backup.json is recent
+File ./my-bench/private/backups/20240918_120002-my-bench-site_config_backup.json is older than 24 hours
+File ./my-bench/private/backups/20240918_180002-my-bench-site_config_backup.json is older than 24 hours
+File ./my-bench/private/backups/20240918_180002-my-bench-database.sql.gz is older than 24 hours
+set -o pipefail; /usr/bin/mariadb-dump --user=_eb4a01807b099b7e --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _eb4a01807b099b7e | /usr/bin/gzip >> ./my-bench/private/backups/20240919_180002-my-bench-database.sql.gz
+
+Backup Summary for my-bench at 2024-09-19 18:00:02.838421
+Config  : ./my-bench/private/backups/20240919_180002-my-bench-site_config_backup.json 94.0B
+Database: ./my-bench/private/backups/20240919_180002-my-bench-database.sql.gz         231.7KiB
+Backup for Site my-bench has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_39f99fb2d3a92313 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _39f99fb2d3a92313 | /usr/bin/gzip >> ./Airplane_mode/private/backups/20240920_120002-Airplane_mode-database.sql.gz
+
+Backup Summary for Airplane_mode at 2024-09-20 12:00:02.954214
+Config  : ./Airplane_mode/private/backups/20240920_120002-Airplane_mode-site_config_backup.json 116.0B
+Database: ./Airplane_mode/private/backups/20240920_120002-Airplane_mode-database.sql.gz         247.3KiB
+Backup for Site Airplane_mode has been successfully completed
+File ./my-bench/private/backups/20240919_180002-my-bench-site_config_backup.json is recent
+File ./my-bench/private/backups/20240919_180002-my-bench-database.sql.gz is recent
+File ./my-bench/private/backups/20240919_120002-my-bench-database.sql.gz is older than 24 hours
+File ./my-bench/private/backups/20240919_120002-my-bench-site_config_backup.json is older than 24 hours
+set -o pipefail; /usr/bin/mariadb-dump --user=_eb4a01807b099b7e --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _eb4a01807b099b7e | /usr/bin/gzip >> ./my-bench/private/backups/20240920_120003-my-bench-database.sql.gz
+
+Backup Summary for my-bench at 2024-09-20 12:00:03.455898
+Config  : ./my-bench/private/backups/20240920_120003-my-bench-site_config_backup.json 94.0B
+Database: ./my-bench/private/backups/20240920_120003-my-bench-database.sql.gz         231.7KiB
+Backup for Site my-bench has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_39f99fb2d3a92313 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _39f99fb2d3a92313 | /usr/bin/gzip >> ./Airplane_mode/private/backups/20240923_120002-Airplane_mode-database.sql.gz
+
+Backup Summary for Airplane_mode at 2024-09-23 12:00:02.675337
+Config  : ./Airplane_mode/private/backups/20240923_120002-Airplane_mode-site_config_backup.json 116.0B
+Database: ./Airplane_mode/private/backups/20240923_120002-Airplane_mode-database.sql.gz         241.4KiB
+Backup for Site Airplane_mode has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_91f6cc24029b4529 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _91f6cc24029b4529 | /usr/bin/gzip >> ./library_management/private/backups/20240923_120002-library_management-database.sql.gz
+
+Backup Summary for library_management at 2024-09-23 12:00:03.024717
+Config  : ./library_management/private/backups/20240923_120002-library_management-site_config_backup.json 94.0B
+Database: ./library_management/private/backups/20240923_120002-library_management-database.sql.gz         217.8KiB
+Backup for Site library_management has been successfully completed
+File ./my-bench/private/backups/20240920_120003-my-bench-database.sql.gz is older than 24 hours
+File ./my-bench/private/backups/20240919_180002-my-bench-site_config_backup.json is older than 24 hours
+File ./my-bench/private/backups/20240920_120003-my-bench-site_config_backup.json is older than 24 hours
+File ./my-bench/private/backups/20240919_180002-my-bench-database.sql.gz is older than 24 hours
+set -o pipefail; /usr/bin/mariadb-dump --user=_eb4a01807b099b7e --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _eb4a01807b099b7e | /usr/bin/gzip >> ./my-bench/private/backups/20240923_120003-my-bench-database.sql.gz
+
+Backup Summary for my-bench at 2024-09-23 12:00:03.450835
+Config  : ./my-bench/private/backups/20240923_120003-my-bench-site_config_backup.json 94.0B
+Database: ./my-bench/private/backups/20240923_120003-my-bench-database.sql.gz         224.1KiB
+Backup for Site my-bench has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_39f99fb2d3a92313 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _39f99fb2d3a92313 | /usr/bin/gzip >> ./Airplane_mode/private/backups/20240923_180002-Airplane_mode-database.sql.gz
+
+Backup Summary for Airplane_mode at 2024-09-23 18:00:03.023962
+Config  : ./Airplane_mode/private/backups/20240923_180002-Airplane_mode-site_config_backup.json 116.0B
+Database: ./Airplane_mode/private/backups/20240923_180002-Airplane_mode-database.sql.gz         249.7KiB
+Backup for Site Airplane_mode has been successfully completed
+File ./my-bench/private/backups/20240923_120003-my-bench-site_config_backup.json is recent
+File ./my-bench/private/backups/20240923_120003-my-bench-database.sql.gz is recent
+set -o pipefail; /usr/bin/mariadb-dump --user=_eb4a01807b099b7e --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _eb4a01807b099b7e | /usr/bin/gzip >> ./my-bench/private/backups/20240923_180003-my-bench-database.sql.gz
+
+Backup Summary for my-bench at 2024-09-23 18:00:03.476402
+Config  : ./my-bench/private/backups/20240923_180003-my-bench-site_config_backup.json 116.0B
+Database: ./my-bench/private/backups/20240923_180003-my-bench-database.sql.gz         227.4KiB
+Backup for Site my-bench has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_39f99fb2d3a92313 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _39f99fb2d3a92313 | /usr/bin/gzip >> ./Airplane_mode/private/backups/20240924_000002-Airplane_mode-database.sql.gz
+
+Backup Summary for Airplane_mode at 2024-09-24 00:00:02.892269
+Config  : ./Airplane_mode/private/backups/20240924_000002-Airplane_mode-site_config_backup.json 116.0B
+Database: ./Airplane_mode/private/backups/20240924_000002-Airplane_mode-database.sql.gz         249.7KiB
+Backup for Site Airplane_mode has been successfully completed
+File ./my-bench/private/backups/20240923_120003-my-bench-site_config_backup.json is recent
+File ./my-bench/private/backups/20240923_180003-my-bench-site_config_backup.json is recent
+File ./my-bench/private/backups/20240923_120003-my-bench-database.sql.gz is recent
+File ./my-bench/private/backups/20240923_180003-my-bench-database.sql.gz is recent
+set -o pipefail; /usr/bin/mariadb-dump --user=_eb4a01807b099b7e --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _eb4a01807b099b7e | /usr/bin/gzip >> ./my-bench/private/backups/20240924_000002-my-bench-database.sql.gz
+
+Backup Summary for my-bench at 2024-09-24 00:00:03.372215
+Config  : ./my-bench/private/backups/20240924_000002-my-bench-site_config_backup.json 116.0B
+Database: ./my-bench/private/backups/20240924_000002-my-bench-database.sql.gz         227.4KiB
+Backup for Site my-bench has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_39f99fb2d3a92313 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _39f99fb2d3a92313 | /usr/bin/gzip >> ./Airplane_mode/private/backups/20240924_120319-Airplane_mode-database.sql.gz
+
+Backup Summary for Airplane_mode at 2024-09-24 12:03:20.036104
+Config  : ./Airplane_mode/private/backups/20240924_120319-Airplane_mode-site_config_backup.json 116.0B
+Database: ./Airplane_mode/private/backups/20240924_120319-Airplane_mode-database.sql.gz         249.7KiB
+Backup for Site Airplane_mode has been successfully completed
+File ./my-bench/private/backups/20240923_120003-my-bench-site_config_backup.json is older than 24 hours
+File ./my-bench/private/backups/20240923_180003-my-bench-site_config_backup.json is recent
+File ./my-bench/private/backups/20240924_000002-my-bench-site_config_backup.json is recent
+File ./my-bench/private/backups/20240923_120003-my-bench-database.sql.gz is older than 24 hours
+File ./my-bench/private/backups/20240923_180003-my-bench-database.sql.gz is recent
+File ./my-bench/private/backups/20240924_000002-my-bench-database.sql.gz is recent
+set -o pipefail; /usr/bin/mariadb-dump --user=_eb4a01807b099b7e --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _eb4a01807b099b7e | /usr/bin/gzip >> ./my-bench/private/backups/20240924_120320-my-bench-database.sql.gz
+
+Backup Summary for my-bench at 2024-09-24 12:03:20.520080
+Config  : ./my-bench/private/backups/20240924_120320-my-bench-site_config_backup.json 116.0B
+Database: ./my-bench/private/backups/20240924_120320-my-bench-database.sql.gz         227.4KiB
+Backup for Site my-bench has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_39f99fb2d3a92313 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _39f99fb2d3a92313 | /usr/bin/gzip >> ./Airplane_mode/private/backups/20240925_120002-Airplane_mode-database.sql.gz
+
+Backup Summary for Airplane_mode at 2024-09-25 12:00:02.754881
+Config  : ./Airplane_mode/private/backups/20240925_120002-Airplane_mode-site_config_backup.json 116.0B
+Database: ./Airplane_mode/private/backups/20240925_120002-Airplane_mode-database.sql.gz         280.3KiB
+Backup for Site Airplane_mode has been successfully completed
+File ./my-bench/private/backups/20240924_120320-my-bench-database.sql.gz is recent
+File ./my-bench/private/backups/20240923_180003-my-bench-site_config_backup.json is older than 24 hours
+File ./my-bench/private/backups/20240924_000002-my-bench-site_config_backup.json is older than 24 hours
+File ./my-bench/private/backups/20240923_180003-my-bench-database.sql.gz is older than 24 hours
+File ./my-bench/private/backups/20240924_000002-my-bench-database.sql.gz is older than 24 hours
+File ./my-bench/private/backups/20240924_120320-my-bench-site_config_backup.json is recent
+set -o pipefail; /usr/bin/mariadb-dump --user=_eb4a01807b099b7e --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _eb4a01807b099b7e | /usr/bin/gzip >> ./my-bench/private/backups/20240925_120002-my-bench-database.sql.gz
+
+Backup Summary for my-bench at 2024-09-25 12:00:03.426703
+Config  : ./my-bench/private/backups/20240925_120002-my-bench-site_config_backup.json 116.0B
+Database: ./my-bench/private/backups/20240925_120002-my-bench-database.sql.gz         232.2KiB
+Backup for Site my-bench has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_39f99fb2d3a92313 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _39f99fb2d3a92313 | /usr/bin/gzip >> ./Airplane_mode/private/backups/20240925_180001-Airplane_mode-database.sql.gz
+
+Backup Summary for Airplane_mode at 2024-09-25 18:00:02.016968
+Config  : ./Airplane_mode/private/backups/20240925_180001-Airplane_mode-site_config_backup.json 116.0B
+Database: ./Airplane_mode/private/backups/20240925_180001-Airplane_mode-database.sql.gz         289.7KiB
+Backup for Site Airplane_mode has been successfully completed
+File ./my-bench/private/backups/20240924_120320-my-bench-database.sql.gz is older than 24 hours
+File ./my-bench/private/backups/20240925_120002-my-bench-site_config_backup.json is recent
+File ./my-bench/private/backups/20240924_120320-my-bench-site_config_backup.json is older than 24 hours
+File ./my-bench/private/backups/20240925_120002-my-bench-database.sql.gz is recent
+set -o pipefail; /usr/bin/mariadb-dump --user=_eb4a01807b099b7e --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _eb4a01807b099b7e | /usr/bin/gzip >> ./my-bench/private/backups/20240925_180002-my-bench-database.sql.gz
+
+Backup Summary for my-bench at 2024-09-25 18:00:02.349376
+Config  : ./my-bench/private/backups/20240925_180002-my-bench-site_config_backup.json 116.0B
+Database: ./my-bench/private/backups/20240925_180002-my-bench-database.sql.gz         235.3KiB
+Backup for Site my-bench has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_39f99fb2d3a92313 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _39f99fb2d3a92313 | /usr/bin/gzip >> ./Airplane_mode/private/backups/20240926_120002-Airplane_mode-database.sql.gz
+
+Backup Summary for Airplane_mode at 2024-09-26 12:00:02.880975
+Config  : ./Airplane_mode/private/backups/20240926_120002-Airplane_mode-site_config_backup.json 116.0B
+Database: ./Airplane_mode/private/backups/20240926_120002-Airplane_mode-database.sql.gz         292.9KiB
+Backup for Site Airplane_mode has been successfully completed
+File ./my-bench/private/backups/20240925_120002-my-bench-site_config_backup.json is recent
+File ./my-bench/private/backups/20240925_180002-my-bench-site_config_backup.json is recent
+File ./my-bench/private/backups/20240925_120002-my-bench-database.sql.gz is recent
+File ./my-bench/private/backups/20240925_180002-my-bench-database.sql.gz is recent
+set -o pipefail; /usr/bin/mariadb-dump --user=_eb4a01807b099b7e --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _eb4a01807b099b7e | /usr/bin/gzip >> ./my-bench/private/backups/20240926_120003-my-bench-database.sql.gz
+
+Backup Summary for my-bench at 2024-09-26 12:00:03.628621
+Config  : ./my-bench/private/backups/20240926_120003-my-bench-site_config_backup.json 116.0B
+Database: ./my-bench/private/backups/20240926_120003-my-bench-database.sql.gz         238.4KiB
+Backup for Site my-bench has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_39f99fb2d3a92313 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _39f99fb2d3a92313 | /usr/bin/gzip >> ./Airplane_mode/private/backups/20240926_180002-Airplane_mode-database.sql.gz
+
+Backup Summary for Airplane_mode at 2024-09-26 18:00:02.551112
+Config  : ./Airplane_mode/private/backups/20240926_180002-Airplane_mode-site_config_backup.json 116.0B
+Database: ./Airplane_mode/private/backups/20240926_180002-Airplane_mode-database.sql.gz         315.5KiB
+Backup for Site Airplane_mode has been successfully completed
+File ./my-bench/private/backups/20240926_120003-my-bench-database.sql.gz is recent
+File ./my-bench/private/backups/20240925_120002-my-bench-site_config_backup.json is older than 24 hours
+File ./my-bench/private/backups/20240926_120003-my-bench-site_config_backup.json is recent
+File ./my-bench/private/backups/20240925_180002-my-bench-site_config_backup.json is older than 24 hours
+File ./my-bench/private/backups/20240925_120002-my-bench-database.sql.gz is older than 24 hours
+File ./my-bench/private/backups/20240925_180002-my-bench-database.sql.gz is older than 24 hours
+set -o pipefail; /usr/bin/mariadb-dump --user=_eb4a01807b099b7e --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _eb4a01807b099b7e | /usr/bin/gzip >> ./my-bench/private/backups/20240926_180002-my-bench-database.sql.gz
+
+Backup Summary for my-bench at 2024-09-26 18:00:02.832629
+Config  : ./my-bench/private/backups/20240926_180002-my-bench-site_config_backup.json 116.0B
+Database: ./my-bench/private/backups/20240926_180002-my-bench-database.sql.gz         241.4KiB
+Backup for Site my-bench has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_39f99fb2d3a92313 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _39f99fb2d3a92313 | /usr/bin/gzip >> ./Airplane_mode/private/backups/20240927_120001-Airplane_mode-database.sql.gz
+
+Backup Summary for Airplane_mode at 2024-09-27 12:00:01.947082
+Config  : ./Airplane_mode/private/backups/20240927_120001-Airplane_mode-site_config_backup.json 116.0B
+Database: ./Airplane_mode/private/backups/20240927_120001-Airplane_mode-database.sql.gz         337.3KiB
+Backup for Site Airplane_mode has been successfully completed
+File ./my-bench/private/backups/20240926_180002-my-bench-database.sql.gz is recent
+File ./my-bench/private/backups/20240926_120003-my-bench-database.sql.gz is recent
+File ./my-bench/private/backups/20240926_180002-my-bench-site_config_backup.json is recent
+File ./my-bench/private/backups/20240926_120003-my-bench-site_config_backup.json is recent
+set -o pipefail; /usr/bin/mariadb-dump --user=_eb4a01807b099b7e --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _eb4a01807b099b7e | /usr/bin/gzip >> ./my-bench/private/backups/20240927_120001-my-bench-database.sql.gz
+
+Backup Summary for my-bench at 2024-09-27 12:00:02.390119
+Config  : ./my-bench/private/backups/20240927_120001-my-bench-site_config_backup.json 116.0B
+Database: ./my-bench/private/backups/20240927_120001-my-bench-database.sql.gz         247.2KiB
+Backup for Site my-bench has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_39f99fb2d3a92313 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _39f99fb2d3a92313 | /usr/bin/gzip >> ./Airplane_mode/private/backups/20240927_180002-Airplane_mode-database.sql.gz
+
+Backup Summary for Airplane_mode at 2024-09-27 18:00:03.015483
+Config  : ./Airplane_mode/private/backups/20240927_180002-Airplane_mode-site_config_backup.json 116.0B
+Database: ./Airplane_mode/private/backups/20240927_180002-Airplane_mode-database.sql.gz         345.8KiB
+Backup for Site Airplane_mode has been successfully completed
+File ./my-bench/private/backups/20240926_180002-my-bench-database.sql.gz is older than 24 hours
+File ./my-bench/private/backups/20240926_120003-my-bench-database.sql.gz is older than 24 hours
+File ./my-bench/private/backups/20240926_180002-my-bench-site_config_backup.json is older than 24 hours
+File ./my-bench/private/backups/20240926_120003-my-bench-site_config_backup.json is older than 24 hours
+File ./my-bench/private/backups/20240927_120001-my-bench-database.sql.gz is recent
+File ./my-bench/private/backups/20240927_120001-my-bench-site_config_backup.json is recent
+set -o pipefail; /usr/bin/mariadb-dump --user=_eb4a01807b099b7e --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _eb4a01807b099b7e | /usr/bin/gzip >> ./my-bench/private/backups/20240927_180003-my-bench-database.sql.gz
+
+Backup Summary for my-bench at 2024-09-27 18:00:03.334867
+Config  : ./my-bench/private/backups/20240927_180003-my-bench-site_config_backup.json 116.0B
+Database: ./my-bench/private/backups/20240927_180003-my-bench-database.sql.gz         252.6KiB
+Backup for Site my-bench has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_39f99fb2d3a92313 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _39f99fb2d3a92313 | /usr/bin/gzip >> ./Airplane_mode/private/backups/20240928_120001-Airplane_mode-database.sql.gz
+
+Backup Summary for Airplane_mode at 2024-09-28 12:00:02.194139
+Config  : ./Airplane_mode/private/backups/20240928_120001-Airplane_mode-site_config_backup.json 116.0B
+Database: ./Airplane_mode/private/backups/20240928_120001-Airplane_mode-database.sql.gz         349.4KiB
+Backup for Site Airplane_mode has been successfully completed
+File ./my-bench/private/backups/20240927_180003-my-bench-database.sql.gz is recent
+File ./my-bench/private/backups/20240927_180003-my-bench-site_config_backup.json is recent
+File ./my-bench/private/backups/20240927_120001-my-bench-database.sql.gz is recent
+File ./my-bench/private/backups/20240927_120001-my-bench-site_config_backup.json is recent
+set -o pipefail; /usr/bin/mariadb-dump --user=_eb4a01807b099b7e --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _eb4a01807b099b7e | /usr/bin/gzip >> ./my-bench/private/backups/20240928_120002-my-bench-database.sql.gz
+
+Backup Summary for my-bench at 2024-09-28 12:00:02.709657
+Config  : ./my-bench/private/backups/20240928_120002-my-bench-site_config_backup.json 116.0B
+Database: ./my-bench/private/backups/20240928_120002-my-bench-database.sql.gz         252.6KiB
+Backup for Site my-bench has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_39f99fb2d3a92313 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _39f99fb2d3a92313 | /usr/bin/gzip >> ./Airplane_mode/private/backups/20240930_180002-Airplane_mode-database.sql.gz
+
+Backup Summary for Airplane_mode at 2024-09-30 18:00:02.686581
+Config  : ./Airplane_mode/private/backups/20240930_180002-Airplane_mode-site_config_backup.json 116.0B
+Database: ./Airplane_mode/private/backups/20240930_180002-Airplane_mode-database.sql.gz         351.1KiB
+Backup for Site Airplane_mode has been successfully completed
+File ./my-bench/private/backups/20240928_120002-my-bench-database.sql.gz is older than 24 hours
+File ./my-bench/private/backups/20240927_180003-my-bench-database.sql.gz is older than 24 hours
+File ./my-bench/private/backups/20240927_180003-my-bench-site_config_backup.json is older than 24 hours
+File ./my-bench/private/backups/20240928_120002-my-bench-site_config_backup.json is older than 24 hours
+File ./my-bench/private/backups/20240927_120001-my-bench-database.sql.gz is older than 24 hours
+File ./my-bench/private/backups/20240927_120001-my-bench-site_config_backup.json is older than 24 hours
+set -o pipefail; /usr/bin/mariadb-dump --user=_eb4a01807b099b7e --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _eb4a01807b099b7e | /usr/bin/gzip >> ./my-bench/private/backups/20240930_180002-my-bench-database.sql.gz
+
+Backup Summary for my-bench at 2024-09-30 18:00:03.185811
+Config  : ./my-bench/private/backups/20240930_180002-my-bench-site_config_backup.json 116.0B
+Database: ./my-bench/private/backups/20240930_180002-my-bench-database.sql.gz         253.8KiB
+Backup for Site my-bench has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_39f99fb2d3a92313 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _39f99fb2d3a92313 | /usr/bin/gzip >> ./Airplane_mode/private/backups/20241001_120002-Airplane_mode-database.sql.gz
+
+Backup Summary for Airplane_mode at 2024-10-01 12:00:02.775649
+Config  : ./Airplane_mode/private/backups/20241001_120002-Airplane_mode-site_config_backup.json 116.0B
+Database: ./Airplane_mode/private/backups/20241001_120002-Airplane_mode-database.sql.gz         351.6KiB
+Backup for Site Airplane_mode has been successfully completed
+File ./my-bench/private/backups/20240930_180002-my-bench-database.sql.gz is recent
+File ./my-bench/private/backups/20240930_180002-my-bench-site_config_backup.json is recent
+set -o pipefail; /usr/bin/mariadb-dump --user=_eb4a01807b099b7e --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _eb4a01807b099b7e | /usr/bin/gzip >> ./my-bench/private/backups/20241001_120002-my-bench-database.sql.gz
+
+Backup Summary for my-bench at 2024-10-01 12:00:03.329225
+Config  : ./my-bench/private/backups/20241001_120002-my-bench-site_config_backup.json 116.0B
+Database: ./my-bench/private/backups/20241001_120002-my-bench-database.sql.gz         253.8KiB
+Backup for Site my-bench has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_39f99fb2d3a92313 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _39f99fb2d3a92313 | /usr/bin/gzip >> ./Airplane_mode/private/backups/20241001_180002-Airplane_mode-database.sql.gz
+
+Backup Summary for Airplane_mode at 2024-10-01 18:00:02.926797
+Config  : ./Airplane_mode/private/backups/20241001_180002-Airplane_mode-site_config_backup.json 116.0B
+Database: ./Airplane_mode/private/backups/20241001_180002-Airplane_mode-database.sql.gz         351.6KiB
+Backup for Site Airplane_mode has been successfully completed
+File ./my-bench/private/backups/20240930_180002-my-bench-database.sql.gz is recent
+File ./my-bench/private/backups/20241001_120002-my-bench-database.sql.gz is recent
+File ./my-bench/private/backups/20240930_180002-my-bench-site_config_backup.json is recent
+File ./my-bench/private/backups/20241001_120002-my-bench-site_config_backup.json is recent
+set -o pipefail; /usr/bin/mariadb-dump --user=_eb4a01807b099b7e --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _eb4a01807b099b7e | /usr/bin/gzip >> ./my-bench/private/backups/20241001_180003-my-bench-database.sql.gz
+
+Backup Summary for my-bench at 2024-10-01 18:00:03.461556
+Config  : ./my-bench/private/backups/20241001_180003-my-bench-site_config_backup.json 116.0B
+Database: ./my-bench/private/backups/20241001_180003-my-bench-database.sql.gz         253.8KiB
+Backup for Site my-bench has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_39f99fb2d3a92313 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _39f99fb2d3a92313 | /usr/bin/gzip >> ./Airplane_mode/private/backups/20241002_120001-Airplane_mode-database.sql.gz
+
+Backup Summary for Airplane_mode at 2024-10-02 12:00:02.123126
+Config  : ./Airplane_mode/private/backups/20241002_120001-Airplane_mode-site_config_backup.json 116.0B
+Database: ./Airplane_mode/private/backups/20241002_120001-Airplane_mode-database.sql.gz         351.6KiB
+Backup for Site Airplane_mode has been successfully completed
+File ./my-bench/private/backups/20240930_180002-my-bench-database.sql.gz is older than 24 hours
+File ./my-bench/private/backups/20241001_120002-my-bench-database.sql.gz is recent
+File ./my-bench/private/backups/20240930_180002-my-bench-site_config_backup.json is older than 24 hours
+File ./my-bench/private/backups/20241001_180003-my-bench-database.sql.gz is recent
+File ./my-bench/private/backups/20241001_180003-my-bench-site_config_backup.json is recent
+File ./my-bench/private/backups/20241001_120002-my-bench-site_config_backup.json is recent
+set -o pipefail; /usr/bin/mariadb-dump --user=_eb4a01807b099b7e --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _eb4a01807b099b7e | /usr/bin/gzip >> ./my-bench/private/backups/20241002_120002-my-bench-database.sql.gz
+
+Backup Summary for my-bench at 2024-10-02 12:00:02.582075
+Config  : ./my-bench/private/backups/20241002_120002-my-bench-site_config_backup.json 116.0B
+Database: ./my-bench/private/backups/20241002_120002-my-bench-database.sql.gz         253.8KiB
+Backup for Site my-bench has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_39f99fb2d3a92313 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _39f99fb2d3a92313 | /usr/bin/gzip >> ./Airplane_mode/private/backups/20241003_180049-Airplane_mode-database.sql.gz
+
+Backup Summary for Airplane_mode at 2024-10-03 18:00:49.629407
+Config  : ./Airplane_mode/private/backups/20241003_180049-Airplane_mode-site_config_backup.json 116.0B
+Database: ./Airplane_mode/private/backups/20241003_180049-Airplane_mode-database.sql.gz         351.6KiB
+Backup for Site Airplane_mode has been successfully completed
+File ./my-bench/private/backups/20241001_120002-my-bench-database.sql.gz is older than 24 hours
+File ./my-bench/private/backups/20241001_180003-my-bench-database.sql.gz is older than 24 hours
+File ./my-bench/private/backups/20241001_180003-my-bench-site_config_backup.json is older than 24 hours
+File ./my-bench/private/backups/20241002_120002-my-bench-database.sql.gz is older than 24 hours
+File ./my-bench/private/backups/20241002_120002-my-bench-site_config_backup.json is older than 24 hours
+File ./my-bench/private/backups/20241001_120002-my-bench-site_config_backup.json is older than 24 hours
+set -o pipefail; /usr/bin/mariadb-dump --user=_eb4a01807b099b7e --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _eb4a01807b099b7e | /usr/bin/gzip >> ./my-bench/private/backups/20241003_180049-my-bench-database.sql.gz
+
+Backup Summary for my-bench at 2024-10-03 18:00:50.100347
+Config  : ./my-bench/private/backups/20241003_180049-my-bench-site_config_backup.json 116.0B
+Database: ./my-bench/private/backups/20241003_180049-my-bench-database.sql.gz         253.8KiB
+Backup for Site my-bench has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_39f99fb2d3a92313 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _39f99fb2d3a92313 | /usr/bin/gzip >> ./Airplane_mode/private/backups/20241005_120002-Airplane_mode-database.sql.gz
+
+Backup Summary for Airplane_mode at 2024-10-05 12:00:02.718973
+Config  : ./Airplane_mode/private/backups/20241005_120002-Airplane_mode-site_config_backup.json 116.0B
+Database: ./Airplane_mode/private/backups/20241005_120002-Airplane_mode-database.sql.gz         351.6KiB
+Backup for Site Airplane_mode has been successfully completed
+File ./my-bench/private/backups/20241003_180049-my-bench-site_config_backup.json is older than 24 hours
+File ./my-bench/private/backups/20241003_180049-my-bench-database.sql.gz is older than 24 hours
+set -o pipefail; /usr/bin/mariadb-dump --user=_eb4a01807b099b7e --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _eb4a01807b099b7e | /usr/bin/gzip >> ./my-bench/private/backups/20241005_120002-my-bench-database.sql.gz
+
+Backup Summary for my-bench at 2024-10-05 12:00:03.282523
+Config  : ./my-bench/private/backups/20241005_120002-my-bench-site_config_backup.json 116.0B
+Database: ./my-bench/private/backups/20241005_120002-my-bench-database.sql.gz         253.8KiB
+Backup for Site my-bench has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_39f99fb2d3a92313 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _39f99fb2d3a92313 | /usr/bin/gzip >> ./Airplane_mode/private/backups/20241008_120003-Airplane_mode-database.sql.gz
+
+Backup Summary for Airplane_mode at 2024-10-08 12:00:05.743432
+Config  : ./Airplane_mode/private/backups/20241008_120003-Airplane_mode-site_config_backup.json 116.0B
+Database: ./Airplane_mode/private/backups/20241008_120003-Airplane_mode-database.sql.gz         318.5KiB
+Backup for Site Airplane_mode has been successfully completed
+File ./my-bench/private/backups/20241005_120002-my-bench-database.sql.gz is older than 24 hours
+File ./my-bench/private/backups/20241005_120002-my-bench-site_config_backup.json is older than 24 hours
+set -o pipefail; /usr/bin/mariadb-dump --user=_eb4a01807b099b7e --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _eb4a01807b099b7e | /usr/bin/gzip >> ./my-bench/private/backups/20241008_120006-my-bench-database.sql.gz
+
+Backup Summary for my-bench at 2024-10-08 12:00:07.668458
+Config  : ./my-bench/private/backups/20241008_120006-my-bench-site_config_backup.json 116.0B
+Database: ./my-bench/private/backups/20241008_120006-my-bench-database.sql.gz         224.5KiB
+Backup for Site my-bench has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_39f99fb2d3a92313 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _39f99fb2d3a92313 | /usr/bin/gzip >> ./Airplane_mode/private/backups/20241008_180002-Airplane_mode-database.sql.gz
+
+Backup Summary for Airplane_mode at 2024-10-08 18:00:02.789979
+Config  : ./Airplane_mode/private/backups/20241008_180002-Airplane_mode-site_config_backup.json 116.0B
+Database: ./Airplane_mode/private/backups/20241008_180002-Airplane_mode-database.sql.gz         318.5KiB
+Backup for Site Airplane_mode has been successfully completed
+File ./my-bench/private/backups/20241008_120006-my-bench-site_config_backup.json is recent
+File ./my-bench/private/backups/20241008_120006-my-bench-database.sql.gz is recent
+set -o pipefail; /usr/bin/mariadb-dump --user=_eb4a01807b099b7e --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _eb4a01807b099b7e | /usr/bin/gzip >> ./my-bench/private/backups/20241008_180002-my-bench-database.sql.gz
+
+Backup Summary for my-bench at 2024-10-08 18:00:03.190540
+Config  : ./my-bench/private/backups/20241008_180002-my-bench-site_config_backup.json 116.0B
+Database: ./my-bench/private/backups/20241008_180002-my-bench-database.sql.gz         224.5KiB
+Backup for Site my-bench has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_39f99fb2d3a92313 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _39f99fb2d3a92313 | /usr/bin/gzip >> ./Airplane_mode/private/backups/20241009_000351-Airplane_mode-database.sql.gz
+
+Backup Summary for Airplane_mode at 2024-10-09 00:03:51.997759
+Config  : ./Airplane_mode/private/backups/20241009_000351-Airplane_mode-site_config_backup.json 116.0B
+Database: ./Airplane_mode/private/backups/20241009_000351-Airplane_mode-database.sql.gz         319.0KiB
+Backup for Site Airplane_mode has been successfully completed
+File ./my-bench/private/backups/20241008_120006-my-bench-site_config_backup.json is recent
+File ./my-bench/private/backups/20241008_120006-my-bench-database.sql.gz is recent
+File ./my-bench/private/backups/20241008_180002-my-bench-database.sql.gz is recent
+File ./my-bench/private/backups/20241008_180002-my-bench-site_config_backup.json is recent
+set -o pipefail; /usr/bin/mariadb-dump --user=_eb4a01807b099b7e --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _eb4a01807b099b7e | /usr/bin/gzip >> ./my-bench/private/backups/20241009_000352-my-bench-database.sql.gz
+
+Backup Summary for my-bench at 2024-10-09 00:03:52.374257
+Config  : ./my-bench/private/backups/20241009_000352-my-bench-site_config_backup.json 116.0B
+Database: ./my-bench/private/backups/20241009_000352-my-bench-database.sql.gz         225.7KiB
+Backup for Site my-bench has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_39f99fb2d3a92313 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _39f99fb2d3a92313 | /usr/bin/gzip >> ./Airplane_mode/private/backups/20241009_120001-Airplane_mode-database.sql.gz
+
+Backup Summary for Airplane_mode at 2024-10-09 12:00:02.301937
+Config  : ./Airplane_mode/private/backups/20241009_120001-Airplane_mode-site_config_backup.json 116.0B
+Database: ./Airplane_mode/private/backups/20241009_120001-Airplane_mode-database.sql.gz         319.0KiB
+Backup for Site Airplane_mode has been successfully completed
+File ./my-bench/private/backups/20241008_120006-my-bench-site_config_backup.json is recent
+File ./my-bench/private/backups/20241009_000352-my-bench-database.sql.gz is recent
+File ./my-bench/private/backups/20241009_000352-my-bench-site_config_backup.json is recent
+File ./my-bench/private/backups/20241008_120006-my-bench-database.sql.gz is recent
+File ./my-bench/private/backups/20241008_180002-my-bench-database.sql.gz is recent
+File ./my-bench/private/backups/20241008_180002-my-bench-site_config_backup.json is recent
+set -o pipefail; /usr/bin/mariadb-dump --user=_eb4a01807b099b7e --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _eb4a01807b099b7e | /usr/bin/gzip >> ./my-bench/private/backups/20241009_120002-my-bench-database.sql.gz
+
+Backup Summary for my-bench at 2024-10-09 12:00:03.019641
+Config  : ./my-bench/private/backups/20241009_120002-my-bench-site_config_backup.json 116.0B
+Database: ./my-bench/private/backups/20241009_120002-my-bench-database.sql.gz         225.7KiB
+Backup for Site my-bench has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_39f99fb2d3a92313 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _39f99fb2d3a92313 | /usr/bin/gzip >> ./Airplane_mode/private/backups/20241010_120002-Airplane_mode-database.sql.gz
+
+Backup Summary for Airplane_mode at 2024-10-10 12:00:02.848574
+Config  : ./Airplane_mode/private/backups/20241010_120002-Airplane_mode-site_config_backup.json 116.0B
+Database: ./Airplane_mode/private/backups/20241010_120002-Airplane_mode-database.sql.gz         324.2KiB
+Backup for Site Airplane_mode has been successfully completed
+File ./my-bench/private/backups/20241008_120006-my-bench-site_config_backup.json is older than 24 hours
+File ./my-bench/private/backups/20241009_000352-my-bench-database.sql.gz is older than 24 hours
+File ./my-bench/private/backups/20241009_000352-my-bench-site_config_backup.json is older than 24 hours
+File ./my-bench/private/backups/20241008_120006-my-bench-database.sql.gz is older than 24 hours
+File ./my-bench/private/backups/20241009_120002-my-bench-database.sql.gz is recent
+File ./my-bench/private/backups/20241008_180002-my-bench-database.sql.gz is older than 24 hours
+File ./my-bench/private/backups/20241009_120002-my-bench-site_config_backup.json is recent
+File ./my-bench/private/backups/20241008_180002-my-bench-site_config_backup.json is older than 24 hours
+set -o pipefail; /usr/bin/mariadb-dump --user=_eb4a01807b099b7e --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _eb4a01807b099b7e | /usr/bin/gzip >> ./my-bench/private/backups/20241010_120002-my-bench-database.sql.gz
+
+Backup Summary for my-bench at 2024-10-10 12:00:03.478746
+Config  : ./my-bench/private/backups/20241010_120002-my-bench-site_config_backup.json 116.0B
+Database: ./my-bench/private/backups/20241010_120002-my-bench-database.sql.gz         225.7KiB
+Backup for Site my-bench has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_39f99fb2d3a92313 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _39f99fb2d3a92313 | /usr/bin/gzip >> ./Airplane_mode/private/backups/20241014_180002-Airplane_mode-database.sql.gz
+
+Backup Summary for Airplane_mode at 2024-10-14 18:00:02.618708
+Config  : ./Airplane_mode/private/backups/20241014_180002-Airplane_mode-site_config_backup.json 116.0B
+Database: ./Airplane_mode/private/backups/20241014_180002-Airplane_mode-database.sql.gz         324.2KiB
+Backup for Site Airplane_mode has been successfully completed
+File ./my-bench/private/backups/20241010_120002-my-bench-database.sql.gz is older than 24 hours
+File ./my-bench/private/backups/20241009_120002-my-bench-database.sql.gz is older than 24 hours
+File ./my-bench/private/backups/20241010_120002-my-bench-site_config_backup.json is older than 24 hours
+File ./my-bench/private/backups/20241009_120002-my-bench-site_config_backup.json is older than 24 hours
+set -o pipefail; /usr/bin/mariadb-dump --user=_eb4a01807b099b7e --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _eb4a01807b099b7e | /usr/bin/gzip >> ./my-bench/private/backups/20241014_180002-my-bench-database.sql.gz
+
+Backup Summary for my-bench at 2024-10-14 18:00:03.129726
+Config  : ./my-bench/private/backups/20241014_180002-my-bench-site_config_backup.json 116.0B
+Database: ./my-bench/private/backups/20241014_180002-my-bench-database.sql.gz         225.7KiB
+Backup for Site my-bench has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_39f99fb2d3a92313 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _39f99fb2d3a92313 | /usr/bin/gzip >> ./Airplane_mode/private/backups/20241015_120001-Airplane_mode-database.sql.gz
+
+Backup Summary for Airplane_mode at 2024-10-15 12:00:02.299975
+Config  : ./Airplane_mode/private/backups/20241015_120001-Airplane_mode-site_config_backup.json 116.0B
+Database: ./Airplane_mode/private/backups/20241015_120001-Airplane_mode-database.sql.gz         318.9KiB
+Backup for Site Airplane_mode has been successfully completed
+File ./my-bench/private/backups/20241014_180002-my-bench-database.sql.gz is recent
+File ./my-bench/private/backups/20241014_180002-my-bench-site_config_backup.json is recent
+set -o pipefail; /usr/bin/mariadb-dump --user=_eb4a01807b099b7e --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _eb4a01807b099b7e | /usr/bin/gzip >> ./my-bench/private/backups/20241015_120002-my-bench-database.sql.gz
+
+Backup Summary for my-bench at 2024-10-15 12:00:02.750955
+Config  : ./my-bench/private/backups/20241015_120002-my-bench-site_config_backup.json 116.0B
+Database: ./my-bench/private/backups/20241015_120002-my-bench-database.sql.gz         225.4KiB
+Backup for Site my-bench has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_39f99fb2d3a92313 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _39f99fb2d3a92313 | /usr/bin/gzip >> ./Airplane_mode/private/backups/20241015_180001-Airplane_mode-database.sql.gz
+
+Backup Summary for Airplane_mode at 2024-10-15 18:00:02.437963
+Config  : ./Airplane_mode/private/backups/20241015_180001-Airplane_mode-site_config_backup.json 116.0B
+Database: ./Airplane_mode/private/backups/20241015_180001-Airplane_mode-database.sql.gz         327.3KiB
+Backup for Site Airplane_mode has been successfully completed
+File ./my-bench/private/backups/20241015_120002-my-bench-database.sql.gz is recent
+File ./my-bench/private/backups/20241015_120002-my-bench-site_config_backup.json is recent
+File ./my-bench/private/backups/20241014_180002-my-bench-database.sql.gz is recent
+File ./my-bench/private/backups/20241014_180002-my-bench-site_config_backup.json is recent
+set -o pipefail; /usr/bin/mariadb-dump --user=_eb4a01807b099b7e --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _eb4a01807b099b7e | /usr/bin/gzip >> ./my-bench/private/backups/20241015_180002-my-bench-database.sql.gz
+
+Backup Summary for my-bench at 2024-10-15 18:00:02.969411
+Config  : ./my-bench/private/backups/20241015_180002-my-bench-site_config_backup.json 116.0B
+Database: ./my-bench/private/backups/20241015_180002-my-bench-database.sql.gz         225.4KiB
+Backup for Site my-bench has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_39f99fb2d3a92313 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _39f99fb2d3a92313 | /usr/bin/gzip >> ./Airplane_mode/private/backups/20241016_120001-Airplane_mode-database.sql.gz
+
+Backup Summary for Airplane_mode at 2024-10-16 12:00:01.924486
+Config  : ./Airplane_mode/private/backups/20241016_120001-Airplane_mode-site_config_backup.json 116.0B
+Database: ./Airplane_mode/private/backups/20241016_120001-Airplane_mode-database.sql.gz         344.7KiB
+Backup for Site Airplane_mode has been successfully completed
+File ./my-bench/private/backups/20241015_120002-my-bench-database.sql.gz is recent
+File ./my-bench/private/backups/20241015_120002-my-bench-site_config_backup.json is recent
+File ./my-bench/private/backups/20241014_180002-my-bench-database.sql.gz is older than 24 hours
+File ./my-bench/private/backups/20241015_180002-my-bench-site_config_backup.json is recent
+File ./my-bench/private/backups/20241015_180002-my-bench-database.sql.gz is recent
+File ./my-bench/private/backups/20241014_180002-my-bench-site_config_backup.json is older than 24 hours
+set -o pipefail; /usr/bin/mariadb-dump --user=_eb4a01807b099b7e --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _eb4a01807b099b7e | /usr/bin/gzip >> ./my-bench/private/backups/20241016_120001-my-bench-database.sql.gz
+
+Backup Summary for my-bench at 2024-10-16 12:00:02.286947
+Config  : ./my-bench/private/backups/20241016_120001-my-bench-site_config_backup.json 116.0B
+Database: ./my-bench/private/backups/20241016_120001-my-bench-database.sql.gz         224.1KiB
+Backup for Site my-bench has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_39f99fb2d3a92313 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _39f99fb2d3a92313 | /usr/bin/gzip >> ./Airplane_mode/private/backups/20241016_180002-Airplane_mode-database.sql.gz
+
+Backup Summary for Airplane_mode at 2024-10-16 18:00:02.643190
+Config  : ./Airplane_mode/private/backups/20241016_180002-Airplane_mode-site_config_backup.json 116.0B
+Database: ./Airplane_mode/private/backups/20241016_180002-Airplane_mode-database.sql.gz         348.6KiB
+Backup for Site Airplane_mode has been successfully completed
+File ./my-bench/private/backups/20241015_120002-my-bench-database.sql.gz is older than 24 hours
+File ./my-bench/private/backups/20241015_120002-my-bench-site_config_backup.json is older than 24 hours
+File ./my-bench/private/backups/20241015_180002-my-bench-site_config_backup.json is recent
+File ./my-bench/private/backups/20241016_120001-my-bench-site_config_backup.json is recent
+File ./my-bench/private/backups/20241015_180002-my-bench-database.sql.gz is recent
+File ./my-bench/private/backups/20241016_120001-my-bench-database.sql.gz is recent
+set -o pipefail; /usr/bin/mariadb-dump --user=_eb4a01807b099b7e --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _eb4a01807b099b7e | /usr/bin/gzip >> ./my-bench/private/backups/20241016_180002-my-bench-database.sql.gz
+
+Backup Summary for my-bench at 2024-10-16 18:00:03.035290
+Config  : ./my-bench/private/backups/20241016_180002-my-bench-site_config_backup.json 116.0B
+Database: ./my-bench/private/backups/20241016_180002-my-bench-database.sql.gz         224.1KiB
+Backup for Site my-bench has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_39f99fb2d3a92313 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _39f99fb2d3a92313 | /usr/bin/gzip >> ./Airplane_mode/private/backups/20241017_120001-Airplane_mode-database.sql.gz
+
+Backup Summary for Airplane_mode at 2024-10-17 12:00:01.714719
+Config  : ./Airplane_mode/private/backups/20241017_120001-Airplane_mode-site_config_backup.json 116.0B
+Database: ./Airplane_mode/private/backups/20241017_120001-Airplane_mode-database.sql.gz         348.7KiB
+Backup for Site Airplane_mode has been successfully completed
+File ./my-bench/private/backups/20241016_180002-my-bench-site_config_backup.json is recent
+File ./my-bench/private/backups/20241015_180002-my-bench-site_config_backup.json is older than 24 hours
+File ./my-bench/private/backups/20241016_120001-my-bench-site_config_backup.json is recent
+File ./my-bench/private/backups/20241015_180002-my-bench-database.sql.gz is older than 24 hours
+File ./my-bench/private/backups/20241016_120001-my-bench-database.sql.gz is recent
+File ./my-bench/private/backups/20241016_180002-my-bench-database.sql.gz is recent
+set -o pipefail; /usr/bin/mariadb-dump --user=_eb4a01807b099b7e --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _eb4a01807b099b7e | /usr/bin/gzip >> ./my-bench/private/backups/20241017_120001-my-bench-database.sql.gz
+
+Backup Summary for my-bench at 2024-10-17 12:00:02.079057
+Config  : ./my-bench/private/backups/20241017_120001-my-bench-site_config_backup.json 116.0B
+Database: ./my-bench/private/backups/20241017_120001-my-bench-database.sql.gz         224.8KiB
+Backup for Site my-bench has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_39f99fb2d3a92313 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _39f99fb2d3a92313 | /usr/bin/gzip >> ./Airplane_mode/private/backups/20241017_180002-Airplane_mode-database.sql.gz
+
+Backup Summary for Airplane_mode at 2024-10-17 18:00:02.769072
+Config  : ./Airplane_mode/private/backups/20241017_180002-Airplane_mode-site_config_backup.json 116.0B
+Database: ./Airplane_mode/private/backups/20241017_180002-Airplane_mode-database.sql.gz         362.7KiB
+Backup for Site Airplane_mode has been successfully completed
+File ./my-bench/private/backups/20241016_180002-my-bench-site_config_backup.json is recent
+File ./my-bench/private/backups/20241017_120001-my-bench-database.sql.gz is recent
+File ./my-bench/private/backups/20241017_120001-my-bench-site_config_backup.json is recent
+File ./my-bench/private/backups/20241016_120001-my-bench-site_config_backup.json is older than 24 hours
+File ./my-bench/private/backups/20241016_120001-my-bench-database.sql.gz is older than 24 hours
+File ./my-bench/private/backups/20241016_180002-my-bench-database.sql.gz is recent
+set -o pipefail; /usr/bin/mariadb-dump --user=_eb4a01807b099b7e --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _eb4a01807b099b7e | /usr/bin/gzip >> ./my-bench/private/backups/20241017_180002-my-bench-database.sql.gz
+
+Backup Summary for my-bench at 2024-10-17 18:00:03.122001
+Config  : ./my-bench/private/backups/20241017_180002-my-bench-site_config_backup.json 116.0B
+Database: ./my-bench/private/backups/20241017_180002-my-bench-database.sql.gz         224.8KiB
+Backup for Site my-bench has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_39f99fb2d3a92313 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _39f99fb2d3a92313 | /usr/bin/gzip >> ./Airplane_mode/private/backups/20241018_120001-Airplane_mode-database.sql.gz
+
+Backup Summary for Airplane_mode at 2024-10-18 12:00:02.356998
+Config  : ./Airplane_mode/private/backups/20241018_120001-Airplane_mode-site_config_backup.json 116.0B
+Database: ./Airplane_mode/private/backups/20241018_120001-Airplane_mode-database.sql.gz         365.1KiB
+Backup for Site Airplane_mode has been successfully completed
+File ./my-bench/private/backups/20241016_180002-my-bench-site_config_backup.json is older than 24 hours
+File ./my-bench/private/backups/20241017_120001-my-bench-database.sql.gz is older than 24 hours
+File ./my-bench/private/backups/20241017_120001-my-bench-site_config_backup.json is older than 24 hours
+File ./my-bench/private/backups/20241017_180002-my-bench-site_config_backup.json is recent
+File ./my-bench/private/backups/20241017_180002-my-bench-database.sql.gz is recent
+File ./my-bench/private/backups/20241016_180002-my-bench-database.sql.gz is older than 24 hours
+set -o pipefail; /usr/bin/mariadb-dump --user=_eb4a01807b099b7e --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _eb4a01807b099b7e | /usr/bin/gzip >> ./my-bench/private/backups/20241018_120002-my-bench-database.sql.gz
+
+Backup Summary for my-bench at 2024-10-18 12:00:02.871685
+Config  : ./my-bench/private/backups/20241018_120002-my-bench-site_config_backup.json 116.0B
+Database: ./my-bench/private/backups/20241018_120002-my-bench-database.sql.gz         224.8KiB
+Backup for Site my-bench has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_39f99fb2d3a92313 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _39f99fb2d3a92313 | /usr/bin/gzip >> ./Airplane_mode/private/backups/20241021_120002-Airplane_mode-database.sql.gz
+
+Backup Summary for Airplane_mode at 2024-10-21 12:00:03.376786
+Config  : ./Airplane_mode/private/backups/20241021_120002-Airplane_mode-site_config_backup.json 116.0B
+Database: ./Airplane_mode/private/backups/20241021_120002-Airplane_mode-database.sql.gz         365.1KiB
+Backup for Site Airplane_mode has been successfully completed
+File ./my-bench/private/backups/20241018_120002-my-bench-database.sql.gz is older than 24 hours
+File ./my-bench/private/backups/20241017_180002-my-bench-site_config_backup.json is older than 24 hours
+File ./my-bench/private/backups/20241017_180002-my-bench-database.sql.gz is older than 24 hours
+File ./my-bench/private/backups/20241018_120002-my-bench-site_config_backup.json is older than 24 hours
+set -o pipefail; /usr/bin/mariadb-dump --user=_eb4a01807b099b7e --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _eb4a01807b099b7e | /usr/bin/gzip >> ./my-bench/private/backups/20241021_120003-my-bench-database.sql.gz
+
+Backup Summary for my-bench at 2024-10-21 12:00:04.173884
+Config  : ./my-bench/private/backups/20241021_120003-my-bench-site_config_backup.json 116.0B
+Database: ./my-bench/private/backups/20241021_120003-my-bench-database.sql.gz         224.8KiB
+Backup for Site my-bench has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_39f99fb2d3a92313 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _39f99fb2d3a92313 | /usr/bin/gzip >> ./Airplane_mode/private/backups/20241022_120003-Airplane_mode-database.sql.gz
+
+Backup Summary for Airplane_mode at 2024-10-22 12:00:05.429902
+Config  : ./Airplane_mode/private/backups/20241022_120003-Airplane_mode-site_config_backup.json 116.0B
+Database: ./Airplane_mode/private/backups/20241022_120003-Airplane_mode-database.sql.gz         365.1KiB
+Backup for Site Airplane_mode has been successfully completed
+File ./my-bench/private/backups/20241021_120003-my-bench-site_config_backup.json is older than 24 hours
+File ./my-bench/private/backups/20241021_120003-my-bench-database.sql.gz is older than 24 hours
+set -o pipefail; /usr/bin/mariadb-dump --user=_eb4a01807b099b7e --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _eb4a01807b099b7e | /usr/bin/gzip >> ./my-bench/private/backups/20241022_120005-my-bench-database.sql.gz
+
+Backup Summary for my-bench at 2024-10-22 12:00:07.508870
+Config  : ./my-bench/private/backups/20241022_120005-my-bench-site_config_backup.json 116.0B
+Database: ./my-bench/private/backups/20241022_120005-my-bench-database.sql.gz         224.8KiB
+Backup for Site my-bench has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_39f99fb2d3a92313 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _39f99fb2d3a92313 | /usr/bin/gzip >> ./Airplane_mode/private/backups/20241022_180055-Airplane_mode-database.sql.gz
+
+Backup Summary for Airplane_mode at 2024-10-22 18:00:55.871164
+Config  : ./Airplane_mode/private/backups/20241022_180055-Airplane_mode-site_config_backup.json 116.0B
+Database: ./Airplane_mode/private/backups/20241022_180055-Airplane_mode-database.sql.gz         365.1KiB
+Backup for Site Airplane_mode has been successfully completed
+File ./my-bench/private/backups/20241022_120005-my-bench-site_config_backup.json is recent
+File ./my-bench/private/backups/20241022_120005-my-bench-database.sql.gz is recent
+set -o pipefail; /usr/bin/mariadb-dump --user=_eb4a01807b099b7e --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _eb4a01807b099b7e | /usr/bin/gzip >> ./my-bench/private/backups/20241022_180055-my-bench-database.sql.gz
+
+Backup Summary for my-bench at 2024-10-22 18:00:56.203586
+Config  : ./my-bench/private/backups/20241022_180055-my-bench-site_config_backup.json 116.0B
+Database: ./my-bench/private/backups/20241022_180055-my-bench-database.sql.gz         224.8KiB
+Backup for Site my-bench has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_39f99fb2d3a92313 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _39f99fb2d3a92313 | /usr/bin/gzip >> ./Airplane_mode/private/backups/20241023_120002-Airplane_mode-database.sql.gz
+
+Backup Summary for Airplane_mode at 2024-10-23 12:00:02.590688
+Config  : ./Airplane_mode/private/backups/20241023_120002-Airplane_mode-site_config_backup.json 116.0B
+Database: ./Airplane_mode/private/backups/20241023_120002-Airplane_mode-database.sql.gz         365.1KiB
+Backup for Site Airplane_mode has been successfully completed
+File ./my-bench/private/backups/20241022_180055-my-bench-site_config_backup.json is recent
+File ./my-bench/private/backups/20241022_120005-my-bench-site_config_backup.json is recent
+File ./my-bench/private/backups/20241022_180055-my-bench-database.sql.gz is recent
+File ./my-bench/private/backups/20241022_120005-my-bench-database.sql.gz is recent
+set -o pipefail; /usr/bin/mariadb-dump --user=_eb4a01807b099b7e --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _eb4a01807b099b7e | /usr/bin/gzip >> ./my-bench/private/backups/20241023_120002-my-bench-database.sql.gz
+
+Backup Summary for my-bench at 2024-10-23 12:00:03.282988
+Config  : ./my-bench/private/backups/20241023_120002-my-bench-site_config_backup.json 116.0B
+Database: ./my-bench/private/backups/20241023_120002-my-bench-database.sql.gz         224.8KiB
+Backup for Site my-bench has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_39f99fb2d3a92313 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _39f99fb2d3a92313 | /usr/bin/gzip >> ./Airplane_mode/private/backups/20241023_180002-Airplane_mode-database.sql.gz
+
+Backup Summary for Airplane_mode at 2024-10-23 18:00:02.722082
+Config  : ./Airplane_mode/private/backups/20241023_180002-Airplane_mode-site_config_backup.json 116.0B
+Database: ./Airplane_mode/private/backups/20241023_180002-Airplane_mode-database.sql.gz         365.2KiB
+Backup for Site Airplane_mode has been successfully completed
+File ./my-bench/private/backups/20241022_180055-my-bench-site_config_backup.json is recent
+File ./my-bench/private/backups/20241023_120002-my-bench-database.sql.gz is recent
+File ./my-bench/private/backups/20241023_120002-my-bench-site_config_backup.json is recent
+File ./my-bench/private/backups/20241022_120005-my-bench-site_config_backup.json is older than 24 hours
+File ./my-bench/private/backups/20241022_180055-my-bench-database.sql.gz is recent
+File ./my-bench/private/backups/20241022_120005-my-bench-database.sql.gz is older than 24 hours
+set -o pipefail; /usr/bin/mariadb-dump --user=_eb4a01807b099b7e --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _eb4a01807b099b7e | /usr/bin/gzip >> ./my-bench/private/backups/20241023_180002-my-bench-database.sql.gz
+
+Backup Summary for my-bench at 2024-10-23 18:00:03.052145
+Config  : ./my-bench/private/backups/20241023_180002-my-bench-site_config_backup.json 116.0B
+Database: ./my-bench/private/backups/20241023_180002-my-bench-database.sql.gz         223.7KiB
+Backup for Site my-bench has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_39f99fb2d3a92313 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _39f99fb2d3a92313 | /usr/bin/gzip >> ./Airplane_mode/private/backups/20241024_120001-Airplane_mode-database.sql.gz
+
+Backup Summary for Airplane_mode at 2024-10-24 12:00:02.611465
+Config  : ./Airplane_mode/private/backups/20241024_120001-Airplane_mode-site_config_backup.json 116.0B
+Database: ./Airplane_mode/private/backups/20241024_120001-Airplane_mode-database.sql.gz         365.2KiB
+Backup for Site Airplane_mode has been successfully completed
+File ./my-bench/private/backups/20241022_180055-my-bench-site_config_backup.json is older than 24 hours
+File ./my-bench/private/backups/20241023_120002-my-bench-database.sql.gz is recent
+File ./my-bench/private/backups/20241023_120002-my-bench-site_config_backup.json is recent
+File ./my-bench/private/backups/20241023_180002-my-bench-database.sql.gz is recent
+File ./my-bench/private/backups/20241023_180002-my-bench-site_config_backup.json is recent
+File ./my-bench/private/backups/20241022_180055-my-bench-database.sql.gz is older than 24 hours
+set -o pipefail; /usr/bin/mariadb-dump --user=_eb4a01807b099b7e --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _eb4a01807b099b7e | /usr/bin/gzip >> ./my-bench/private/backups/20241024_120002-my-bench-database.sql.gz
+
+Backup Summary for my-bench at 2024-10-24 12:00:03.367951
+Config  : ./my-bench/private/backups/20241024_120002-my-bench-site_config_backup.json 116.0B
+Database: ./my-bench/private/backups/20241024_120002-my-bench-database.sql.gz         223.7KiB
+Backup for Site my-bench has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_39f99fb2d3a92313 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _39f99fb2d3a92313 | /usr/bin/gzip >> ./Airplane_mode/private/backups/20241024_180001-Airplane_mode-database.sql.gz
+
+Backup Summary for Airplane_mode at 2024-10-24 18:00:02.368835
+Config  : ./Airplane_mode/private/backups/20241024_180001-Airplane_mode-site_config_backup.json 116.0B
+Database: ./Airplane_mode/private/backups/20241024_180001-Airplane_mode-database.sql.gz         365.2KiB
+Backup for Site Airplane_mode has been successfully completed
+File ./my-bench/private/backups/20241024_120002-my-bench-site_config_backup.json is recent
+File ./my-bench/private/backups/20241023_120002-my-bench-database.sql.gz is older than 24 hours
+File ./my-bench/private/backups/20241023_120002-my-bench-site_config_backup.json is older than 24 hours
+File ./my-bench/private/backups/20241023_180002-my-bench-database.sql.gz is recent
+File ./my-bench/private/backups/20241024_120002-my-bench-database.sql.gz is recent
+File ./my-bench/private/backups/20241023_180002-my-bench-site_config_backup.json is recent
+set -o pipefail; /usr/bin/mariadb-dump --user=_eb4a01807b099b7e --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _eb4a01807b099b7e | /usr/bin/gzip >> ./my-bench/private/backups/20241024_180002-my-bench-database.sql.gz
+
+Backup Summary for my-bench at 2024-10-24 18:00:02.818123
+Config  : ./my-bench/private/backups/20241024_180002-my-bench-site_config_backup.json 116.0B
+Database: ./my-bench/private/backups/20241024_180002-my-bench-database.sql.gz         223.7KiB
+Backup for Site my-bench has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_39f99fb2d3a92313 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _39f99fb2d3a92313 | /usr/bin/gzip >> ./Airplane_mode/private/backups/20241026_120002-Airplane_mode-database.sql.gz
+
+Backup Summary for Airplane_mode at 2024-10-26 12:00:03.586722
+Config  : ./Airplane_mode/private/backups/20241026_120002-Airplane_mode-site_config_backup.json 116.0B
+Database: ./Airplane_mode/private/backups/20241026_120002-Airplane_mode-database.sql.gz         365.3KiB
+Backup for Site Airplane_mode has been successfully completed
+File ./my-bench/private/backups/20241024_120002-my-bench-site_config_backup.json is older than 24 hours
+File ./my-bench/private/backups/20241024_180002-my-bench-database.sql.gz is older than 24 hours
+File ./my-bench/private/backups/20241024_180002-my-bench-site_config_backup.json is older than 24 hours
+File ./my-bench/private/backups/20241023_180002-my-bench-database.sql.gz is older than 24 hours
+File ./my-bench/private/backups/20241024_120002-my-bench-database.sql.gz is older than 24 hours
+File ./my-bench/private/backups/20241023_180002-my-bench-site_config_backup.json is older than 24 hours
+set -o pipefail; /usr/bin/mariadb-dump --user=_eb4a01807b099b7e --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _eb4a01807b099b7e | /usr/bin/gzip >> ./my-bench/private/backups/20241026_120003-my-bench-database.sql.gz
+
+Backup Summary for my-bench at 2024-10-26 12:00:04.490515
+Config  : ./my-bench/private/backups/20241026_120003-my-bench-site_config_backup.json 116.0B
+Database: ./my-bench/private/backups/20241026_120003-my-bench-database.sql.gz         223.7KiB
+Backup for Site my-bench has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_39f99fb2d3a92313 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _39f99fb2d3a92313 | /usr/bin/gzip >> ./Airplane_mode/private/backups/20241028_120002-Airplane_mode-database.sql.gz
+
+Backup Summary for Airplane_mode at 2024-10-28 12:00:03.062031
+Config  : ./Airplane_mode/private/backups/20241028_120002-Airplane_mode-site_config_backup.json 116.0B
+Database: ./Airplane_mode/private/backups/20241028_120002-Airplane_mode-database.sql.gz         365.3KiB
+Backup for Site Airplane_mode has been successfully completed
+File ./my-bench/private/backups/20241026_120003-my-bench-site_config_backup.json is older than 24 hours
+File ./my-bench/private/backups/20241026_120003-my-bench-database.sql.gz is older than 24 hours
+set -o pipefail; /usr/bin/mariadb-dump --user=_eb4a01807b099b7e --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _eb4a01807b099b7e | /usr/bin/gzip >> ./my-bench/private/backups/20241028_120003-my-bench-database.sql.gz
+
+Backup Summary for my-bench at 2024-10-28 12:00:03.519583
+Config  : ./my-bench/private/backups/20241028_120003-my-bench-site_config_backup.json 116.0B
+Database: ./my-bench/private/backups/20241028_120003-my-bench-database.sql.gz         223.7KiB
+Backup for Site my-bench has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_39f99fb2d3a92313 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _39f99fb2d3a92313 | /usr/bin/gzip >> ./Airplane_mode/private/backups/20241105_120002-Airplane_mode-database.sql.gz
+
+Backup Summary for Airplane_mode at 2024-11-05 12:00:03.144254
+Config  : ./Airplane_mode/private/backups/20241105_120002-Airplane_mode-site_config_backup.json 116.0B
+Database: ./Airplane_mode/private/backups/20241105_120002-Airplane_mode-database.sql.gz         365.3KiB
+Backup for Site Airplane_mode has been successfully completed
+File ./my-bench/private/backups/20241028_120003-my-bench-site_config_backup.json is older than 24 hours
+File ./my-bench/private/backups/20241028_120003-my-bench-database.sql.gz is older than 24 hours
+set -o pipefail; /usr/bin/mariadb-dump --user=_eb4a01807b099b7e --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _eb4a01807b099b7e | /usr/bin/gzip >> ./my-bench/private/backups/20241105_120003-my-bench-database.sql.gz
+
+Backup Summary for my-bench at 2024-11-05 12:00:04.000044
+Config  : ./my-bench/private/backups/20241105_120003-my-bench-site_config_backup.json 116.0B
+Database: ./my-bench/private/backups/20241105_120003-my-bench-database.sql.gz         223.7KiB
+Backup for Site my-bench has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_39f99fb2d3a92313 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _39f99fb2d3a92313 | /usr/bin/gzip >> ./Airplane_mode/private/backups/20241106_120002-Airplane_mode-database.sql.gz
+
+Backup Summary for Airplane_mode at 2024-11-06 12:00:02.798750
+Config  : ./Airplane_mode/private/backups/20241106_120002-Airplane_mode-site_config_backup.json 116.0B
+Database: ./Airplane_mode/private/backups/20241106_120002-Airplane_mode-database.sql.gz         369.1KiB
+Backup for Site Airplane_mode has been successfully completed
+File ./my-bench/private/backups/20241105_120003-my-bench-site_config_backup.json is recent
+File ./my-bench/private/backups/20241105_120003-my-bench-database.sql.gz is recent
+set -o pipefail; /usr/bin/mariadb-dump --user=_eb4a01807b099b7e --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _eb4a01807b099b7e | /usr/bin/gzip >> ./my-bench/private/backups/20241106_120002-my-bench-database.sql.gz
+
+Backup Summary for my-bench at 2024-11-06 12:00:03.569941
+Config  : ./my-bench/private/backups/20241106_120002-my-bench-site_config_backup.json 116.0B
+Database: ./my-bench/private/backups/20241106_120002-my-bench-database.sql.gz         223.5KiB
+Backup for Site my-bench has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_bf93fa85d9a62050 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _bf93fa85d9a62050 | /usr/bin/gzip >> ./print-designer.test/private/backups/20241106_120003-print-designer_test-database.sql.gz
+
+Backup Summary for print-designer.test at 2024-11-06 12:00:04.092086
+Config  : ./print-designer.test/private/backups/20241106_120003-print-designer_test-site_config_backup.json 94.0B
+Database: ./print-designer.test/private/backups/20241106_120003-print-designer_test-database.sql.gz         213.9KiB
+Backup for Site print-designer.test has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_39f99fb2d3a92313 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _39f99fb2d3a92313 | /usr/bin/gzip >> ./Airplane_mode/private/backups/20241106_180002-Airplane_mode-database.sql.gz
+
+Backup Summary for Airplane_mode at 2024-11-06 18:00:02.774980
+Config  : ./Airplane_mode/private/backups/20241106_180002-Airplane_mode-site_config_backup.json 116.0B
+Database: ./Airplane_mode/private/backups/20241106_180002-Airplane_mode-database.sql.gz         369.9KiB
+Backup for Site Airplane_mode has been successfully completed
+File ./my-bench/private/backups/20241105_120003-my-bench-site_config_backup.json is older than 24 hours
+File ./my-bench/private/backups/20241106_120002-my-bench-database.sql.gz is recent
+File ./my-bench/private/backups/20241106_120002-my-bench-site_config_backup.json is recent
+File ./my-bench/private/backups/20241105_120003-my-bench-database.sql.gz is older than 24 hours
+set -o pipefail; /usr/bin/mariadb-dump --user=_eb4a01807b099b7e --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _eb4a01807b099b7e | /usr/bin/gzip >> ./my-bench/private/backups/20241106_180002-my-bench-database.sql.gz
+
+Backup Summary for my-bench at 2024-11-06 18:00:03.222776
+Config  : ./my-bench/private/backups/20241106_180002-my-bench-site_config_backup.json 116.0B
+Database: ./my-bench/private/backups/20241106_180002-my-bench-database.sql.gz         224.3KiB
+Backup for Site my-bench has been successfully completed
+File ./print-designer.test/private/backups/20241106_120003-print-designer_test-database.sql.gz is recent
+File ./print-designer.test/private/backups/20241106_120003-print-designer_test-site_config_backup.json is recent
+set -o pipefail; /usr/bin/mariadb-dump --user=_bf93fa85d9a62050 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _bf93fa85d9a62050 | /usr/bin/gzip >> ./print-designer.test/private/backups/20241106_180003-print-designer_test-database.sql.gz
+
+Backup Summary for print-designer.test at 2024-11-06 18:00:03.690497
+Config  : ./print-designer.test/private/backups/20241106_180003-print-designer_test-site_config_backup.json 94.0B
+Database: ./print-designer.test/private/backups/20241106_180003-print-designer_test-database.sql.gz         213.9KiB
+Backup for Site print-designer.test has been successfully completed
