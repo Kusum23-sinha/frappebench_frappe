@@ -854,3 +854,475 @@ Backup Summary for print-designer.test at 2024-11-06 18:00:03.690497
 Config  : ./print-designer.test/private/backups/20241106_180003-print-designer_test-site_config_backup.json 94.0B
 Database: ./print-designer.test/private/backups/20241106_180003-print-designer_test-database.sql.gz         213.9KiB
 Backup for Site print-designer.test has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_39f99fb2d3a92313 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _39f99fb2d3a92313 | /usr/bin/gzip >> ./Airplane_mode/private/backups/20241107_120002-Airplane_mode-database.sql.gz
+
+Backup Summary for Airplane_mode at 2024-11-07 12:00:02.608514
+Config  : ./Airplane_mode/private/backups/20241107_120002-Airplane_mode-site_config_backup.json 116.0B
+Database: ./Airplane_mode/private/backups/20241107_120002-Airplane_mode-database.sql.gz         374.6KiB
+Backup for Site Airplane_mode has been successfully completed
+File ./my-bench/private/backups/20241106_180002-my-bench-site_config_backup.json is recent
+File ./my-bench/private/backups/20241106_120002-my-bench-database.sql.gz is recent
+File ./my-bench/private/backups/20241106_120002-my-bench-site_config_backup.json is recent
+File ./my-bench/private/backups/20241106_180002-my-bench-database.sql.gz is recent
+set -o pipefail; /usr/bin/mariadb-dump --user=_eb4a01807b099b7e --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _eb4a01807b099b7e | /usr/bin/gzip >> ./my-bench/private/backups/20241107_120002-my-bench-database.sql.gz
+
+Backup Summary for my-bench at 2024-11-07 12:00:03.186745
+Config  : ./my-bench/private/backups/20241107_120002-my-bench-site_config_backup.json 116.0B
+Database: ./my-bench/private/backups/20241107_120002-my-bench-database.sql.gz         224.3KiB
+Backup for Site my-bench has been successfully completed
+File ./print-designer.test/private/backups/20241106_180003-print-designer_test-database.sql.gz is recent
+File ./print-designer.test/private/backups/20241106_120003-print-designer_test-database.sql.gz is recent
+File ./print-designer.test/private/backups/20241106_180003-print-designer_test-site_config_backup.json is recent
+File ./print-designer.test/private/backups/20241106_120003-print-designer_test-site_config_backup.json is recent
+set -o pipefail; /usr/bin/mariadb-dump --user=_bf93fa85d9a62050 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _bf93fa85d9a62050 | /usr/bin/gzip >> ./print-designer.test/private/backups/20241107_120003-print-designer_test-database.sql.gz
+
+Backup Summary for print-designer.test at 2024-11-07 12:00:03.722681
+Config  : ./print-designer.test/private/backups/20241107_120003-print-designer_test-site_config_backup.json 94.0B
+Database: ./print-designer.test/private/backups/20241107_120003-print-designer_test-database.sql.gz         213.9KiB
+Backup for Site print-designer.test has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_39f99fb2d3a92313 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _39f99fb2d3a92313 | /usr/bin/gzip >> ./Airplane_mode/private/backups/20241108_120002-Airplane_mode-database.sql.gz
+
+Backup Summary for Airplane_mode at 2024-11-08 12:00:02.530755
+Config  : ./Airplane_mode/private/backups/20241108_120002-Airplane_mode-site_config_backup.json 116.0B
+Database: ./Airplane_mode/private/backups/20241108_120002-Airplane_mode-database.sql.gz         408.1KiB
+Backup for Site Airplane_mode has been successfully completed
+File ./my-bench/private/backups/20241107_120002-my-bench-database.sql.gz is recent
+File ./my-bench/private/backups/20241106_180002-my-bench-site_config_backup.json is older than 24 hours
+File ./my-bench/private/backups/20241107_120002-my-bench-site_config_backup.json is recent
+File ./my-bench/private/backups/20241106_120002-my-bench-database.sql.gz is older than 24 hours
+File ./my-bench/private/backups/20241106_120002-my-bench-site_config_backup.json is older than 24 hours
+File ./my-bench/private/backups/20241106_180002-my-bench-database.sql.gz is older than 24 hours
+set -o pipefail; /usr/bin/mariadb-dump --user=_eb4a01807b099b7e --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _eb4a01807b099b7e | /usr/bin/gzip >> ./my-bench/private/backups/20241108_120002-my-bench-database.sql.gz
+
+Backup Summary for my-bench at 2024-11-08 12:00:03.228869
+Config  : ./my-bench/private/backups/20241108_120002-my-bench-site_config_backup.json 116.0B
+Database: ./my-bench/private/backups/20241108_120002-my-bench-database.sql.gz         225.0KiB
+Backup for Site my-bench has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_39f99fb2d3a92313 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _39f99fb2d3a92313 | /usr/bin/gzip >> ./Airplane_mode/private/backups/20241108_180001-Airplane_mode-database.sql.gz
+
+Backup Summary for Airplane_mode at 2024-11-08 18:00:01.995807
+Config  : ./Airplane_mode/private/backups/20241108_180001-Airplane_mode-site_config_backup.json 116.0B
+Database: ./Airplane_mode/private/backups/20241108_180001-Airplane_mode-database.sql.gz         411.1KiB
+Backup for Site Airplane_mode has been successfully completed
+File ./my-bench/private/backups/20241108_120002-my-bench-database.sql.gz is recent
+File ./my-bench/private/backups/20241107_120002-my-bench-database.sql.gz is older than 24 hours
+File ./my-bench/private/backups/20241107_120002-my-bench-site_config_backup.json is older than 24 hours
+File ./my-bench/private/backups/20241108_120002-my-bench-site_config_backup.json is recent
+set -o pipefail; /usr/bin/mariadb-dump --user=_eb4a01807b099b7e --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _eb4a01807b099b7e | /usr/bin/gzip >> ./my-bench/private/backups/20241108_180002-my-bench-database.sql.gz
+
+Backup Summary for my-bench at 2024-11-08 18:00:02.513158
+Config  : ./my-bench/private/backups/20241108_180002-my-bench-site_config_backup.json 116.0B
+Database: ./my-bench/private/backups/20241108_180002-my-bench-database.sql.gz         225.7KiB
+Backup for Site my-bench has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_39f99fb2d3a92313 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _39f99fb2d3a92313 | /usr/bin/gzip >> ./Airplane_mode/private/backups/20241111_120002-Airplane_mode-database.sql.gz
+
+Backup Summary for Airplane_mode at 2024-11-11 12:00:02.777474
+Config  : ./Airplane_mode/private/backups/20241111_120002-Airplane_mode-site_config_backup.json 183.0B
+Database: ./Airplane_mode/private/backups/20241111_120002-Airplane_mode-database.sql.gz         758.4KiB
+Backup for Site Airplane_mode has been successfully completed
+File ./my-bench/private/backups/20241108_120002-my-bench-database.sql.gz is older than 24 hours
+File ./my-bench/private/backups/20241108_180002-my-bench-database.sql.gz is older than 24 hours
+File ./my-bench/private/backups/20241108_120002-my-bench-site_config_backup.json is older than 24 hours
+File ./my-bench/private/backups/20241108_180002-my-bench-site_config_backup.json is older than 24 hours
+set -o pipefail; /usr/bin/mariadb-dump --user=_eb4a01807b099b7e --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _eb4a01807b099b7e | /usr/bin/gzip >> ./my-bench/private/backups/20241111_120002-my-bench-database.sql.gz
+
+Backup Summary for my-bench at 2024-11-11 12:00:03.339843
+Config  : ./my-bench/private/backups/20241111_120002-my-bench-site_config_backup.json 116.0B
+Database: ./my-bench/private/backups/20241111_120002-my-bench-database.sql.gz         227.8KiB
+Backup for Site my-bench has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_39f99fb2d3a92313 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _39f99fb2d3a92313 | /usr/bin/gzip >> ./Airplane_mode/private/backups/20241113_180001-Airplane_mode-database.sql.gz
+
+Backup Summary for Airplane_mode at 2024-11-13 18:00:02.255074
+Config  : ./Airplane_mode/private/backups/20241113_180001-Airplane_mode-site_config_backup.json 183.0B
+Database: ./Airplane_mode/private/backups/20241113_180001-Airplane_mode-database.sql.gz         966.5KiB
+Backup for Site Airplane_mode has been successfully completed
+File ./my-bench/private/backups/20241111_120002-my-bench-database.sql.gz is older than 24 hours
+File ./my-bench/private/backups/20241111_120002-my-bench-site_config_backup.json is older than 24 hours
+set -o pipefail; /usr/bin/mariadb-dump --user=_eb4a01807b099b7e --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _eb4a01807b099b7e | /usr/bin/gzip >> ./my-bench/private/backups/20241113_180002-my-bench-database.sql.gz
+
+Backup Summary for my-bench at 2024-11-13 18:00:02.744981
+Config  : ./my-bench/private/backups/20241113_180002-my-bench-site_config_backup.json 116.0B
+Database: ./my-bench/private/backups/20241113_180002-my-bench-database.sql.gz         228.3KiB
+Backup for Site my-bench has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_39f99fb2d3a92313 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _39f99fb2d3a92313 | /usr/bin/gzip >> ./Airplane_mode/private/backups/20241114_120001-Airplane_mode-database.sql.gz
+
+Backup Summary for Airplane_mode at 2024-11-14 12:00:02.565578
+Config  : ./Airplane_mode/private/backups/20241114_120001-Airplane_mode-site_config_backup.json 183.0B
+Database: ./Airplane_mode/private/backups/20241114_120001-Airplane_mode-database.sql.gz         1.0MiB
+Backup for Site Airplane_mode has been successfully completed
+File ./my-bench/private/backups/20241113_180002-my-bench-site_config_backup.json is recent
+File ./my-bench/private/backups/20241113_180002-my-bench-database.sql.gz is recent
+set -o pipefail; /usr/bin/mariadb-dump --user=_eb4a01807b099b7e --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _eb4a01807b099b7e | /usr/bin/gzip >> ./my-bench/private/backups/20241114_120002-my-bench-database.sql.gz
+
+Backup Summary for my-bench at 2024-11-14 12:00:03.369523
+Config  : ./my-bench/private/backups/20241114_120002-my-bench-site_config_backup.json 116.0B
+Database: ./my-bench/private/backups/20241114_120002-my-bench-database.sql.gz         228.3KiB
+Backup for Site my-bench has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_39f99fb2d3a92313 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _39f99fb2d3a92313 | /usr/bin/gzip >> ./Airplane_mode/private/backups/20241114_180001-Airplane_mode-database.sql.gz
+
+Backup Summary for Airplane_mode at 2024-11-14 18:00:02.380112
+Config  : ./Airplane_mode/private/backups/20241114_180001-Airplane_mode-site_config_backup.json 183.0B
+Database: ./Airplane_mode/private/backups/20241114_180001-Airplane_mode-database.sql.gz         1.0MiB
+Backup for Site Airplane_mode has been successfully completed
+File ./my-bench/private/backups/20241113_180002-my-bench-site_config_backup.json is recent
+File ./my-bench/private/backups/20241114_120002-my-bench-database.sql.gz is recent
+File ./my-bench/private/backups/20241114_120002-my-bench-site_config_backup.json is recent
+File ./my-bench/private/backups/20241113_180002-my-bench-database.sql.gz is recent
+set -o pipefail; /usr/bin/mariadb-dump --user=_eb4a01807b099b7e --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _eb4a01807b099b7e | /usr/bin/gzip >> ./my-bench/private/backups/20241114_180002-my-bench-database.sql.gz
+
+Backup Summary for my-bench at 2024-11-14 18:00:02.899686
+Config  : ./my-bench/private/backups/20241114_180002-my-bench-site_config_backup.json 116.0B
+Database: ./my-bench/private/backups/20241114_180002-my-bench-database.sql.gz         228.3KiB
+Backup for Site my-bench has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_39f99fb2d3a92313 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _39f99fb2d3a92313 | /usr/bin/gzip >> ./Airplane_mode/private/backups/20241115_120003-Airplane_mode-database.sql.gz
+
+Backup Summary for Airplane_mode at 2024-11-15 12:00:06.738482
+Config  : ./Airplane_mode/private/backups/20241115_120003-Airplane_mode-site_config_backup.json 183.0B
+Database: ./Airplane_mode/private/backups/20241115_120003-Airplane_mode-database.sql.gz         1.1MiB
+Backup for Site Airplane_mode has been successfully completed
+File ./my-bench/private/backups/20241113_180002-my-bench-site_config_backup.json is older than 24 hours
+File ./my-bench/private/backups/20241114_120002-my-bench-database.sql.gz is older than 24 hours
+File ./my-bench/private/backups/20241114_180002-my-bench-database.sql.gz is recent
+File ./my-bench/private/backups/20241114_120002-my-bench-site_config_backup.json is older than 24 hours
+File ./my-bench/private/backups/20241114_180002-my-bench-site_config_backup.json is recent
+File ./my-bench/private/backups/20241113_180002-my-bench-database.sql.gz is older than 24 hours
+set -o pipefail; /usr/bin/mariadb-dump --user=_eb4a01807b099b7e --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _eb4a01807b099b7e | /usr/bin/gzip >> ./my-bench/private/backups/20241115_120007-my-bench-database.sql.gz
+
+Backup Summary for my-bench at 2024-11-15 12:00:09.477913
+Config  : ./my-bench/private/backups/20241115_120007-my-bench-site_config_backup.json 116.0B
+Database: ./my-bench/private/backups/20241115_120007-my-bench-database.sql.gz         227.5KiB
+Backup for Site my-bench has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_39f99fb2d3a92313 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _39f99fb2d3a92313 | /usr/bin/gzip >> ./Airplane_mode/private/backups/20241115_180002-Airplane_mode-database.sql.gz
+
+Backup Summary for Airplane_mode at 2024-11-15 18:00:03.040208
+Config  : ./Airplane_mode/private/backups/20241115_180002-Airplane_mode-site_config_backup.json 183.0B
+Database: ./Airplane_mode/private/backups/20241115_180002-Airplane_mode-database.sql.gz         1.1MiB
+Backup for Site Airplane_mode has been successfully completed
+File ./my-bench/private/backups/20241115_120007-my-bench-site_config_backup.json is recent
+File ./my-bench/private/backups/20241114_180002-my-bench-database.sql.gz is older than 24 hours
+File ./my-bench/private/backups/20241114_180002-my-bench-site_config_backup.json is older than 24 hours
+File ./my-bench/private/backups/20241115_120007-my-bench-database.sql.gz is recent
+set -o pipefail; /usr/bin/mariadb-dump --user=_eb4a01807b099b7e --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _eb4a01807b099b7e | /usr/bin/gzip >> ./my-bench/private/backups/20241115_180003-my-bench-database.sql.gz
+
+Backup Summary for my-bench at 2024-11-15 18:00:03.413570
+Config  : ./my-bench/private/backups/20241115_180003-my-bench-site_config_backup.json 116.0B
+Database: ./my-bench/private/backups/20241115_180003-my-bench-database.sql.gz         227.5KiB
+Backup for Site my-bench has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_39f99fb2d3a92313 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _39f99fb2d3a92313 | /usr/bin/gzip >> ./Airplane_mode/private/backups/20241118_120002-Airplane_mode-database.sql.gz
+
+Backup Summary for Airplane_mode at 2024-11-18 12:00:03.690263
+Config  : ./Airplane_mode/private/backups/20241118_120002-Airplane_mode-site_config_backup.json 183.0B
+Database: ./Airplane_mode/private/backups/20241118_120002-Airplane_mode-database.sql.gz         1.1MiB
+Backup for Site Airplane_mode has been successfully completed
+File ./my-bench/private/backups/20241115_120007-my-bench-site_config_backup.json is older than 24 hours
+File ./my-bench/private/backups/20241115_180003-my-bench-site_config_backup.json is older than 24 hours
+File ./my-bench/private/backups/20241115_120007-my-bench-database.sql.gz is older than 24 hours
+File ./my-bench/private/backups/20241115_180003-my-bench-database.sql.gz is older than 24 hours
+set -o pipefail; /usr/bin/mariadb-dump --user=_eb4a01807b099b7e --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _eb4a01807b099b7e | /usr/bin/gzip >> ./my-bench/private/backups/20241118_120003-my-bench-database.sql.gz
+
+Backup Summary for my-bench at 2024-11-18 12:00:04.616108
+Config  : ./my-bench/private/backups/20241118_120003-my-bench-site_config_backup.json 116.0B
+Database: ./my-bench/private/backups/20241118_120003-my-bench-database.sql.gz         227.5KiB
+Backup for Site my-bench has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_39f99fb2d3a92313 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _39f99fb2d3a92313 | /usr/bin/gzip >> ./Airplane_mode/private/backups/20241118_180002-Airplane_mode-database.sql.gz
+
+Backup Summary for Airplane_mode at 2024-11-18 18:00:03.707443
+Config  : ./Airplane_mode/private/backups/20241118_180002-Airplane_mode-site_config_backup.json 183.0B
+Database: ./Airplane_mode/private/backups/20241118_180002-Airplane_mode-database.sql.gz         1.1MiB
+Backup for Site Airplane_mode has been successfully completed
+File ./my-bench/private/backups/20241118_120003-my-bench-site_config_backup.json is recent
+File ./my-bench/private/backups/20241118_120003-my-bench-database.sql.gz is recent
+set -o pipefail; /usr/bin/mariadb-dump --user=_eb4a01807b099b7e --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _eb4a01807b099b7e | /usr/bin/gzip >> ./my-bench/private/backups/20241118_180003-my-bench-database.sql.gz
+
+Backup Summary for my-bench at 2024-11-18 18:00:04.471192
+Config  : ./my-bench/private/backups/20241118_180003-my-bench-site_config_backup.json 116.0B
+Database: ./my-bench/private/backups/20241118_180003-my-bench-database.sql.gz         227.5KiB
+Backup for Site my-bench has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_39f99fb2d3a92313 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _39f99fb2d3a92313 | /usr/bin/gzip >> ./Airplane_mode/private/backups/20241119_180002-Airplane_mode-database.sql.gz
+
+b'mariadb-dump: Got error: 2026: "TLS/SSL error: certificate is not yet valid" when trying to connect\n'
+Backup failed for Site Airplane_mode. Database or site_config.json may be corrupted
+Traceback with variables (most recent call last):
+  File "apps/frappe/frappe/commands/site.py", line 778, in backup
+    odb = scheduled_backup(
+      context = {'sites': ['Airplane_mode', 'my-bench'], 'force': False, 'verbose': True, 'profile': False}
+      with_files = False
+      backup_path = None
+      backup_path_db = None
+      backup_path_files = None
+      backup_path_private_files = None
+      backup_path_conf = None
+      ignore_backup_conf = False
+      verbose = True
+      compress = False
+      include = ''
+      exclude = ''
+      old_backup_metadata = False
+      scheduled_backup = <function scheduled_backup at 0x7d2af5c328c0>
+      exit_code = 0
+      rollback_callback = None
+      site = 'Airplane_mode'
+  File "apps/frappe/frappe/utils/backups.py", line 564, in scheduled_backup
+    return new_backup(
+      older_than = 6
+      ignore_files = True
+      backup_path = None
+      backup_path_db = None
+      backup_path_files = None
+      backup_path_private_files = None
+      backup_path_conf = None
+      ignore_conf = False
+      include_doctypes = ''
+      exclude_doctypes = ''
+      compress = False
+      force = True
+      verbose = True
+      old_backup_metadata = False
+      rollback_callback = <frappe.utils.CallbackManager object at 0x7d2af4bdef50>
+  File "apps/frappe/frappe/utils/backups.py", line 621, in new_backup
+    odb.get_backup(older_than, ignore_files, force=force)
+      older_than = 6
+      ignore_files = True
+      backup_path = None
+      backup_path_db = None
+      backup_path_files = None
+      backup_path_private_files = None
+      backup_path_conf = None
+      ignore_conf = False
+      include_doctypes = ''
+      exclude_doctypes = ''
+      compress = False
+      force = True
+      verbose = True
+      old_backup_metadata = False
+      rollback_callback = <frappe.utils.CallbackManager object at 0x7d2af4bdef50>
+      odb = <frappe.utils.backups.BackupGenerator object at 0x7d2af4bde830>
+  File "apps/frappe/frappe/utils/backups.py", line 193, in get_backup
+    self.delete_if_step_fails(self.take_dump, self.backup_path_db)
+      self = <frappe.utils.backups.BackupGenerator object at 0x7d2af4bde830>
+      older_than = 6
+      ignore_files = True
+      force = True
+      last_db = False
+      last_file = False
+      last_private_file = False
+      site_config_backup_path = False
+  File "apps/frappe/frappe/utils/backups.py", line 517, in delete_if_step_fails
+    raise e
+      self = <frappe.utils.backups.BackupGenerator object at 0x7d2af4bde830>
+      step = <bound method BackupGenerator.take_dump of <frappe.utils.backups.BackupGenerator object at 0x7d2af4bde830>>
+      paths = ('./Airplane_mode/private/backups/20241119_180002-Airplane_mode-database.sql.gz',)
+      path = './Airplane_mode/private/backups/20241119_180002-Airplane_mode-database.sql.gz'
+  File "apps/frappe/frappe/utils/backups.py", line 512, in delete_if_step_fails
+    step()
+      self = <frappe.utils.backups.BackupGenerator object at 0x7d2af4bde830>
+      step = <bound method BackupGenerator.take_dump of <frappe.utils.backups.BackupGenerator object at 0x7d2af4bde830>>
+      paths = ('./Airplane_mode/private/backups/20241119_180002-Airplane_mode-database.sql.gz',)
+      path = './Airplane_mode/private/backups/20241119_180002-Airplane_mode-database.sql.gz'
+  File "apps/frappe/frappe/utils/backups.py", line 465, in take_dump
+    frappe.utils.execute_in_shell(command, low_priority=True, check_exit_code=True)
+      shlex = <module 'shlex' from '/usr/lib/python3.10/shlex.py'>
+      frappe = <module 'frappe' from 'apps/frappe/frappe/__init__.py'>
+      get_app_branch = <function get_app_branch at 0x7d2af3f0f760>
+      gzip_exc = '/usr/bin/gzip'
+      database_header_content = ['begin frappe metadata', '[frappe]', 'version = 15.40.6', 'branch = version-15', 'end frappe metadata', '']
+      generated_header = '-- begin frappe metadata\n-- [frappe]\n-- version = 15.40.6\n-- branch = version-15\n-- end frappe metadata\n-- \n'
+      f = <_io.TextIOWrapper name='./Airplane_mode/private/backups/20241119_180002-Airplane_mode-database.sql.gz' encoding='UTF-8'>
+      cmd = ['/usr/bin/mariadb-dump', '--user=_39f99fb2d3a92313 --host=127.0.0.1 --port=3306 --password=cYfGyTOL6ZBANwGV --single-transaction --quick --lock-tables=false _39f99fb2d3a92313']
+      extra = []
+      get_command = <function get_command at 0x7d2af4e777f0>
+      bin = '/usr/bin/mariadb-dump'
+      args = ['--user=_39f99fb2d3a92313', '--host=127.0.0.1', '--port=3306', '--password=cYfGyTOL6ZBANwGV', '--single-transaction', '--quick', '--lock-tables=false', '_39f99fb2d3a92313']
+      bin_name = 'mariadb-dump'
+      command = 'set -o pipefail; /usr/bin/mariadb-dump --user=_39f99fb2d3a92313 --host=127.0.0.1 --port=3306 --password=cYfGyTOL6ZBANwGV --single-transaction --quick --lock-tables=false _39f99fb2d3a92313 | /usr/bin/gzip >> ./Airplane_mode/private/backups/20241119_180002-Airplane_mode-database.sql.gz'
+      self = <frappe.utils.backups.BackupGenerator object at 0x7d2af4bde830>
+  File "apps/frappe/frappe/utils/__init__.py", line 484, in execute_in_shell
+    raise frappe.CommandFailedError(
+      cmd = 'set -o pipefail; /usr/bin/mariadb-dump --user=_39f99fb2d3a92313 --host=127.0.0.1 --port=3306 --password=cYfGyTOL6ZBANwGV --single-transaction --quick --lock-tables=false _39f99fb2d3a92313 | /usr/bin/gzip >> ./Airplane_mode/private/backups/20241119_180002-Airplane_mode-database.sql.gz'
+      verbose = False
+      low_priority = True
+      check_exit_code = True
+      shlex = <module 'shlex' from '/usr/lib/python3.10/shlex.py'>
+      tempfile = <module 'tempfile' from '/usr/lib/python3.10/tempfile.py'>
+      Popen = <class 'subprocess.Popen'>
+      stdout = <_io.BufferedRandom name=6>
+      stderr = <_io.BufferedRandom name=7>
+      kwargs = <exception while printing> Traceback (most recent call last):
+          File "env/lib/python3.10/site-packages/traceback_with_variables/core.py", line 222, in _to_cropped_str
+            raw = print_(obj)
+          File "apps/frappe/frappe/utils/__init__.py", line 326, in dict_printer
+            v = deepcopy(v)
+          File "/usr/lib/python3.10/copy.py", line 146, in deepcopy
+            y = copier(x, memo)
+          File "/usr/lib/python3.10/copy.py", line 231, in _deepcopy_dict
+            y[deepcopy(key, memo)] = deepcopy(value, memo)
+          File "/usr/lib/python3.10/copy.py", line 161, in deepcopy
+            rv = reductor(4)
+        TypeError: cannot pickle '_io.BufferedRandom' object
+        
+      p = <Popen: returncode: 2 args: 'set -o pipefail; /usr/bin/mariadb-dump --user=_...>
+      exit_code = 2
+      out = b''
+      err = b'mariadb-dump: Got error: 2026: "TLS/SSL error: certificate is not yet valid" when trying to connect\n'
+      failed = 2
+frappe.exceptions.CommandFailedError: Command failed
+File ./Airplane_mode/private/backups/20241118_180002-Airplane_mode-database.sql.gz is recent
+File ./Airplane_mode/private/backups/20241118_180002-Airplane_mode-site_config_backup.json is recent
+set -o pipefail; /usr/bin/mariadb-dump --user=_39f99fb2d3a92313 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _39f99fb2d3a92313 | /usr/bin/gzip >> ./Airplane_mode/private/backups/20241119_180002-Airplane_mode-database.sql.gz
+
+b'mariadb-dump: Got error: 2026: "TLS/SSL error: certificate is not yet valid" when trying to connect\n'
+Backup failed for Site my-bench. Database or site_config.json may be corrupted
+Traceback with variables (most recent call last):
+  File "apps/frappe/frappe/commands/site.py", line 778, in backup
+    odb = scheduled_backup(
+      context = {'sites': ['Airplane_mode', 'my-bench'], 'force': False, 'verbose': True, 'profile': False}
+      with_files = False
+      backup_path = None
+      backup_path_db = None
+      backup_path_files = None
+      backup_path_private_files = None
+      backup_path_conf = None
+      ignore_backup_conf = False
+      verbose = True
+      compress = False
+      include = ''
+      exclude = ''
+      old_backup_metadata = False
+      scheduled_backup = <function scheduled_backup at 0x7d2af5c328c0>
+      exit_code = 1
+      rollback_callback = None
+      site = 'my-bench'
+  File "apps/frappe/frappe/utils/backups.py", line 564, in scheduled_backup
+    return new_backup(
+      older_than = 6
+      ignore_files = True
+      backup_path = None
+      backup_path_db = None
+      backup_path_files = None
+      backup_path_private_files = None
+      backup_path_conf = None
+      ignore_conf = False
+      include_doctypes = ''
+      exclude_doctypes = ''
+      compress = False
+      force = True
+      verbose = True
+      old_backup_metadata = False
+      rollback_callback = <frappe.utils.CallbackManager object at 0x7d2af64a4100>
+  File "apps/frappe/frappe/utils/backups.py", line 621, in new_backup
+    odb.get_backup(older_than, ignore_files, force=force)
+      older_than = 6
+      ignore_files = True
+      backup_path = None
+      backup_path_db = None
+      backup_path_files = None
+      backup_path_private_files = None
+      backup_path_conf = None
+      ignore_conf = False
+      include_doctypes = ''
+      exclude_doctypes = ''
+      compress = False
+      force = True
+      verbose = True
+      old_backup_metadata = False
+      rollback_callback = <frappe.utils.CallbackManager object at 0x7d2af64a4100>
+      odb = <frappe.utils.backups.BackupGenerator object at 0x7d2af6463a90>
+  File "apps/frappe/frappe/utils/backups.py", line 193, in get_backup
+    self.delete_if_step_fails(self.take_dump, self.backup_path_db)
+      self = <frappe.utils.backups.BackupGenerator object at 0x7d2af6463a90>
+      older_than = 6
+      ignore_files = True
+      force = True
+      last_db = False
+      last_file = False
+      last_private_file = False
+      site_config_backup_path = False
+  File "apps/frappe/frappe/utils/backups.py", line 517, in delete_if_step_fails
+    raise e
+      self = <frappe.utils.backups.BackupGenerator object at 0x7d2af6463a90>
+      step = <bound method BackupGenerator.take_dump of <frappe.utils.backups.BackupGenerator object at 0x7d2af6463a90>>
+      paths = ('./Airplane_mode/private/backups/20241119_180002-Airplane_mode-database.sql.gz',)
+      path = './Airplane_mode/private/backups/20241119_180002-Airplane_mode-database.sql.gz'
+  File "apps/frappe/frappe/utils/backups.py", line 512, in delete_if_step_fails
+    step()
+      self = <frappe.utils.backups.BackupGenerator object at 0x7d2af6463a90>
+      step = <bound method BackupGenerator.take_dump of <frappe.utils.backups.BackupGenerator object at 0x7d2af6463a90>>
+      paths = ('./Airplane_mode/private/backups/20241119_180002-Airplane_mode-database.sql.gz',)
+      path = './Airplane_mode/private/backups/20241119_180002-Airplane_mode-database.sql.gz'
+  File "apps/frappe/frappe/utils/backups.py", line 465, in take_dump
+    frappe.utils.execute_in_shell(command, low_priority=True, check_exit_code=True)
+      shlex = <module 'shlex' from '/usr/lib/python3.10/shlex.py'>
+      frappe = <module 'frappe' from 'apps/frappe/frappe/__init__.py'>
+      get_app_branch = <function get_app_branch at 0x7d2af3f0f760>
+      gzip_exc = '/usr/bin/gzip'
+      database_header_content = ['begin frappe metadata', '[frappe]', 'version = 15.40.6', 'branch = version-15', 'end frappe metadata', '']
+      generated_header = '-- begin frappe metadata\n-- [frappe]\n-- version = 15.40.6\n-- branch = version-15\n-- end frappe metadata\n-- \n'
+      f = <_io.TextIOWrapper name='./Airplane_mode/private/backups/20241119_180002-Airplane_mode-database.sql.gz' encoding='UTF-8'>
+      cmd = ['/usr/bin/mariadb-dump', '--user=_39f99fb2d3a92313 --host=127.0.0.1 --port=3306 --password=cYfGyTOL6ZBANwGV --single-transaction --quick --lock-tables=false _39f99fb2d3a92313']
+      extra = []
+      get_command = <function get_command at 0x7d2af4e777f0>
+      bin = '/usr/bin/mariadb-dump'
+      args = ['--user=_39f99fb2d3a92313', '--host=127.0.0.1', '--port=3306', '--password=cYfGyTOL6ZBANwGV', '--single-transaction', '--quick', '--lock-tables=false', '_39f99fb2d3a92313']
+      bin_name = 'mariadb-dump'
+      command = 'set -o pipefail; /usr/bin/mariadb-dump --user=_39f99fb2d3a92313 --host=127.0.0.1 --port=3306 --password=cYfGyTOL6ZBANwGV --single-transaction --quick --lock-tables=false _39f99fb2d3a92313 | /usr/bin/gzip >> ./Airplane_mode/private/backups/20241119_180002-Airplane_mode-database.sql.gz'
+      self = <frappe.utils.backups.BackupGenerator object at 0x7d2af6463a90>
+  File "apps/frappe/frappe/utils/__init__.py", line 484, in execute_in_shell
+    raise frappe.CommandFailedError(
+      cmd = 'set -o pipefail; /usr/bin/mariadb-dump --user=_39f99fb2d3a92313 --host=127.0.0.1 --port=3306 --password=cYfGyTOL6ZBANwGV --single-transaction --quick --lock-tables=false _39f99fb2d3a92313 | /usr/bin/gzip >> ./Airplane_mode/private/backups/20241119_180002-Airplane_mode-database.sql.gz'
+      verbose = False
+      low_priority = True
+      check_exit_code = True
+      shlex = <module 'shlex' from '/usr/lib/python3.10/shlex.py'>
+      tempfile = <module 'tempfile' from '/usr/lib/python3.10/tempfile.py'>
+      Popen = <class 'subprocess.Popen'>
+      stdout = <_io.BufferedRandom name=7>
+      stderr = <_io.BufferedRandom name=8>
+      kwargs = <exception while printing> Traceback (most recent call last):
+          File "env/lib/python3.10/site-packages/traceback_with_variables/core.py", line 222, in _to_cropped_str
+            raw = print_(obj)
+          File "apps/frappe/frappe/utils/__init__.py", line 326, in dict_printer
+            v = deepcopy(v)
+          File "/usr/lib/python3.10/copy.py", line 146, in deepcopy
+            y = copier(x, memo)
+          File "/usr/lib/python3.10/copy.py", line 231, in _deepcopy_dict
+            y[deepcopy(key, memo)] = deepcopy(value, memo)
+          File "/usr/lib/python3.10/copy.py", line 161, in deepcopy
+            rv = reductor(4)
+        TypeError: cannot pickle '_io.BufferedRandom' object
+        
+      p = <Popen: returncode: 2 args: 'set -o pipefail; /usr/bin/mariadb-dump --user=_...>
+      exit_code = 2
+      out = b''
+      err = b'mariadb-dump: Got error: 2026: "TLS/SSL error: certificate is not yet valid" when trying to connect\n'
+      failed = 2
+frappe.exceptions.CommandFailedError: Command failed
+set -o pipefail; /usr/bin/mariadb-dump --user=_39f99fb2d3a92313 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _39f99fb2d3a92313 | /usr/bin/gzip >> ./Airplane_mode/private/backups/20241121_120001-Airplane_mode-database.sql.gz
+
+Backup Summary for Airplane_mode at 2024-11-21 12:00:03.171949
+Config  : ./Airplane_mode/private/backups/20241121_120001-Airplane_mode-site_config_backup.json 183.0B
+Database: ./Airplane_mode/private/backups/20241121_120001-Airplane_mode-database.sql.gz         1.1MiB
+Backup for Site Airplane_mode has been successfully completed
+File ./my-bench/private/backups/20241118_180003-my-bench-site_config_backup.json is older than 24 hours
+File ./my-bench/private/backups/20241118_180003-my-bench-database.sql.gz is older than 24 hours
+File ./my-bench/private/backups/20241118_120003-my-bench-site_config_backup.json is older than 24 hours
+File ./my-bench/private/backups/20241118_120003-my-bench-database.sql.gz is older than 24 hours
+set -o pipefail; /usr/bin/mariadb-dump --user=_eb4a01807b099b7e --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _eb4a01807b099b7e | /usr/bin/gzip >> ./my-bench/private/backups/20241121_120003-my-bench-database.sql.gz
+
+Backup Summary for my-bench at 2024-11-21 12:00:04.145494
+Config  : ./my-bench/private/backups/20241121_120003-my-bench-site_config_backup.json 116.0B
+Database: ./my-bench/private/backups/20241121_120003-my-bench-database.sql.gz         225.6KiB
+Backup for Site my-bench has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_39f99fb2d3a92313 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _39f99fb2d3a92313 | /usr/bin/gzip >> ./Airplane_mode/private/backups/20241122_120002-Airplane_mode-database.sql.gz
+
+Backup Summary for Airplane_mode at 2024-11-22 12:00:03.735915
+Config  : ./Airplane_mode/private/backups/20241122_120002-Airplane_mode-site_config_backup.json 183.0B
+Database: ./Airplane_mode/private/backups/20241122_120002-Airplane_mode-database.sql.gz         1.1MiB
+Backup for Site Airplane_mode has been successfully completed
+File ./my-bench/private/backups/20241121_120003-my-bench-site_config_backup.json is recent
+File ./my-bench/private/backups/20241121_120003-my-bench-database.sql.gz is recent
+set -o pipefail; /usr/bin/mariadb-dump --user=_eb4a01807b099b7e --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _eb4a01807b099b7e | /usr/bin/gzip >> ./my-bench/private/backups/20241122_120003-my-bench-database.sql.gz
+
+Backup Summary for my-bench at 2024-11-22 12:00:04.689677
+Config  : ./my-bench/private/backups/20241122_120003-my-bench-site_config_backup.json 116.0B
+Database: ./my-bench/private/backups/20241122_120003-my-bench-database.sql.gz         225.6KiB
+Backup for Site my-bench has been successfully completed

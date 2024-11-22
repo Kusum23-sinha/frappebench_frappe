@@ -1,0 +1,553 @@
+2024-11-08 11:31:30,010 ERROR scheduler Exception in Enqueue Events for Site Airplane_mode
+Traceback (most recent call last):
+  File "/home/ng/frappe/apps/frappe/frappe/utils/caching.py", line 57, in wrapper
+    return frappe.local.request_cache[func][args_key]
+KeyError: 5740354900026072187
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ng/frappe/apps/frappe/frappe/utils/scheduler.py", line 75, in enqueue_events_for_site
+    if is_scheduler_inactive():
+  File "/home/ng/frappe/apps/frappe/frappe/utils/scheduler.py", line 117, in is_scheduler_inactive
+    if is_scheduler_disabled(verbose=verbose):
+  File "/home/ng/frappe/apps/frappe/frappe/utils/scheduler.py", line 130, in is_scheduler_disabled
+    frappe.db.get_single_value("System Settings", "enable_scheduler")
+  File "/home/ng/frappe/apps/frappe/frappe/database/database.py", line 837, in get_single_value
+    df = frappe.get_meta(doctype).get_field(fieldname)
+  File "/home/ng/frappe/apps/frappe/frappe/__init__.py", line 1367, in get_meta
+    return frappe.model.meta.get_meta(doctype, cached=cached)
+  File "/home/ng/frappe/apps/frappe/frappe/model/meta.py", line 63, in get_meta
+    meta = Meta(doctype)
+  File "/home/ng/frappe/apps/frappe/frappe/model/meta.py", line 117, in __init__
+    super().__init__("DocType", doctype)
+  File "/home/ng/frappe/apps/frappe/frappe/model/document.py", line 126, in __init__
+    self.load_from_db()
+  File "/home/ng/frappe/apps/frappe/frappe/model/meta.py", line 123, in load_from_db
+    super().load_from_db()
+  File "/home/ng/frappe/apps/frappe/frappe/model/document.py", line 199, in load_from_db
+    self.set(df.fieldname, children)
+  File "/home/ng/frappe/apps/frappe/frappe/model/base_document.py", line 236, in set
+    self.extend(key, value)
+  File "/home/ng/frappe/apps/frappe/frappe/model/base_document.py", line 294, in extend
+    self.append(key, v)
+  File "/home/ng/frappe/apps/frappe/frappe/model/base_document.py", line 262, in append
+    ret_value = self._init_child(value, key)
+  File "/home/ng/frappe/apps/frappe/frappe/model/base_document.py", line 308, in _init_child
+    value = get_controller(doctype)(value)
+  File "/home/ng/frappe/apps/frappe/frappe/model/base_document.py", line 66, in get_controller
+    return import_controller(doctype)
+  File "/home/ng/frappe/apps/frappe/frappe/model/base_document.py", line 88, in import_controller
+    class_overrides = frappe.get_hooks("override_doctype_class")
+  File "/home/ng/frappe/apps/frappe/frappe/__init__.py", line 1648, in get_hooks
+    hooks = _dict(_load_app_hooks())
+  File "/home/ng/frappe/apps/frappe/frappe/utils/caching.py", line 59, in wrapper
+    return_val = func(*args, **kwargs)
+  File "/home/ng/frappe/apps/frappe/frappe/__init__.py", line 1631, in _load_app_hooks
+    append_hook(hooks, key, value)
+  File "/home/ng/frappe/apps/frappe/frappe/__init__.py", line 1669, in append_hook
+    append_hook(target[key], inkey, value[inkey])
+  File "/home/ng/frappe/apps/frappe/frappe/__init__.py", line 1669, in append_hook
+    append_hook(target[key], inkey, value[inkey])
+  File "/home/ng/frappe/apps/frappe/frappe/__init__.py", line 1672, in append_hook
+    target.setdefault(key, [])
+AttributeError: 'list' object has no attribute 'setdefault'
+2024-11-08 11:33:25,696 ERROR scheduler Exception in Enqueue Events for Site Airplane_mode
+Traceback (most recent call last):
+  File "/home/ng/frappe/apps/frappe/frappe/utils/caching.py", line 57, in wrapper
+    return frappe.local.request_cache[func][args_key]
+KeyError: 5740354900026072187
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ng/frappe/apps/frappe/frappe/utils/scheduler.py", line 75, in enqueue_events_for_site
+    if is_scheduler_inactive():
+  File "/home/ng/frappe/apps/frappe/frappe/utils/scheduler.py", line 117, in is_scheduler_inactive
+    if is_scheduler_disabled(verbose=verbose):
+  File "/home/ng/frappe/apps/frappe/frappe/utils/scheduler.py", line 130, in is_scheduler_disabled
+    frappe.db.get_single_value("System Settings", "enable_scheduler")
+  File "/home/ng/frappe/apps/frappe/frappe/database/database.py", line 837, in get_single_value
+    df = frappe.get_meta(doctype).get_field(fieldname)
+  File "/home/ng/frappe/apps/frappe/frappe/__init__.py", line 1367, in get_meta
+    return frappe.model.meta.get_meta(doctype, cached=cached)
+  File "/home/ng/frappe/apps/frappe/frappe/model/meta.py", line 63, in get_meta
+    meta = Meta(doctype)
+  File "/home/ng/frappe/apps/frappe/frappe/model/meta.py", line 117, in __init__
+    super().__init__("DocType", doctype)
+  File "/home/ng/frappe/apps/frappe/frappe/model/document.py", line 126, in __init__
+    self.load_from_db()
+  File "/home/ng/frappe/apps/frappe/frappe/model/meta.py", line 123, in load_from_db
+    super().load_from_db()
+  File "/home/ng/frappe/apps/frappe/frappe/model/document.py", line 199, in load_from_db
+    self.set(df.fieldname, children)
+  File "/home/ng/frappe/apps/frappe/frappe/model/base_document.py", line 236, in set
+    self.extend(key, value)
+  File "/home/ng/frappe/apps/frappe/frappe/model/base_document.py", line 294, in extend
+    self.append(key, v)
+  File "/home/ng/frappe/apps/frappe/frappe/model/base_document.py", line 262, in append
+    ret_value = self._init_child(value, key)
+  File "/home/ng/frappe/apps/frappe/frappe/model/base_document.py", line 308, in _init_child
+    value = get_controller(doctype)(value)
+  File "/home/ng/frappe/apps/frappe/frappe/model/base_document.py", line 66, in get_controller
+    return import_controller(doctype)
+  File "/home/ng/frappe/apps/frappe/frappe/model/base_document.py", line 88, in import_controller
+    class_overrides = frappe.get_hooks("override_doctype_class")
+  File "/home/ng/frappe/apps/frappe/frappe/__init__.py", line 1648, in get_hooks
+    hooks = _dict(_load_app_hooks())
+  File "/home/ng/frappe/apps/frappe/frappe/utils/caching.py", line 59, in wrapper
+    return_val = func(*args, **kwargs)
+  File "/home/ng/frappe/apps/frappe/frappe/__init__.py", line 1631, in _load_app_hooks
+    append_hook(hooks, key, value)
+  File "/home/ng/frappe/apps/frappe/frappe/__init__.py", line 1669, in append_hook
+    append_hook(target[key], inkey, value[inkey])
+  File "/home/ng/frappe/apps/frappe/frappe/__init__.py", line 1669, in append_hook
+    append_hook(target[key], inkey, value[inkey])
+  File "/home/ng/frappe/apps/frappe/frappe/__init__.py", line 1672, in append_hook
+    target.setdefault(key, [])
+AttributeError: 'list' object has no attribute 'setdefault'
+2024-11-08 11:34:25,866 ERROR scheduler Exception in Enqueue Events for Site Airplane_mode
+Traceback (most recent call last):
+  File "/home/ng/frappe/apps/frappe/frappe/utils/caching.py", line 57, in wrapper
+    return frappe.local.request_cache[func][args_key]
+KeyError: 5740354900026072187
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ng/frappe/apps/frappe/frappe/utils/scheduler.py", line 75, in enqueue_events_for_site
+    if is_scheduler_inactive():
+  File "/home/ng/frappe/apps/frappe/frappe/utils/scheduler.py", line 117, in is_scheduler_inactive
+    if is_scheduler_disabled(verbose=verbose):
+  File "/home/ng/frappe/apps/frappe/frappe/utils/scheduler.py", line 130, in is_scheduler_disabled
+    frappe.db.get_single_value("System Settings", "enable_scheduler")
+  File "/home/ng/frappe/apps/frappe/frappe/database/database.py", line 837, in get_single_value
+    df = frappe.get_meta(doctype).get_field(fieldname)
+  File "/home/ng/frappe/apps/frappe/frappe/__init__.py", line 1367, in get_meta
+    return frappe.model.meta.get_meta(doctype, cached=cached)
+  File "/home/ng/frappe/apps/frappe/frappe/model/meta.py", line 63, in get_meta
+    meta = Meta(doctype)
+  File "/home/ng/frappe/apps/frappe/frappe/model/meta.py", line 117, in __init__
+    super().__init__("DocType", doctype)
+  File "/home/ng/frappe/apps/frappe/frappe/model/document.py", line 126, in __init__
+    self.load_from_db()
+  File "/home/ng/frappe/apps/frappe/frappe/model/meta.py", line 123, in load_from_db
+    super().load_from_db()
+  File "/home/ng/frappe/apps/frappe/frappe/model/document.py", line 199, in load_from_db
+    self.set(df.fieldname, children)
+  File "/home/ng/frappe/apps/frappe/frappe/model/base_document.py", line 236, in set
+    self.extend(key, value)
+  File "/home/ng/frappe/apps/frappe/frappe/model/base_document.py", line 294, in extend
+    self.append(key, v)
+  File "/home/ng/frappe/apps/frappe/frappe/model/base_document.py", line 262, in append
+    ret_value = self._init_child(value, key)
+  File "/home/ng/frappe/apps/frappe/frappe/model/base_document.py", line 308, in _init_child
+    value = get_controller(doctype)(value)
+  File "/home/ng/frappe/apps/frappe/frappe/model/base_document.py", line 66, in get_controller
+    return import_controller(doctype)
+  File "/home/ng/frappe/apps/frappe/frappe/model/base_document.py", line 88, in import_controller
+    class_overrides = frappe.get_hooks("override_doctype_class")
+  File "/home/ng/frappe/apps/frappe/frappe/__init__.py", line 1648, in get_hooks
+    hooks = _dict(_load_app_hooks())
+  File "/home/ng/frappe/apps/frappe/frappe/utils/caching.py", line 59, in wrapper
+    return_val = func(*args, **kwargs)
+  File "/home/ng/frappe/apps/frappe/frappe/__init__.py", line 1631, in _load_app_hooks
+    append_hook(hooks, key, value)
+  File "/home/ng/frappe/apps/frappe/frappe/__init__.py", line 1669, in append_hook
+    append_hook(target[key], inkey, value[inkey])
+  File "/home/ng/frappe/apps/frappe/frappe/__init__.py", line 1669, in append_hook
+    append_hook(target[key], inkey, value[inkey])
+  File "/home/ng/frappe/apps/frappe/frappe/__init__.py", line 1672, in append_hook
+    target.setdefault(key, [])
+AttributeError: 'list' object has no attribute 'setdefault'
+2024-11-08 11:35:25,976 ERROR scheduler Exception in Enqueue Events for Site Airplane_mode
+Traceback (most recent call last):
+  File "/home/ng/frappe/apps/frappe/frappe/utils/caching.py", line 57, in wrapper
+    return frappe.local.request_cache[func][args_key]
+KeyError: 5740354900026072187
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ng/frappe/apps/frappe/frappe/utils/scheduler.py", line 75, in enqueue_events_for_site
+    if is_scheduler_inactive():
+  File "/home/ng/frappe/apps/frappe/frappe/utils/scheduler.py", line 117, in is_scheduler_inactive
+    if is_scheduler_disabled(verbose=verbose):
+  File "/home/ng/frappe/apps/frappe/frappe/utils/scheduler.py", line 130, in is_scheduler_disabled
+    frappe.db.get_single_value("System Settings", "enable_scheduler")
+  File "/home/ng/frappe/apps/frappe/frappe/database/database.py", line 837, in get_single_value
+    df = frappe.get_meta(doctype).get_field(fieldname)
+  File "/home/ng/frappe/apps/frappe/frappe/__init__.py", line 1367, in get_meta
+    return frappe.model.meta.get_meta(doctype, cached=cached)
+  File "/home/ng/frappe/apps/frappe/frappe/model/meta.py", line 63, in get_meta
+    meta = Meta(doctype)
+  File "/home/ng/frappe/apps/frappe/frappe/model/meta.py", line 117, in __init__
+    super().__init__("DocType", doctype)
+  File "/home/ng/frappe/apps/frappe/frappe/model/document.py", line 126, in __init__
+    self.load_from_db()
+  File "/home/ng/frappe/apps/frappe/frappe/model/meta.py", line 123, in load_from_db
+    super().load_from_db()
+  File "/home/ng/frappe/apps/frappe/frappe/model/document.py", line 199, in load_from_db
+    self.set(df.fieldname, children)
+  File "/home/ng/frappe/apps/frappe/frappe/model/base_document.py", line 236, in set
+    self.extend(key, value)
+  File "/home/ng/frappe/apps/frappe/frappe/model/base_document.py", line 294, in extend
+    self.append(key, v)
+  File "/home/ng/frappe/apps/frappe/frappe/model/base_document.py", line 262, in append
+    ret_value = self._init_child(value, key)
+  File "/home/ng/frappe/apps/frappe/frappe/model/base_document.py", line 308, in _init_child
+    value = get_controller(doctype)(value)
+  File "/home/ng/frappe/apps/frappe/frappe/model/base_document.py", line 66, in get_controller
+    return import_controller(doctype)
+  File "/home/ng/frappe/apps/frappe/frappe/model/base_document.py", line 88, in import_controller
+    class_overrides = frappe.get_hooks("override_doctype_class")
+  File "/home/ng/frappe/apps/frappe/frappe/__init__.py", line 1648, in get_hooks
+    hooks = _dict(_load_app_hooks())
+  File "/home/ng/frappe/apps/frappe/frappe/utils/caching.py", line 59, in wrapper
+    return_val = func(*args, **kwargs)
+  File "/home/ng/frappe/apps/frappe/frappe/__init__.py", line 1631, in _load_app_hooks
+    append_hook(hooks, key, value)
+  File "/home/ng/frappe/apps/frappe/frappe/__init__.py", line 1669, in append_hook
+    append_hook(target[key], inkey, value[inkey])
+  File "/home/ng/frappe/apps/frappe/frappe/__init__.py", line 1669, in append_hook
+    append_hook(target[key], inkey, value[inkey])
+  File "/home/ng/frappe/apps/frappe/frappe/__init__.py", line 1672, in append_hook
+    target.setdefault(key, [])
+AttributeError: 'list' object has no attribute 'setdefault'
+2024-11-08 11:38:13,948 ERROR scheduler Exception in Enqueue Events for Site Airplane_mode
+Traceback (most recent call last):
+  File "/home/ng/frappe/apps/frappe/frappe/utils/caching.py", line 57, in wrapper
+    return frappe.local.request_cache[func][args_key]
+KeyError: 5740354900026072187
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ng/frappe/apps/frappe/frappe/utils/scheduler.py", line 75, in enqueue_events_for_site
+    if is_scheduler_inactive():
+  File "/home/ng/frappe/apps/frappe/frappe/utils/scheduler.py", line 117, in is_scheduler_inactive
+    if is_scheduler_disabled(verbose=verbose):
+  File "/home/ng/frappe/apps/frappe/frappe/utils/scheduler.py", line 130, in is_scheduler_disabled
+    frappe.db.get_single_value("System Settings", "enable_scheduler")
+  File "/home/ng/frappe/apps/frappe/frappe/database/database.py", line 837, in get_single_value
+    df = frappe.get_meta(doctype).get_field(fieldname)
+  File "/home/ng/frappe/apps/frappe/frappe/__init__.py", line 1367, in get_meta
+    return frappe.model.meta.get_meta(doctype, cached=cached)
+  File "/home/ng/frappe/apps/frappe/frappe/model/meta.py", line 63, in get_meta
+    meta = Meta(doctype)
+  File "/home/ng/frappe/apps/frappe/frappe/model/meta.py", line 117, in __init__
+    super().__init__("DocType", doctype)
+  File "/home/ng/frappe/apps/frappe/frappe/model/document.py", line 126, in __init__
+    self.load_from_db()
+  File "/home/ng/frappe/apps/frappe/frappe/model/meta.py", line 123, in load_from_db
+    super().load_from_db()
+  File "/home/ng/frappe/apps/frappe/frappe/model/document.py", line 199, in load_from_db
+    self.set(df.fieldname, children)
+  File "/home/ng/frappe/apps/frappe/frappe/model/base_document.py", line 236, in set
+    self.extend(key, value)
+  File "/home/ng/frappe/apps/frappe/frappe/model/base_document.py", line 294, in extend
+    self.append(key, v)
+  File "/home/ng/frappe/apps/frappe/frappe/model/base_document.py", line 262, in append
+    ret_value = self._init_child(value, key)
+  File "/home/ng/frappe/apps/frappe/frappe/model/base_document.py", line 308, in _init_child
+    value = get_controller(doctype)(value)
+  File "/home/ng/frappe/apps/frappe/frappe/model/base_document.py", line 66, in get_controller
+    return import_controller(doctype)
+  File "/home/ng/frappe/apps/frappe/frappe/model/base_document.py", line 88, in import_controller
+    class_overrides = frappe.get_hooks("override_doctype_class")
+  File "/home/ng/frappe/apps/frappe/frappe/__init__.py", line 1648, in get_hooks
+    hooks = _dict(_load_app_hooks())
+  File "/home/ng/frappe/apps/frappe/frappe/utils/caching.py", line 59, in wrapper
+    return_val = func(*args, **kwargs)
+  File "/home/ng/frappe/apps/frappe/frappe/__init__.py", line 1631, in _load_app_hooks
+    append_hook(hooks, key, value)
+  File "/home/ng/frappe/apps/frappe/frappe/__init__.py", line 1669, in append_hook
+    append_hook(target[key], inkey, value[inkey])
+  File "/home/ng/frappe/apps/frappe/frappe/__init__.py", line 1669, in append_hook
+    append_hook(target[key], inkey, value[inkey])
+  File "/home/ng/frappe/apps/frappe/frappe/__init__.py", line 1672, in append_hook
+    target.setdefault(key, [])
+AttributeError: 'list' object has no attribute 'setdefault'
+2024-11-08 11:39:14,146 ERROR scheduler Exception in Enqueue Events for Site Airplane_mode
+Traceback (most recent call last):
+  File "/home/ng/frappe/apps/frappe/frappe/utils/caching.py", line 57, in wrapper
+    return frappe.local.request_cache[func][args_key]
+KeyError: 5740354900026072187
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ng/frappe/apps/frappe/frappe/utils/scheduler.py", line 75, in enqueue_events_for_site
+    if is_scheduler_inactive():
+  File "/home/ng/frappe/apps/frappe/frappe/utils/scheduler.py", line 117, in is_scheduler_inactive
+    if is_scheduler_disabled(verbose=verbose):
+  File "/home/ng/frappe/apps/frappe/frappe/utils/scheduler.py", line 130, in is_scheduler_disabled
+    frappe.db.get_single_value("System Settings", "enable_scheduler")
+  File "/home/ng/frappe/apps/frappe/frappe/database/database.py", line 837, in get_single_value
+    df = frappe.get_meta(doctype).get_field(fieldname)
+  File "/home/ng/frappe/apps/frappe/frappe/__init__.py", line 1367, in get_meta
+    return frappe.model.meta.get_meta(doctype, cached=cached)
+  File "/home/ng/frappe/apps/frappe/frappe/model/meta.py", line 63, in get_meta
+    meta = Meta(doctype)
+  File "/home/ng/frappe/apps/frappe/frappe/model/meta.py", line 117, in __init__
+    super().__init__("DocType", doctype)
+  File "/home/ng/frappe/apps/frappe/frappe/model/document.py", line 126, in __init__
+    self.load_from_db()
+  File "/home/ng/frappe/apps/frappe/frappe/model/meta.py", line 123, in load_from_db
+    super().load_from_db()
+  File "/home/ng/frappe/apps/frappe/frappe/model/document.py", line 199, in load_from_db
+    self.set(df.fieldname, children)
+  File "/home/ng/frappe/apps/frappe/frappe/model/base_document.py", line 236, in set
+    self.extend(key, value)
+  File "/home/ng/frappe/apps/frappe/frappe/model/base_document.py", line 294, in extend
+    self.append(key, v)
+  File "/home/ng/frappe/apps/frappe/frappe/model/base_document.py", line 262, in append
+    ret_value = self._init_child(value, key)
+  File "/home/ng/frappe/apps/frappe/frappe/model/base_document.py", line 308, in _init_child
+    value = get_controller(doctype)(value)
+  File "/home/ng/frappe/apps/frappe/frappe/model/base_document.py", line 66, in get_controller
+    return import_controller(doctype)
+  File "/home/ng/frappe/apps/frappe/frappe/model/base_document.py", line 88, in import_controller
+    class_overrides = frappe.get_hooks("override_doctype_class")
+  File "/home/ng/frappe/apps/frappe/frappe/__init__.py", line 1648, in get_hooks
+    hooks = _dict(_load_app_hooks())
+  File "/home/ng/frappe/apps/frappe/frappe/utils/caching.py", line 59, in wrapper
+    return_val = func(*args, **kwargs)
+  File "/home/ng/frappe/apps/frappe/frappe/__init__.py", line 1631, in _load_app_hooks
+    append_hook(hooks, key, value)
+  File "/home/ng/frappe/apps/frappe/frappe/__init__.py", line 1669, in append_hook
+    append_hook(target[key], inkey, value[inkey])
+  File "/home/ng/frappe/apps/frappe/frappe/__init__.py", line 1669, in append_hook
+    append_hook(target[key], inkey, value[inkey])
+  File "/home/ng/frappe/apps/frappe/frappe/__init__.py", line 1672, in append_hook
+    target.setdefault(key, [])
+AttributeError: 'list' object has no attribute 'setdefault'
+2024-11-08 11:40:14,267 ERROR scheduler Exception in Enqueue Events for Site Airplane_mode
+Traceback (most recent call last):
+  File "/home/ng/frappe/apps/frappe/frappe/utils/caching.py", line 57, in wrapper
+    return frappe.local.request_cache[func][args_key]
+KeyError: 5740354900026072187
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ng/frappe/apps/frappe/frappe/utils/scheduler.py", line 75, in enqueue_events_for_site
+    if is_scheduler_inactive():
+  File "/home/ng/frappe/apps/frappe/frappe/utils/scheduler.py", line 117, in is_scheduler_inactive
+    if is_scheduler_disabled(verbose=verbose):
+  File "/home/ng/frappe/apps/frappe/frappe/utils/scheduler.py", line 130, in is_scheduler_disabled
+    frappe.db.get_single_value("System Settings", "enable_scheduler")
+  File "/home/ng/frappe/apps/frappe/frappe/database/database.py", line 837, in get_single_value
+    df = frappe.get_meta(doctype).get_field(fieldname)
+  File "/home/ng/frappe/apps/frappe/frappe/__init__.py", line 1367, in get_meta
+    return frappe.model.meta.get_meta(doctype, cached=cached)
+  File "/home/ng/frappe/apps/frappe/frappe/model/meta.py", line 63, in get_meta
+    meta = Meta(doctype)
+  File "/home/ng/frappe/apps/frappe/frappe/model/meta.py", line 117, in __init__
+    super().__init__("DocType", doctype)
+  File "/home/ng/frappe/apps/frappe/frappe/model/document.py", line 126, in __init__
+    self.load_from_db()
+  File "/home/ng/frappe/apps/frappe/frappe/model/meta.py", line 123, in load_from_db
+    super().load_from_db()
+  File "/home/ng/frappe/apps/frappe/frappe/model/document.py", line 199, in load_from_db
+    self.set(df.fieldname, children)
+  File "/home/ng/frappe/apps/frappe/frappe/model/base_document.py", line 236, in set
+    self.extend(key, value)
+  File "/home/ng/frappe/apps/frappe/frappe/model/base_document.py", line 294, in extend
+    self.append(key, v)
+  File "/home/ng/frappe/apps/frappe/frappe/model/base_document.py", line 262, in append
+    ret_value = self._init_child(value, key)
+  File "/home/ng/frappe/apps/frappe/frappe/model/base_document.py", line 308, in _init_child
+    value = get_controller(doctype)(value)
+  File "/home/ng/frappe/apps/frappe/frappe/model/base_document.py", line 66, in get_controller
+    return import_controller(doctype)
+  File "/home/ng/frappe/apps/frappe/frappe/model/base_document.py", line 88, in import_controller
+    class_overrides = frappe.get_hooks("override_doctype_class")
+  File "/home/ng/frappe/apps/frappe/frappe/__init__.py", line 1648, in get_hooks
+    hooks = _dict(_load_app_hooks())
+  File "/home/ng/frappe/apps/frappe/frappe/utils/caching.py", line 59, in wrapper
+    return_val = func(*args, **kwargs)
+  File "/home/ng/frappe/apps/frappe/frappe/__init__.py", line 1631, in _load_app_hooks
+    append_hook(hooks, key, value)
+  File "/home/ng/frappe/apps/frappe/frappe/__init__.py", line 1669, in append_hook
+    append_hook(target[key], inkey, value[inkey])
+  File "/home/ng/frappe/apps/frappe/frappe/__init__.py", line 1669, in append_hook
+    append_hook(target[key], inkey, value[inkey])
+  File "/home/ng/frappe/apps/frappe/frappe/__init__.py", line 1672, in append_hook
+    target.setdefault(key, [])
+AttributeError: 'list' object has no attribute 'setdefault'
+2024-11-08 11:41:14,418 ERROR scheduler Exception in Enqueue Events for Site Airplane_mode
+Traceback (most recent call last):
+  File "/home/ng/frappe/apps/frappe/frappe/utils/caching.py", line 57, in wrapper
+    return frappe.local.request_cache[func][args_key]
+KeyError: 5740354900026072187
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ng/frappe/apps/frappe/frappe/utils/scheduler.py", line 75, in enqueue_events_for_site
+    if is_scheduler_inactive():
+  File "/home/ng/frappe/apps/frappe/frappe/utils/scheduler.py", line 117, in is_scheduler_inactive
+    if is_scheduler_disabled(verbose=verbose):
+  File "/home/ng/frappe/apps/frappe/frappe/utils/scheduler.py", line 130, in is_scheduler_disabled
+    frappe.db.get_single_value("System Settings", "enable_scheduler")
+  File "/home/ng/frappe/apps/frappe/frappe/database/database.py", line 837, in get_single_value
+    df = frappe.get_meta(doctype).get_field(fieldname)
+  File "/home/ng/frappe/apps/frappe/frappe/__init__.py", line 1367, in get_meta
+    return frappe.model.meta.get_meta(doctype, cached=cached)
+  File "/home/ng/frappe/apps/frappe/frappe/model/meta.py", line 63, in get_meta
+    meta = Meta(doctype)
+  File "/home/ng/frappe/apps/frappe/frappe/model/meta.py", line 117, in __init__
+    super().__init__("DocType", doctype)
+  File "/home/ng/frappe/apps/frappe/frappe/model/document.py", line 126, in __init__
+    self.load_from_db()
+  File "/home/ng/frappe/apps/frappe/frappe/model/meta.py", line 123, in load_from_db
+    super().load_from_db()
+  File "/home/ng/frappe/apps/frappe/frappe/model/document.py", line 199, in load_from_db
+    self.set(df.fieldname, children)
+  File "/home/ng/frappe/apps/frappe/frappe/model/base_document.py", line 236, in set
+    self.extend(key, value)
+  File "/home/ng/frappe/apps/frappe/frappe/model/base_document.py", line 294, in extend
+    self.append(key, v)
+  File "/home/ng/frappe/apps/frappe/frappe/model/base_document.py", line 262, in append
+    ret_value = self._init_child(value, key)
+  File "/home/ng/frappe/apps/frappe/frappe/model/base_document.py", line 308, in _init_child
+    value = get_controller(doctype)(value)
+  File "/home/ng/frappe/apps/frappe/frappe/model/base_document.py", line 66, in get_controller
+    return import_controller(doctype)
+  File "/home/ng/frappe/apps/frappe/frappe/model/base_document.py", line 88, in import_controller
+    class_overrides = frappe.get_hooks("override_doctype_class")
+  File "/home/ng/frappe/apps/frappe/frappe/__init__.py", line 1648, in get_hooks
+    hooks = _dict(_load_app_hooks())
+  File "/home/ng/frappe/apps/frappe/frappe/utils/caching.py", line 59, in wrapper
+    return_val = func(*args, **kwargs)
+  File "/home/ng/frappe/apps/frappe/frappe/__init__.py", line 1631, in _load_app_hooks
+    append_hook(hooks, key, value)
+  File "/home/ng/frappe/apps/frappe/frappe/__init__.py", line 1669, in append_hook
+    append_hook(target[key], inkey, value[inkey])
+  File "/home/ng/frappe/apps/frappe/frappe/__init__.py", line 1669, in append_hook
+    append_hook(target[key], inkey, value[inkey])
+  File "/home/ng/frappe/apps/frappe/frappe/__init__.py", line 1672, in append_hook
+    target.setdefault(key, [])
+AttributeError: 'list' object has no attribute 'setdefault'
+2024-11-08 11:42:14,579 ERROR scheduler Exception in Enqueue Events for Site Airplane_mode
+Traceback (most recent call last):
+  File "/home/ng/frappe/apps/frappe/frappe/utils/caching.py", line 57, in wrapper
+    return frappe.local.request_cache[func][args_key]
+KeyError: 5740354900026072187
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ng/frappe/apps/frappe/frappe/utils/scheduler.py", line 75, in enqueue_events_for_site
+    if is_scheduler_inactive():
+  File "/home/ng/frappe/apps/frappe/frappe/utils/scheduler.py", line 117, in is_scheduler_inactive
+    if is_scheduler_disabled(verbose=verbose):
+  File "/home/ng/frappe/apps/frappe/frappe/utils/scheduler.py", line 130, in is_scheduler_disabled
+    frappe.db.get_single_value("System Settings", "enable_scheduler")
+  File "/home/ng/frappe/apps/frappe/frappe/database/database.py", line 837, in get_single_value
+    df = frappe.get_meta(doctype).get_field(fieldname)
+  File "/home/ng/frappe/apps/frappe/frappe/__init__.py", line 1367, in get_meta
+    return frappe.model.meta.get_meta(doctype, cached=cached)
+  File "/home/ng/frappe/apps/frappe/frappe/model/meta.py", line 63, in get_meta
+    meta = Meta(doctype)
+  File "/home/ng/frappe/apps/frappe/frappe/model/meta.py", line 117, in __init__
+    super().__init__("DocType", doctype)
+  File "/home/ng/frappe/apps/frappe/frappe/model/document.py", line 126, in __init__
+    self.load_from_db()
+  File "/home/ng/frappe/apps/frappe/frappe/model/meta.py", line 123, in load_from_db
+    super().load_from_db()
+  File "/home/ng/frappe/apps/frappe/frappe/model/document.py", line 199, in load_from_db
+    self.set(df.fieldname, children)
+  File "/home/ng/frappe/apps/frappe/frappe/model/base_document.py", line 236, in set
+    self.extend(key, value)
+  File "/home/ng/frappe/apps/frappe/frappe/model/base_document.py", line 294, in extend
+    self.append(key, v)
+  File "/home/ng/frappe/apps/frappe/frappe/model/base_document.py", line 262, in append
+    ret_value = self._init_child(value, key)
+  File "/home/ng/frappe/apps/frappe/frappe/model/base_document.py", line 308, in _init_child
+    value = get_controller(doctype)(value)
+  File "/home/ng/frappe/apps/frappe/frappe/model/base_document.py", line 66, in get_controller
+    return import_controller(doctype)
+  File "/home/ng/frappe/apps/frappe/frappe/model/base_document.py", line 88, in import_controller
+    class_overrides = frappe.get_hooks("override_doctype_class")
+  File "/home/ng/frappe/apps/frappe/frappe/__init__.py", line 1648, in get_hooks
+    hooks = _dict(_load_app_hooks())
+  File "/home/ng/frappe/apps/frappe/frappe/utils/caching.py", line 59, in wrapper
+    return_val = func(*args, **kwargs)
+  File "/home/ng/frappe/apps/frappe/frappe/__init__.py", line 1631, in _load_app_hooks
+    append_hook(hooks, key, value)
+  File "/home/ng/frappe/apps/frappe/frappe/__init__.py", line 1669, in append_hook
+    append_hook(target[key], inkey, value[inkey])
+  File "/home/ng/frappe/apps/frappe/frappe/__init__.py", line 1669, in append_hook
+    append_hook(target[key], inkey, value[inkey])
+  File "/home/ng/frappe/apps/frappe/frappe/__init__.py", line 1672, in append_hook
+    target.setdefault(key, [])
+AttributeError: 'list' object has no attribute 'setdefault'
+2024-11-08 11:43:14,704 ERROR scheduler Exception in Enqueue Events for Site Airplane_mode
+Traceback (most recent call last):
+  File "/home/ng/frappe/apps/frappe/frappe/utils/caching.py", line 57, in wrapper
+    return frappe.local.request_cache[func][args_key]
+KeyError: 5740354900026072187
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ng/frappe/apps/frappe/frappe/utils/scheduler.py", line 75, in enqueue_events_for_site
+    if is_scheduler_inactive():
+  File "/home/ng/frappe/apps/frappe/frappe/utils/scheduler.py", line 117, in is_scheduler_inactive
+    if is_scheduler_disabled(verbose=verbose):
+  File "/home/ng/frappe/apps/frappe/frappe/utils/scheduler.py", line 130, in is_scheduler_disabled
+    frappe.db.get_single_value("System Settings", "enable_scheduler")
+  File "/home/ng/frappe/apps/frappe/frappe/database/database.py", line 837, in get_single_value
+    df = frappe.get_meta(doctype).get_field(fieldname)
+  File "/home/ng/frappe/apps/frappe/frappe/__init__.py", line 1367, in get_meta
+    return frappe.model.meta.get_meta(doctype, cached=cached)
+  File "/home/ng/frappe/apps/frappe/frappe/model/meta.py", line 63, in get_meta
+    meta = Meta(doctype)
+  File "/home/ng/frappe/apps/frappe/frappe/model/meta.py", line 117, in __init__
+    super().__init__("DocType", doctype)
+  File "/home/ng/frappe/apps/frappe/frappe/model/document.py", line 126, in __init__
+    self.load_from_db()
+  File "/home/ng/frappe/apps/frappe/frappe/model/meta.py", line 123, in load_from_db
+    super().load_from_db()
+  File "/home/ng/frappe/apps/frappe/frappe/model/document.py", line 199, in load_from_db
+    self.set(df.fieldname, children)
+  File "/home/ng/frappe/apps/frappe/frappe/model/base_document.py", line 236, in set
+    self.extend(key, value)
+  File "/home/ng/frappe/apps/frappe/frappe/model/base_document.py", line 294, in extend
+    self.append(key, v)
+  File "/home/ng/frappe/apps/frappe/frappe/model/base_document.py", line 262, in append
+    ret_value = self._init_child(value, key)
+  File "/home/ng/frappe/apps/frappe/frappe/model/base_document.py", line 308, in _init_child
+    value = get_controller(doctype)(value)
+  File "/home/ng/frappe/apps/frappe/frappe/model/base_document.py", line 66, in get_controller
+    return import_controller(doctype)
+  File "/home/ng/frappe/apps/frappe/frappe/model/base_document.py", line 88, in import_controller
+    class_overrides = frappe.get_hooks("override_doctype_class")
+  File "/home/ng/frappe/apps/frappe/frappe/__init__.py", line 1648, in get_hooks
+    hooks = _dict(_load_app_hooks())
+  File "/home/ng/frappe/apps/frappe/frappe/utils/caching.py", line 59, in wrapper
+    return_val = func(*args, **kwargs)
+  File "/home/ng/frappe/apps/frappe/frappe/__init__.py", line 1631, in _load_app_hooks
+    append_hook(hooks, key, value)
+  File "/home/ng/frappe/apps/frappe/frappe/__init__.py", line 1669, in append_hook
+    append_hook(target[key], inkey, value[inkey])
+  File "/home/ng/frappe/apps/frappe/frappe/__init__.py", line 1669, in append_hook
+    append_hook(target[key], inkey, value[inkey])
+  File "/home/ng/frappe/apps/frappe/frappe/__init__.py", line 1672, in append_hook
+    target.setdefault(key, [])
+AttributeError: 'list' object has no attribute 'setdefault'
+2024-11-09 15:10:51,323 ERROR scheduler Skipped queueing send_email_hourly because it was found in queue for Airplane_mode
+2024-11-09 15:11:09,613 ERROR scheduler Skipped queueing send_email_hourly because it was found in queue for Airplane_mode
+2024-11-11 10:53:23,456 ERROR scheduler Skipped queueing frappe.desk.doctype.changelog_feed.changelog_feed.fetch_changelog_feed because it was found in queue for Airplane_mode
+2024-11-11 10:53:23,464 ERROR scheduler Skipped queueing frappe.integrations.doctype.google_drive.google_drive.weekly_backup because it was found in queue for Airplane_mode
+2024-11-11 10:53:23,473 ERROR scheduler Skipped queueing frappe.social.doctype.energy_point_log.energy_point_log.send_weekly_summary because it was found in queue for Airplane_mode
+2024-11-11 10:53:23,480 ERROR scheduler Skipped queueing frappe.utils.change_log.check_for_update because it was found in queue for Airplane_mode
+2024-11-11 10:53:23,489 ERROR scheduler Skipped queueing frappe.desk.form.document_follow.send_weekly_updates because it was found in queue for Airplane_mode
+2024-11-11 10:53:23,498 ERROR scheduler Skipped queueing frappe.integrations.doctype.s3_backup_settings.s3_backup_settings.take_backups_weekly because it was found in queue for Airplane_mode
+2024-11-11 10:53:23,508 ERROR scheduler Skipped queueing frappe.integrations.doctype.dropbox_settings.dropbox_settings.take_backups_weekly because it was found in queue for Airplane_mode
+2024-11-11 10:53:23,516 ERROR scheduler Skipped queueing frappe.integrations.doctype.google_drive.google_drive.daily_backup because it was found in queue for Airplane_mode
+2024-11-11 10:53:23,525 ERROR scheduler Skipped queueing frappe.email.doctype.auto_email_report.auto_email_report.send_daily because it was found in queue for Airplane_mode
+2024-11-11 10:53:23,534 ERROR scheduler Skipped queueing frappe.integrations.doctype.s3_backup_settings.s3_backup_settings.take_backups_daily because it was found in queue for Airplane_mode
+2024-11-11 10:53:23,542 ERROR scheduler Skipped queueing frappe.integrations.doctype.dropbox_settings.dropbox_settings.take_backups_daily because it was found in queue for Airplane_mode

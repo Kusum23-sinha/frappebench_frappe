@@ -4,3 +4,4 @@ interview_management
 airport_management
 frappe_app
 rentals
+print_designer

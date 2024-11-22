@@ -57,5 +57,15 @@
         "required": [],
         "idx": 6,
         "version": "0.0.1"
+    },
+    "print_designer": {
+        "is_repo": true,
+        "resolution": {
+            "commit_hash": "21fdcfca839a528a92744912fe50e98a025e10ec",
+            "branch": "develop"
+        },
+        "required": [],
+        "idx": 7,
+        "version": "1.0.0-dev"
     }
 }
